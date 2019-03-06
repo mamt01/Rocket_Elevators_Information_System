@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :quotes
   get '/gform', to: 'pages#gform'
   get '/residential', to: 'pages#residential'
   get '/commercial', to: 'pages#commercial'
