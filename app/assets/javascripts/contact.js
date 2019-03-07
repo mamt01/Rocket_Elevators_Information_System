@@ -7,20 +7,20 @@ $(".row-1, .row-2, .row-3, .row-4").hide()
 $("input").keyup(function() {	
 		calculMain();
 		radioButton();
-		$("input[name='price']").change(function() {
+		$("input[name='Price']").change(function() {
 			radioButton();
 		})
     });	
 
     $( document ).ready(function() {
-        var choice = document.getElementById('quote_Department');
+        var choice = document.getElementById('quote_department');
         choice.addEventListener("change", department);
         choice.addEventListener("change", clear);
     });
 
 // Function Choice of sector ---------------------------------------------------
 var department = function(){
-    var choice = document.getElementById('quote_Department').value;
+    var choice = document.getElementById('quote_department').value;
     
     
 	if (choice === "Residential") {
@@ -39,7 +39,7 @@ var department = function(){
 		$(".row-4").show();
 		$(".row-1, .row-2, .row-3").hide();
 	}
-	else if (choice === "select"){
+	else if (choice === "-"){
 		$(".row-1, .row-2, .row-3, .row-4").hide()
 	}	
 }
@@ -53,13 +53,13 @@ var calculMain = function() {
 			clearPrice();
 		}})
 
-	if (document.getElementById('quote_Department').value === "Residential"){
+	if (document.getElementById('quote_department').value === "Residential"){
 
 		if(document.getElementById('resi-app').value !== "" && document.getElementById('resi-floor').value !== ""){
 			var residentiel = calculResi();
 			calculPrix(residentiel);
 
-			$("input[name='price']").change(function() {
+			$("input[name='Price']").change(function() {
 				if(document.getElementById('resi-app').value !== "" && document.getElementById('resi-floor').value !== ""){
 				calculPrix(residentiel);
 			}})	
@@ -69,14 +69,14 @@ var calculMain = function() {
 		}
 	}	
 
-	else if (document.getElementById('quote_Department').value === "Corporate"){
+	else if (document.getElementById('quote_department').value === "Corporate"){
 
 		if(document.getElementById('cor-floor').value !== "" && document.getElementById('cor-quar').value !== "" 
 		&& document.getElementById('cor-occu').value !== ""){
 			var corpo = calculCorpo();
 			calculPrix(corpo);
 
-			$("input[name='price']").change(function() {
+			$("input[name='Price']").change(function() {
 				if(document.getElementById('cor-floor').value !== "" && document.getElementById('cor-quar').value !== "" 
 				&& document.getElementById('cor-occu').value !== ""){
 				calculPrix(corpo);
@@ -86,14 +86,14 @@ var calculMain = function() {
 			clearPrice();
 		}
 	}
-	else if (document.getElementById('quote_Department').value === "Hybrid"){
+	else if (document.getElementById('quote_department').value === "Hybrid"){
 
 		if(document.getElementById('hyb-floor').value !== "" && document.getElementById('hyb-quar').value !== "" 
 		&& document.getElementById('hyb-occu').value !== ""){
 			var corpo = calculCorpo();
 			calculPrix(corpo);
 
-			$("input[name='price']").change(function() {
+			$("input[name='Price']").change(function() {
 				if(document.getElementById('hyb-floor').value !== "" && document.getElementById('hyb-quar').value !== "" 
 				&& document.getElementById('hyb-occu').value !== ""){
 				calculPrix(corpo);
@@ -104,13 +104,13 @@ var calculMain = function() {
 
 		}
 	}
-	else if (document.getElementById('quote_Department').value === "Commercial"){
+	else if (document.getElementById('quote_department').value === "Commercial"){
 
 		if (document.getElementById('com-asce').value !== ""){
 			var comm = calculCommerce();
 			calculPrix(comm);
 
-			$("input[name='price']").change(function() {
+			$("input[name='Price']").change(function() {
 				if (document.getElementById('com-asce').value !== ""){
 					var comm = calculCommerce();
 					calculPrix(comm);
@@ -165,12 +165,12 @@ var calculCommerce = function(){
 */
 var calculCorpo = function(){
 
-	if (document.getElementById('quote_Department').value === 'Corporate'){
+	if (document.getElementById('quote_department').value === 'Corporate'){
 		var floor = parseInt(document.getElementById('cor-floor').value);
 		var quar = parseInt(document.getElementById('cor-quar').value);
 		var occu = parseInt(document.getElementById('cor-occu').value);
 	}
-	else if (document.getElementById('quote_Department').value === 'Hybrid'){
+	else if (document.getElementById('quote_department').value === 'Hybrid'){
 		var floor = parseInt(document.getElementById('hyb-floor').value);
 		var quar = parseInt(document.getElementById('hyb-quar').value);
 		var occu = parseInt(document.getElementById('hyb-occu').value);
@@ -241,9 +241,9 @@ var calculResi = function(){
  */
 var calculPrix = function(totalAscensor){
 
-	var radioValue = $("input[name='price']:checked").val();
-	$("input[name='price']").change(function() {
-		var radioValue = $("input[name='price']:checked").val();
+	var radioValue = $("input[name='Price']:checked").val();
+	$("input[name='Price']").change(function() {
+		var radioValue = $("input[name='Price']:checked").val();
 		return radioValue;
 	})
 	var finalPrice;
@@ -265,7 +265,7 @@ var calculPrix = function(totalAscensor){
 }
 // Function to show radio-button value-------------------------------------------------
 var radioButton = function(){
-	var radioValue = $("input[name='price']:checked").val();
+	var radioValue = $("input[name='Price']:checked").val();
 	if (radioValue === "7565"){
 
 		document.getElementById('fees').innerHTML = "10%";
