@@ -32,7 +32,6 @@ class QuotesController < ApplicationController
       @quote.number_of_apartments = params[:quote][:resi_number_of_apartments]
       @quote.number_of_floors = params[:quote][:resi_number_of_floors]
       @quote.number_of_basements = params[:quote][:resi_number_of_basements]
-
     
     elsif params[:quote][:department] == 'Commercial' 
       @quote.number_of_apartments = params[:quote][:comm_number_of_apartments]
@@ -55,7 +54,6 @@ class QuotesController < ApplicationController
       @quote.max_occupancy_per_floor = params[:quote][:hyb_max_occupancy_per_floor]
       @quote.number_of_stores = params[:quote][:hyb_number_of_stores]
       @quote.number_of_parking = params[:quote][:hyb_number_of_parking]
-
 
     end
 
