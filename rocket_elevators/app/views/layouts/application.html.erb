@@ -11,6 +11,8 @@
 
   <body>
     <%= yield %>
+      <p class="notice"><%= notice %></p> <!-- Alerts for user "logged in successfully" or "wrong password" -->
+      <p class="alert"><%= alert %></p>
     <script>var plugin_path = 'assets/plugins/';</script>
   </body>
 </html>
