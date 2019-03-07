@@ -1,7 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.0"
 
-before 'deploy', 'rvm1:install:ruby'
+
 set :rvm_map_bins, [ 'rake', 'gem', 'bundle', 'ruby', 'puma', 'pumactl' ]
 set :application, "marc_antoine_tanguay"
 set :repo_url, "https://github.com/mamt01/Rocket_Elevators_Information_System.git"
