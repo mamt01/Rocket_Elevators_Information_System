@@ -13,14 +13,14 @@ $("input").keyup(function() {
     });	
 
     $( document ).ready(function() {
-        var choice = document.getElementById('forme-1');
+        var choice = document.getElementById('quote_Department');
         choice.addEventListener("change", department);
         choice.addEventListener("change", clear);
     });
 
 // Function Choice of sector ---------------------------------------------------
 var department = function(){
-    var choice = document.getElementById('forme-1').value;
+    var choice = document.getElementById('quote_Department').value;
     
     
 	if (choice === "Residential") {
@@ -31,11 +31,11 @@ var department = function(){
 		$(".row-2").show();
 		$(".row-1, .row-3, .row-4").hide();
 	}
-	else if (choice === "Corporatif"){
+	else if (choice === "Corporate"){
 		$(".row-3").show();
 		$(".row-1, .row-2, .row-4").hide();	
 	}
-	else if (choice === "Hybride"){
+	else if (choice === "Hybrid"){
 		$(".row-4").show();
 		$(".row-1, .row-2, .row-3").hide();
 	}
@@ -53,7 +53,7 @@ var calculMain = function() {
 			clearPrice();
 		}})
 
-	if (document.getElementById('forme-1').value === "Residential"){
+	if (document.getElementById('quote_Department').value === "Residential"){
 
 		if(document.getElementById('resi-app').value !== "" && document.getElementById('resi-floor').value !== ""){
 			var residentiel = calculResi();
@@ -69,7 +69,7 @@ var calculMain = function() {
 		}
 	}	
 
-	else if (document.getElementById('forme-1').value === "Corporatif"){
+	else if (document.getElementById('quote_Department').value === "Corporate"){
 
 		if(document.getElementById('cor-floor').value !== "" && document.getElementById('cor-quar').value !== "" 
 		&& document.getElementById('cor-occu').value !== ""){
@@ -86,7 +86,7 @@ var calculMain = function() {
 			clearPrice();
 		}
 	}
-	else if (document.getElementById('forme-1').value === "Hybride"){
+	else if (document.getElementById('quote_Department').value === "Hybrid"){
 
 		if(document.getElementById('hyb-floor').value !== "" && document.getElementById('hyb-quar').value !== "" 
 		&& document.getElementById('hyb-occu').value !== ""){
@@ -104,7 +104,7 @@ var calculMain = function() {
 
 		}
 	}
-	else if (document.getElementById('forme-1').value === "Commercial"){
+	else if (document.getElementById('quote_Department').value === "Commercial"){
 
 		if (document.getElementById('com-asce').value !== ""){
 			var comm = calculCommerce();
@@ -160,17 +160,17 @@ var calculCommerce = function(){
 	return nbr_ascen;
 }
 
-/*Function calcul Corporatif/Hybride-----------------------------------------------------
-	return and show number of elevator needed for corpo/hybride
+/*Function calcul Corporate/Hybrid-----------------------------------------------------
+	return and show number of elevator needed for corpo/hybrid
 */
 var calculCorpo = function(){
 
-	if (document.getElementById('forme-1').value === 'Corporatif'){
+	if (document.getElementById('quote_Department').value === 'Corporate'){
 		var floor = parseInt(document.getElementById('cor-floor').value);
 		var quar = parseInt(document.getElementById('cor-quar').value);
 		var occu = parseInt(document.getElementById('cor-occu').value);
 	}
-	else if (document.getElementById('forme-1').value === 'Hybride'){
+	else if (document.getElementById('quote_Department').value === 'Hybrid'){
 		var floor = parseInt(document.getElementById('hyb-floor').value);
 		var quar = parseInt(document.getElementById('hyb-quar').value);
 		var occu = parseInt(document.getElementById('hyb-occu').value);
