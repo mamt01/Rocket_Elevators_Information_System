@@ -1,3 +1,5 @@
+<%= form_with(model: @quote, local: true) do |form| %>    
+    
     <!-- SLIDE TOP -->
     <%= form_with(model: @quote, local: true) do |form| %>
 
@@ -166,60 +168,14 @@
                 <button>Corporate's services</button>
         </a>-->
 
-        <!-- /BUTTON CALLOUT -->
-        
-        <!-- Services -->
-
-        <!-- /Services -->
-
-
-        <!-- Parallax -->
-
-        <!-- /Parallax -->
-
-        <!-- PORTFOLIO -->
-
-        <!-- /PORTFOLIO -->
-
-
-
-
-        <!-- Testimonials -->
-
-        <!-- /Testimonials -->
-
-
-
-
-
-        <!-- News -->
-
-        <!-- /News -->
-
-
-
-
-        <!-- Overview -->
-        <!-- /Overview -->
-
-
-
-
-
-        <!-- Clients -->
-
-        <!-- /Clients -->
-
-
-
 
         <!-- CONTACT -->
         <section id="contact">
             <div class="container">
 
                 <header class="text-center mb-60-1">
-                    <h2>Submission</h2>
-                    <p class="lead font-lato">Get a free submission now.</p>
+                    <h2>Quote</h2>
+                    <p class="lead font-lato">Get a free quote now.</p>
                     <hr />
                 </header>
 
@@ -281,74 +237,66 @@
                         <form action="php/contact.php" method="post" enctype="multipart/form-data">
                             <fieldset>
                                 <input type="hidden" name="action" value="contact_send" />
-
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <%= form.label :full_name %>
+                                        <%= form.text_field :full_name, class: 'form-control-1' %>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <%= form.label :company_name %>
+                                        <%= form.text_field :company_name, class: 'form-control-1' %>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <%= form.label :email %>
+                                        <%= form.text_field :email, class: 'form-control-1' %>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <%= form.label :phone_number %>
+                                        <%= form.text_field :phone_number, class: 'form-control-1' %>
+                                    </div>
+                                </div>
                             <div class="row">
-                                <div class="col-md-3">
-                                    <label>Full Name </label>
-                                    <input required type="text" value="" class="form-control-5" id="full_name">
-
-                                </div>
-                                <div class="col-md-3">
-                                    <label>Company Name </label>
-                                    <input required type="text" value="" class="form-control-5" id="company">
-                                </div>
-                                <div class="col-md-3">
-                                    <label>Email </label>
-                                    <input required type="text" value="" class="form-control-5" id="email">
-                                </div>
-                                <div class="col-md-3">
-                                    <label>Phone </label>
-                                    <input required type="text" value="" class="form-control-5" id="phone">
-                                </div>
-                                <div class="col-md-3">
-                                    
-                                </div>
-                             </div>
-                            <div class="row">
-
-                                <div class="col-md-3">
-                                        <label class="label_form" for="contact_department">Department</label>
-                                        <%=select_tag(:forme-1, "<option selected='selected'>Select</option><option>Residential</option><option>Commercial</option> <option>Corporate</option><option>Hybrid</option>".html_safe)  %>
-
+                                <div class="col-md-4">
+                                        <%= form.label :Department %>
+                                        <%= form.select :Department, [['-', '-'], ['Residential','Residential'], ['Commercial','Commercial'], ['Corporate','Corporate'], ['Hybrid','Hybrid']] %>
                                     </div>
                                 </div>
                                 <div class="row-1">
-                                    <form>
-                                        <div class="col-md-4">
-                                                <label class="resi" for="resi-app">Number of appartements * </label>
-                                                <input required type="text" value="" class="form-control-1" name="resi[app]" id="resi-app">
-                                            </div>
-                                        <div class="col-md-4">
-                                                <label for="resi-floor">Number of floors *</label>
-                                                <input required type="text" value="" class="form-control-1" name="resi[floor]" id="resi-floor">
-                                        </div>
-                                            <div class="col-md-4">
-                                                <label for="resi-quar">Number of basements</label>
-                                                <input required type="text" value="" placeholder="Not Required" class="form-control-1" name="resi[quar]" id="resi-quar">
-                                            </div>
-                                    </form>	
-                                </div>
-                                <div class="row-2">
                                     
                                         <div class="col-md-4">
-                                                <label for="contact:name">Number of ascensors *</label>
-                                                <input required type="text" value="" class="form-control-4" name="contact[name][required]" id="com-asce">
+                                            <%= form.label :number_of_apartments %>
+                                            <%= form.text_field :number_of_apartments, class: 'form-control-1', name:'resi[app]', id: 'resi-app'  %>
                                             </div>
                                         <div class="col-md-4">
-                                                <label for="contact:name">Number of appartements </label>
-                                                <input required type="text" value="" placeholder="Not Required" class="form-control-4" name="contact[name][required]" id="com-app">
+                                            <%= form.label :number_of_floors %>
+                                            <%= form.text_field :number_of_floors, class: 'form-control-1', name:'resi[floor]', id: 'resi-floor'  %>
                                         </div>
                                             <div class="col-md-4">
-                                                <label for="contact:name">Number of parking spaces </label>
-                                                <input required type="text" value="" placeholder="Not Required" class="form-control-4" name="contact[name][required]" id="com-space">
+                                            <%= form.label :number_of_basements %>
+                                            <%= form.text_field :number_of_basements, class: 'form-control-1', name:'resi[quar]', id: 'resi-quar'  %>
+                                            </div>
+                              
+                                </div>
+                                <div class="row-2">
+                                        <div class="col-md-4">
+                                            <%= form.label :number_of_elevators %>
+                                            <%= form.text_field :number_of_elevators, class: 'form-control-4', name:'com[asc]', id: 'com-asce'  %>
                                             </div>
                                         <div class="col-md-4">
-                                                    <label for="contact:name">Number of basements </label>
-                                                    <input required type="text" value="" placeholder="Not Required" class="form-control-4" name="contact[name][required]" id="com-quar">
+                                            <%= form.label :number_of_apartments %>
+                                            <%= form.text_field :number_of_apartments, class: 'form-control-4', name:'com[app]', id: 'com-app'  %>
+                                        </div>
+                                            <div class="col-md-4">
+                                            <%= form.label :number_of_parking %>
+                                            <%= form.text_field :number_of_parking, class: 'form-control-4', name:'com[space]', id: 'com-space'  %>
+                                            </div>
+                                        <div class="col-md-4">
+                                            <%= form.label :number_of_basements %>
+                                            <%= form.text_field :number_of_basements, class: 'form-control-4', name:'com[quar]', id: 'com-quar'  %>
                                         </div>
                                         <div class="col-md-4">
-                                                <label for="contact:name">Number of stores </label>
-                                                <input required type="text" value="" placeholder="Not Required" class="form-control-4" name="contact[name][required]" id="com-com">
+                                            <%= form.label :number_of_stores %>
+                                            <%= form.text_field :number_of_stores, class: 'form-control-4', name:'com[com]', id: 'com-com'  %>
                                             </div>
                         
                                                 
@@ -356,54 +304,53 @@
 
                                 <div class="row-3">
                                         <div class="col-md-4">
-                                                <label class="resi" for="contact:name">Number of floors * </label>   
-                                                <input required type="text" value="" class="form-control-2" name="contact[name][required]" id="cor-floor">
+                                            <%= form.label :number_of_floors %>
+                                            <%= form.text_field :number_of_floors, class: 'form-control-2', name:'cor[floor]', id: 'cor-floor'  %>
                                             </div>
                                         <div class="col-md-4">
-                                                <label for="contact:name"> Numbers of basements *</label>
-                                                <input required type="text" value="" class="form-control-2" name="contact[name][required]" id="cor-quar">
+                                            <%= form.label :number_of_basements %>
+                                            <%= form.text_field :number_of_basements, class: 'form-control-2', name:'cor[quar]', id: 'cor-quar'  %>
                                         </div>
                                             <div class="col-md-4">
-                                                <label for="contact:name">Max ocuppancy by floor *</label>
-                                                <input required type="text" value="" class="form-control-2" name="contact[name][required]" id="cor-occu">
+                                            <%= form.label :max_occupancy_per_floor %>
+                                            <%= form.text_field :max_occupancy_per_floor, class: 'form-control-2', name:'cor[occu]', id: 'cor-occu'  %>
                                          </div>
                                             <div class="col-md-4">
-                                                    <label for="contact:name">Number of commerces</label>
-                                                    <input required type="text" value="" placeholder="Not Required" class="form-control-2" name="contact[name][required]" id="cor-com-">
+                                                <%= form.label :number_of_stores %>
+                                                <%= form.text_field :number_of_stores, class: 'form-control-2', name:'cor[com]', id: 'cor-com'  %>
                                             </div>
 
                                             <div class="col-md-4">
-                                                    <label for="contact:name">Parking spaces</label>
-                                                    <input required type="text" value="" placeholder="Not Required" class="form-control-2" name="contact[name][required]" id="cor-space">
+                                                <%= form.label :number_of_parking %>
+                                                <%= form.text_field :number_of_parking, class: 'form-control-2', name:'cor[space]', id: 'cor-space'  %>
                                             </div>
 
                                 </div>
                                 <div class="row-4">
                                         <div class="col-md-4">
-                                                <label class="resi" for="hyb-floor">Number of floors * </label>
-                                                    
-                                                <input required type="text" value="" class="form-control-3" name="hyb-floor" id="hyb-floor">
+                                            <%= form.label :number_of_floors %>
+                                            <%= form.text_field :number_of_floors, class: 'form-control-3', name:'hyb[floor]', id: 'hyb-floor'  %>
                                             </div>
                                         <div class="col-md-4">
-                                                <label for="hyb-quar"> Number of basements *</label>
-                                                <input required type="text" value="" class="form-control-3" name="hyb-quar" id="hyb-quar">
+                                            <%= form.label :number_of_basements %>
+                                            <%= form.text_field :number_of_basements, class: 'form-control-3', name:'hyb[quar]', id: 'hyb-quar'  %>
                                         </div>
-                                            <div class="col-md-4">
-                                                <label for="hyb-occu"> Max ocuppancy by floor *</label>
-                                                <input required type="text" value="" class="form-control-3" name="hyb-occu" id="hyb-occu">
-                                            </div>
-                                            <div class="col-md-4">
-                                                    <label for="hyb-space">Parking Spaces </label>
-                                                    <input required type="text" value="" placeholder="Not Required" class="form-control-3" name="hyb-space" id="hyb-space">
-                                            </div>
+                                        <div class="col-md-4">
+                                            <%= form.label :max_occupancy_per_floor %>
+                                            <%= form.text_field :max_occupancy_per_floor, class: 'form-control-3', name:'hyb[occu]', id: 'hyb-occu'  %>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <%= form.label :number_of_parking %>
+                                            <%= form.text_field :number_of_parking, class: 'form-control-3', name:'hyb[space]', id: 'hyb-space'  %>
+                                        </div>
 
-                                            <div class="col-md-4">
-                                                    <label for="hyb-com">Number of commerces</label>
-                                                    <input required type="text" value="" placeholder="Not Required" class="form-control-3" name="hyb-com" id="hyb-com">
-                                            </div>
-                                            <div class="col-md-4">
-                                                    <label for="hyb-hour">Hours of Activity(max 24h)</label>
-                                                    <input required type="number" min="1" max="24" value="" placeholder="Not Required" class="form-control-3" name="hyb-hour" id="hyb-hour">
+                                        <div class="col-md-4">
+                                            <%= form.label :number_of_stores %>
+                                            <%= form.text_field :number_of_stores, class: 'form-control-3', name:'hyb[com]', id: 'hyb-com'  %>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <%= form.label :number_of_stores %>
+                                            <%= form.text_field :number_of_stores, class: 'form-control-3', name:'hyb[hour]', id: 'hyb-hour'  %>
                                         </div>
                                     
                                 </div>
@@ -468,8 +415,9 @@
                                                 <span id="float-right-3"></span>
                                         </span>
                                         <hr>
-
-                                        <a class="btn btn-primary btn-lg btn-block fs-15" href=genesis.html#contact><i class="fa fa-mail-forward"></i> Contact Us Now</a>
+                                    <div class="actions"> 
+                                    <%= form.submit class: 'btn btn-primary btn-lg btn-block fs-15' %>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
