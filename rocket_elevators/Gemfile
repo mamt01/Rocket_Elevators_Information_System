@@ -21,6 +21,8 @@ gem 'bootstrap-sass', '~> 3.3.4'
 gem 'font-awesome-sass', '~> 4.3.0'
 #
 gem 'jquery-ui-rails'
+# GEM ADMIN LOGIN
+gem 'rails_admin'
 #
 gem 'bootstrap-social-rails'
 #
