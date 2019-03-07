@@ -27,39 +27,44 @@ class QuotesController < ApplicationController
 
     @quote = Quote.new(quote_params)
 
-    puts "======================================="
-    puts params[:quote][:department]
-    puts @quote.inspect
-    puts "===================================="
     if params[:quote][:department] == 'Residential'
-      @quote.number_of_apartments = params[:resi_number_of_apartments]
-      @quote.number_of_floors = params[:resi_number_of_floors]
-      @quote.number_of_basements = params[:resi_number_of_basements]
+      puts 'RESIDENTIAL'
+      @quote.number_of_apartments = params[:quote][:resi_number_of_apartments]
+      @quote.number_of_floors = params[:quote][:resi_number_of_floors]
+      @quote.number_of_basements = params[:quote][:resi_number_of_basements]
+
     
     elsif params[:quote][:department] == 'Commercial' 
-      @quote.number_of_apartments = params[:comm_number_of_apartments]
-      @quote.number_of_parking = params[:comm_number_of_parking]
-      @quote.number_of_basements = params[:comm_number_of_basements]
-      @quote.number_of_stores = params[:comm_number_of_stores]
+      @quote.number_of_apartments = params[:quote][:comm_number_of_apartments]
+      @quote.number_of_parking = params[:quote][:comm_number_of_parking]
+      @quote.number_of_basements = params[:quote][:comm_number_of_basements]
+      @quote.number_of_stores = params[:quote][:comm_number_of_stores]
+
 
     elsif params[:quote][:department] == 'Corporate' 
-      @quote.number_of_floors = params[:corp_number_of_floors]
-      @quote.number_of_basements = params[:corp_number_of_basements]
-      @quote.max_occupancy_per_floor = params[:corp_max_occupancy_per_floor]
-      @quote.number_of_stores = params[:corp_number_of_stores]
-      @quote.number_of_parking = params[:corp_number_of_parking]
+      @quote.number_of_floors = params[:quote][:corp_number_of_floors]
+      @quote.number_of_basements = params[:quote][:corp_number_of_basements]
+      @quote.max_occupancy_per_floor = params[:quote][:corp_max_occupancy_per_floor]
+      @quote.number_of_stores = params[:quote][:corp_number_of_stores]
+      @quote.number_of_parking = params[:quote][:corp_number_of_parking]
+
 
     elsif params[:quote][:department] == 'Hybrid' 
-      @quote.number_of_floors = params[:hyb_number_of_floors]
-      @quote.number_of_basements = params[:hyb_number_of_basements]
-      @quote.max_occupancy_per_floor = params[:hyb_max_occupancy_per_floor]
-      @quote.number_of_stores = params[:hyb_number_of_stores]
-      @quote.number_of_parking = params[:hyb_number_of_parking]
+      @quote.number_of_floors = params[:quote][:hyb_number_of_floors]
+      @quote.number_of_basements = params[:quote][:hyb_number_of_basements]
+      @quote.max_occupancy_per_floor = params[:quote][:hyb_max_occupancy_per_floor]
+      @quote.number_of_stores = params[:quote][:hyb_number_of_stores]
+      @quote.number_of_parking = params[:quote][:hyb_number_of_parking]
+
+
     end
+
+
+pp @quote
 
     respond_to do |format|
       if @quote.save
-        format.html { redirect_to "http://localhost:3000/gform.html", notice: 'Quote was successfully created.' }
+        format.html { redirect_to "http://localhost:3000/gform.html", alert: "Quote was successfully created." }
         format.json { render :show, status: :created, location: @quote }
       else
         format.html { render :new }

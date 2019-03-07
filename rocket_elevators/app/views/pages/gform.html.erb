@@ -355,12 +355,12 @@
                                 <div class="row">
                                     <div class="col-md-4-1">
                                     <label class="label_form" for="radio-button">Service level *</label>
-                                    <%= radio_button_tag(:Price, '7565') %>
-                                    <%= label_tag(:Standard) %>
-                                    <%= radio_button_tag(:Price, '12345') %>
-                                    <%= label_tag(:Premium) %>
-                                    <%= radio_button_tag(:Price, '15400') %>
-                                    <%= label_tag(:Excelium) %>
+                                    <%= form.radio_button(:service_level, '7565') %>
+                                    <%= form.label :Standard %>
+                                    <%= form.radio_button(:service_level, '12345') %>
+                                    <%= form.label :Premium %>
+                                    <%= form.radio_button(:service_level, '15400') %>
+                                    <%= form.label :Excelium %>
                                     </div>
                                 </div>
                                 
@@ -386,9 +386,8 @@
                             <div class="toggle-transparent toggle-bordered-full clearfix">
                                 <div class="toggle active">
                                     <div class="toggle-content-1" style="display: block;">
-                                        
                                         <span class="clearfix">
-                                            <strong class="float-left">Total ascensors:</strong>
+                                            <strong class="float-left">Total elevators:</strong>
                                             <span id="float-right-1"></span>
                                         </span>
 
@@ -406,6 +405,7 @@
                                                 <span id="float-right-3"></span>
                                                 <strong class="float-left">Approximate price:</strong>
                                                 <span id="float-right-3"></span>
+
                                         </span>
                                         <hr>
                                     <div class="actions"> 

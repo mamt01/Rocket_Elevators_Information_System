@@ -7,7 +7,7 @@ $(".row-1, .row-2, .row-3, .row-4").hide()
 $("input").keyup(function() {	
 		calculMain();
 		radioButton();
-		$("input[name='Price']").change(function() {
+		$("input[name='quote[service_level]']").change(function() {
 			radioButton();
 		})
     });	
@@ -59,7 +59,7 @@ var calculMain = function() {
 			var residentiel = calculResi();
 			calculPrix(residentiel);
 
-			$("input[name='Price']").change(function() {
+			$("input[name='quote[service_level]']").change(function() {
 				if(document.getElementById('resi-app').value !== "" && document.getElementById('resi-floor').value !== ""){
 				calculPrix(residentiel);
 			}})	
@@ -76,7 +76,7 @@ var calculMain = function() {
 			var corpo = calculCorpo();
 			calculPrix(corpo);
 
-			$("input[name='Price']").change(function() {
+			$("input[name='quote[service_level]']").change(function() {
 				if(document.getElementById('cor-floor').value !== "" && document.getElementById('cor-quar').value !== "" 
 				&& document.getElementById('cor-occu').value !== ""){
 				calculPrix(corpo);
@@ -93,7 +93,7 @@ var calculMain = function() {
 			var corpo = calculCorpo();
 			calculPrix(corpo);
 
-			$("input[name='Price']").change(function() {
+			$("input[name='quote[service_level]']").change(function() {
 				if(document.getElementById('hyb-floor').value !== "" && document.getElementById('hyb-quar').value !== "" 
 				&& document.getElementById('hyb-occu').value !== ""){
 				calculPrix(corpo);
@@ -110,7 +110,7 @@ var calculMain = function() {
 			var comm = calculCommerce();
 			calculPrix(comm);
 
-			$("input[name='Price']").change(function() {
+			$("input[name='quote[service_level]']").change(function() {
 				if (document.getElementById('com-asce').value !== ""){
 					var comm = calculCommerce();
 					calculPrix(comm);
@@ -241,9 +241,9 @@ var calculResi = function(){
  */
 var calculPrix = function(totalAscensor){
 
-	var radioValue = $("input[name='Price']:checked").val();
-	$("input[name='Price']").change(function() {
-		var radioValue = $("input[name='Price']:checked").val();
+	var radioValue = $("input[name='quote[service_level]']:checked").val();
+	$("input[name='quote[service_level]']").change(function() {
+		var radioValue = $("input[name='quote[service_level]']:checked").val();
 		return radioValue;
 	})
 	var finalPrice;
@@ -265,7 +265,7 @@ var calculPrix = function(totalAscensor){
 }
 // Function to show radio-button value-------------------------------------------------
 var radioButton = function(){
-	var radioValue = $("input[name='Price']:checked").val();
+	var radioValue = $("input[name='quote[service_level]']:checked").val();
 	if (radioValue === "7565"){
 
 		document.getElementById('fees').innerHTML = "10%";
