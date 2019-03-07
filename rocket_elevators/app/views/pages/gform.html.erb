@@ -1,4 +1,7 @@
     <!-- SLIDE TOP -->
+    <%= form_with(model: @quote, local: true) do |form| %>
+
+
     <div id="slidetop">
 
         <div class="container">
@@ -278,22 +281,41 @@
                         <form action="php/contact.php" method="post" enctype="multipart/form-data">
                             <fieldset>
                                 <input type="hidden" name="action" value="contact_send" />
+
                             <div class="row">
                                 <div class="col-md-3">
+                                    <label>Full Name </label>
+                                    <input required type="text" value="" class="form-control-5" id="full_name">
+
+                                </div>
+                                <div class="col-md-3">
+                                    <label>Company Name </label>
+                                    <input required type="text" value="" class="form-control-5" id="company">
+                                </div>
+                                <div class="col-md-3">
+                                    <label>Email </label>
+                                    <input required type="text" value="" class="form-control-5" id="email">
+                                </div>
+                                <div class="col-md-3">
+                                    <label>Phone </label>
+                                    <input required type="text" value="" class="form-control-5" id="phone">
+                                </div>
+                                <div class="col-md-3">
+                                    
+                                </div>
+                             </div>
+                            <div class="row">
+
+                                <div class="col-md-3">
                                         <label class="label_form" for="contact_department">Department</label>
-                                        <select id="forme-1" name="department">
-                                            <option value="select">--- Select ---</option>
-                                            <option value="Residential">Residential</option>
-                                            <option value="Commercial">Commercial</option>
-                                            <option value="Hybride">Hybride</option>
-                                            <option value="Corporatif">Corporatif</option>
-                                        </select>
+                                        <%=select_tag(:forme-1, "<option selected='selected'>Select</option><option>Residential</option><option>Commercial</option> <option>Corporate</option><option>Hybrid</option>".html_safe)  %>
+
                                     </div>
                                 </div>
                                 <div class="row-1">
                                     <form>
                                         <div class="col-md-4">
-                                                <label class="resi" for="resi-app">Number of appartements * <span class="resi-a">Exclude basements</span></label>
+                                                <label class="resi" for="resi-app">Number of appartements * </label>
                                                 <input required type="text" value="" class="form-control-1" name="resi[app]" id="resi-app">
                                             </div>
                                         <div class="col-md-4">
@@ -334,8 +356,7 @@
 
                                 <div class="row-3">
                                         <div class="col-md-4">
-                                                <label class="resi" for="contact:name">Number of floors * <br>
-                                                    <span class="resi-a">Exclude basements</span></label>
+                                                <label class="resi" for="contact:name">Number of floors * </label>   
                                                 <input required type="text" value="" class="form-control-2" name="contact[name][required]" id="cor-floor">
                                             </div>
                                         <div class="col-md-4">
@@ -359,8 +380,8 @@
                                 </div>
                                 <div class="row-4">
                                         <div class="col-md-4">
-                                                <label class="resi" for="hyb-floor">Number of floors * <br>
-                                                    <span class="resi-a">Exclude Basements</span></label>
+                                                <label class="resi" for="hyb-floor">Number of floors * </label>
+                                                    
                                                 <input required type="text" value="" class="form-control-3" name="hyb-floor" id="hyb-floor">
                                             </div>
                                         <div class="col-md-4">
@@ -392,11 +413,11 @@
                                     <form id="radio">
                                         <label class="label_form" for="radio-button">Service level *</label>
                                         <hr class="hr-1">
-                                        <input type="radio" name="price" value="1" checked="checked"> Standard<br>
+                                        <input type="radio" name="price" value="7565" checked="checked"> Standard<br>
                                         <hr class="hr-1">
-                                        <input type="radio" name="price" value="2"> Premium<br>
+                                        <input type="radio" name="price" value="12345"> Premium<br>
                                         <hr class="hr-1">
-                                        <input type="radio" name="price" value="3"> Excellium
+                                        <input type="radio" name="price" value="15400"> Excellium
                                         <hr class="hr-1">
                                     </form>
                                     </div>
@@ -560,13 +581,17 @@
 
         </footer>
         <!-- /FOOTER -->
-
+        
     </div>
+
+    <%=javascript_include_tag "contact" %>
     <!-- /wrapper -->
 
 
     <!-- SCROLL TO TOP -->
     <a href="#" id="toTop"></a>
+
+    <% end %>
 
 
     <!-- PRELOADER -->
@@ -583,10 +608,6 @@
 
 
     <!-- PAGELEVEL SCRIPTS -->
-    <script src="assets/js/contact.js"></script>
-
-
-    <script>
-
     
-    </script>
+
+

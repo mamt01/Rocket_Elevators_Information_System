@@ -33,13 +33,4 @@ ActiveRecord::Schema.define(version: 2019_03_06_201513) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "soumissions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "first_name"
-    t.integer "nb_floor"
-    t.boolean "published"
-    t.date "date_soumission"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end
