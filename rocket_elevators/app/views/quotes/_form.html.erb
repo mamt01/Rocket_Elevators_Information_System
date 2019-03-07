@@ -1,141 +1,3 @@
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>Form - Rocket Evelators</title>
-		<meta name="description" content="" />
-		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
-
-		<!-- mobile settings -->
-		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
-		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-
-		<!-- WEB FONTS : use %7C instead of | (pipe) -->
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"type="text/css" />
-
-		<!-- CORE CSS -->
-		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
-		<!-- REVOLUTION SLIDER -->
-		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
-		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
-
-		<!-- THEME CSS -->
-		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
-
-
-		<!-- PAGE LEVEL SCRIPTS -->
-		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
-		<link href="assets/css/rocket2.css" rel="stylesheet" type="text/css" id="color_scheme" />
-		<link rel="shortcut icon" href="demo_files/images/R2.png" type="image/x-icon" />
-
-	</head>
-
-
-
-<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
-
-				<!-- TOP NAV -->
-				<header id="topNav">
-					<div class="container">
-
-						<!-- Mobile Menu Button -->
-						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
-							<i class="fa fa-bars"></i>
-						</button>
-
-						<!-- Logo -->
-
-						<a class="logo float-left scrollTo" href="#top">
-							<img src="assets/R2.png" alt="" />
-						</a>
-
-						<!-- 
-							Top Nav 
-							
-							AVAILABLE CLASSES:
-							submenu-dark = dark sub menu
-						-->
-						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
-							<nav class="nav-main">
-
-								<!-- 
-									.nav-onepage
-									Required for onepage navigation links
-									
-									Add .external for an external link!
-								-->
-								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
-									<li class="active"><!-- HOME -->
-										<a href="genesis.html">
-											HOME
-										</a>
-									</li>
-									<li><!-- SERVICES -->
-										<a class="dropdown-toogle">
-											SERVICES
-
-										</a>
-										<ul class="dropdown-menu">
-											<li>
-												<a href="index-onepage-parallax.html">Residential</a>
-											</li>
-											<li>
-												<a href="index-onepage-parallax-commercial.html">Commercial</a>
-											</li>
-										</ul>
-										
-									</li>
-									<li><!-- WORK -->
-										<a href="genesis.html#work">
-											PORTFOLIO
-										</a>
-									</li>
-									<li><!-- NEWS -->
-										<a href="genesis.html#news">
-											NEWS
-										</a>
-									</li>
-									<li><!-- OVERVIEW -->
-										<a href="genesis.html#contact">
-											CONTACT
-										</a>
-									</li>
-									<li><!-- CLIENTS -->
-										<a href="genesis.html#clients">
-											CLIENTS
-										</a>
-									</li>
-								</ul>
-
-							</nav>
-						</div>
-
-					</div>
-				</header>
-				<!-- /Top Nav -->
-
-			</div>
-
-      <!-- CONTACT -->
-			<section id="contact">
-				<div class="container">
-
-					<header class="text-center mb-60-1">
-						<h2>Quote</h2>
-						<p class="lead font-lato">Get a free quote now.</p>
-						<hr />
-					</header>
-
-
-					<div class="row">
-
-						<!-- FORM -->
-						<div class="col-md-8 col-sm-8">
-
-							<h3>Enter your informations </h3>
-
 <%= form_with(model: quote, local: true) do |form| %>
 <% if quote.errors.any? %>
 <div id="error_explanation">
@@ -155,14 +17,14 @@
   <fieldset>
     <input type="hidden" name="action" value="contact_send" />
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3" >
         <%= form.label :Department %>
-        <%= form.select :Department, [['Residential','Residential'], ['Commercial','Commercial'], ['Corporate','Corporate'], ['Hybrid','Hybrid']] %>
+        <%= form.select :Department, [['-', '-'], ['Residential','Residential'], ['Commercial','Commercial'], ['Corporate','Corporate'], ['Hybrid','Hybrid']]%>
       </div>
   </div>
 
 
-  <div class="row-1">
+  <div class="row-0">
     <form>
       <div class="col-md-4">
         <%= form.label :full_name %>
@@ -184,40 +46,95 @@
   </div>
 
 
-<div class="field">
-<%= form.label :number_of_floors %>
-<%= form.text_field :number_of_floors %>
-</div>
+  <div class="row-1">									
+    <div class="col-md-4">
+      <%= form.label :number_of_apartments %>
+      <%= form.text_field :number_of_apartments %>
+      </div>
+    <div class="col-md-4">
+      <%= form.label :number_of_floors %>
+      <%= form.text_field :number_of_floors %>
+    </div>
+    <div class="col-md-4">
+      <%= form.label :number_of_basements %>
+      <%= form.text_field :number_of_basements %>
+    </div>
 
-<div class="field">
-<%= form.label :number_of_basements %>
-<%= form.text_field :number_of_basements %>
-</div>
+    
+    
+  <div class="row-2">									
+    <div class="col-md-4">
+      <%= form.label :number_of_elevators %>
+      <%= form.text_field :number_of_elevators %>
+    </div>
+    <div class="col-md-4">
+      <%= form.label :number_of_apartments %>
+      <%= form.text_field :number_of_apartments %>
+    </div>
+    <div class="col-md-4">
+      <%= form.label :number_of_parking %>
+      <%= form.text_field :number_of_parking %>
+    </div>
+    <div class="col-md-4">
+      <%= form.label :number_of_basements %>
+      <%= form.text_field :number_of_basements %>
+    </div>
+    <div class="col-md-4">
+      <%= form.label :number_of_stores %>
+      <%= form.text_field :number_of_stores %>
+    </div>
+  </div>
 
-<div class="field">
-<%= form.label :number_of_parking %>
-<%= form.text_field :number_of_parking %>
-</div>
 
-<div class="field">
-<%= form.label :number_of_stores %>
-<%= form.text_field :number_of_stores %>
-</div>
+  <div class="row-3">									
+    <div class="col-md-4">
+      <%= form.label :number_of_floors %>
+      <%= form.text_field :number_of_floors %>
+    </div>
+    <div class="col-md-4">
+      <%= form.label :number_of_basements %>
+      <%= form.text_field :number_of_basements %>
+    </div>
+    <div class="col-md-4">
+      <%= form.label :max_occupancy_per_floor %>
+      <%= form.text_field :max_occupancy_per_floor %>
+    </div>
+    <div class="col-md-4">
+      <%= form.label :number_of_stores %>
+      <%= form.text_field :number_of_stores %>
+    </div>
+    <div class="col-md-4">
+      <%= form.label :number_of_parking %>
+      <%= form.text_field :number_of_parking %>
+    </div>
+  </div>
 
-<div class="field">
-<%= form.label :max_occupancy_per_floor %>
-<%= form.text_field :max_occupancy_per_floor %>
-</div>
-
-<div class="field">
-<%= form.label :hours_of_activity %>
-<%= form.text_field :hours_of_activity %>
-</div>
-
-<div class="field">
-<%= form.label :number_of_elevators %>
-<%= form.text_field :number_of_elevators %>
-</div>
+  <div class="row-4">									
+    <div class="col-md-4">
+      <%= form.label :number_of_floors %>
+      <%= form.text_field :number_of_floors %>
+    </div>
+    <div class="col-md-4">
+      <%= form.label :number_of_basements %>
+      <%= form.text_field :number_of_basements %>
+    </div>
+    <div class="col-md-4">
+      <%= form.label :max_occupancy_per_floor %>
+      <%= form.text_field :max_occupancy_per_floor %>
+    </div>
+    <div class="col-md-4">
+    <%= form.label :number_of_parking %>
+    <%= form.text_field :number_of_parking %>
+  </div>
+    <div class="col-md-4">
+      <%= form.label :number_of_stores %>
+      <%= form.text_field :number_of_stores %>
+    </div>
+    <div class="col-md-4">
+      <%= form.label :hours_of_activity %>
+      <%= form.text_field :hours_of_activity %>
+    </div>
+  </div>
 
 <div class="field">
 <%= form.label :installation_cost %>
@@ -235,7 +152,39 @@
 <% end %>
 
 
+<!-- TOTAL / PLACE ORDER -->
+  <div class="toggle-transparent toggle-bordered-full clearfix">
+      <div class="toggle active">
+          <div class="toggle-content-1" style="display: block;">
+              
+              <span class="clearfix">
+                  <strong class="float-left">Total elevators:</strong>
+                  <span id="float-right-1"></span>
+              </span>
 
+              <hr>
+
+              <span class="clearfix">
+                  <span id="float-right-2"></span>
+                  <strong class="float-left">Standard price unit:</strong><br>
+                  <span>Installation fee:</span>
+                  <span id="fees"></span>
+              </span>
+
+              <hr>
+              <span class="clearfix">
+                      <span id="float-right-3"></span>
+<strong class="float-left">Approximate price:</strong>
+<span id="float-right-3"></span>
+              </span>
+              <hr>
+
+              <a class="btn btn-primary btn-lg btn-block fs-15" href=genesis.html #contact><i class="fa fa-mail-forward"></i> Contact Us Now</a>
+          </div>
+      </div>
+  </div>
+
+                                <!-- /TOTAL / PLACE ORDER -->
 
 <!-- FOOTER -->
 			<footer id="footer">
@@ -292,3 +241,4 @@
 
 			</footer>
 			<!-- /FOOTER -->
+
