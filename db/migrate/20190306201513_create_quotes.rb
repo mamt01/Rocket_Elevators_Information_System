@@ -15,7 +15,7 @@ class CreateQuotes < ActiveRecord::Migration[5.2]
       t.integer :hours_of_activity 
       t.string :service_level 
       t.integer :number_of_elevators 
-      t.float :installation_cost 
+      t.float :fees 
       t.float :total_cost 
       t.timestamps
     end

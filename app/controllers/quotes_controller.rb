@@ -27,14 +27,11 @@ class QuotesController < ApplicationController
 
     @quote = Quote.new(quote_params)
 
-    puts "======================================="
-    puts params[:quote][:department]
-    puts @quote.inspect
-    puts "===================================="
     if params[:quote][:department] == 'Residential'
+      puts 'RESIDENTIAL'
       @quote.number_of_apartments = params[:quote][:resi_number_of_apartments]
       @quote.number_of_floors = params[:quote][:resi_number_of_floors]
-      @quote.number_of_basements = params[:resi_number_of_basements]
+      @quote.number_of_basements = params[:quote][:resi_number_of_basements]
     
     elsif params[:quote][:department] == 'Commercial' 
       @quote.number_of_apartments = params[:quote][:comm_number_of_apartments]
@@ -57,9 +54,12 @@ class QuotesController < ApplicationController
       @quote.number_of_parking = params[:quote][:hyb_number_of_parking]
     end
 
+
+pp @quote
+
     respond_to do |format|
       if @quote.save
-        format.html { redirect_to "http://localhost:3000/gform.html", notice: 'Quote was successfully created.' }
+        format.html { redirect_to "http://localhost:3000/gform.html", alert: "Quote was successfully created." }
         format.json { render :show, status: :created, location: @quote }
       else
         format.html { render :new }
