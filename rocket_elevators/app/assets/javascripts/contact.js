@@ -69,7 +69,7 @@ var calculMain = function() {
 		}
 	}	
 
-	else if (document.getElementById('quote_Department').value === "Corporatif"){
+	else if (document.getElementById('quote_Department').value === "Corporate"){
 
 		if(document.getElementById('cor-floor').value !== "" && document.getElementById('cor-quar').value !== "" 
 		&& document.getElementById('cor-occu').value !== ""){
@@ -86,7 +86,7 @@ var calculMain = function() {
 			clearPrice();
 		}
 	}
-	else if (document.getElementById('quote_Department').value === "Hybride"){
+	else if (document.getElementById('quote_Department').value === "Hybrid"){
 
 		if(document.getElementById('hyb-floor').value !== "" && document.getElementById('hyb-quar').value !== "" 
 		&& document.getElementById('hyb-occu').value !== ""){
@@ -160,17 +160,17 @@ var calculCommerce = function(){
 	return nbr_ascen;
 }
 
-/*Function calcul Corporatif/Hybride-----------------------------------------------------
-	return and show number of elevator needed for corpo/hybride
+/*Function calcul Corporate/Hybrid-----------------------------------------------------
+	return and show number of elevator needed for corpo/hybrid
 */
 var calculCorpo = function(){
 
-	if (document.getElementById('quote_Department').value === 'Corporatif'){
+	if (document.getElementById('quote_Department').value === 'Corporate'){
 		var floor = parseInt(document.getElementById('cor-floor').value);
 		var quar = parseInt(document.getElementById('cor-quar').value);
 		var occu = parseInt(document.getElementById('cor-occu').value);
 	}
-	else if (document.getElementById('quote_Department').value === 'Hybride'){
+	else if (document.getElementById('quote_Department').value === 'Hybrid'){
 		var floor = parseInt(document.getElementById('hyb-floor').value);
 		var quar = parseInt(document.getElementById('hyb-quar').value);
 		var occu = parseInt(document.getElementById('hyb-occu').value);

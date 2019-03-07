@@ -276,7 +276,25 @@ div.toggle div.toggle-content-1 {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     height: 40px;
 }
-
+.form-control-5 {
+    border: #ddd 1px solid;
+    box-shadow: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    height: 40px;
+}
 .col-md-4-1{
     position: relative;
     width: 100%;
