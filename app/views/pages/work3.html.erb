@@ -1,54 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>Atlanta - Multipurpose + Admin</title>
-		<meta name="description" content="" />
-		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
-
-		<!-- mobile settings -->
-		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
-		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-
-		<!-- WEB FONTS : use %7C instead of | (pipe) -->
-		<link href="https://fonts.googleapis.com/css?family=Roboto"  rel="stylesheet" type="text/css" />
-
-		<!-- CORE CSS -->
-		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-		
-		<!-- THEME CSS -->
-		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
-
-		<!-- PAGE LEVEL SCRIPTS -->
-		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
-		<link href="assets/css/rocket.css" rel="stylesheet" type="text/css" id="color_scheme" />
-		<link rel="shortcut icon" href="demo_files/images/R2.png" type="image/x-icon" />
-
-	</head>
-
-	<!--
-		AVAILABLE BODY CLASSES:
-		
-		smoothscroll 			= create a browser smooth scroll
-		enable-animation		= enable WOW animations
-
-		bg-grey					= grey background
-		grain-grey				= grey grain background
-		grain-blue				= blue grain background
-		grain-green				= green grain background
-		grain-blue				= blue grain background
-		grain-orange			= orange grain background
-		grain-yellow			= yellow grain background
-		
-		boxed 					= boxed layout
-		pattern1 ... patern11	= pattern background
-		menu-vertical-hide		= hidden, open on click
-		
-		BACKGROUND IMAGE [together with .boxed class]
-		data-background="assets/images/_smarty/boxed_background/1.jpg"
-	-->
 	<body class="smoothscroll enable-animation">
 
 		<!-- SLIDE TOP -->
@@ -165,9 +114,10 @@
 										Add .external for an external link!
 									-->
 									<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+										<%= link_to "", '/index', :method => :get %> 
 										<li class="active"><!-- HOME -->
-											<a href="genesis.html">
-												HOME
+											<a href="index.html">
+												HOME 	
 											</a>
 										</li>
 										<li><!-- SERVICES -->
@@ -177,34 +127,40 @@
 											</a>
 											<ul class="dropdown-menu">
 												<li>
-													<a href="index-onepage-parallax.html">Residential</a>
+													<%= link_to "", '/residential', :method => :get %> <a href="residential.html">Residential</a>
 												</li>
 												<li>
-													<a href="index-onepage-parallax-commercial.html">Commercial</a>
+													<%= link_to "", '/commercial', :method => :get %> <a href="commercial.html">Commercial</a>
 												</li>
 											</ul>
 											
 										</li>
+											<%= link_to "", '/index', :method => :get %> <a href="index.html#work">
 										<li><!-- WORK -->
-											<a href="genesis.html#work">
 												PORTFOLIO
 											</a>
 										</li>
+											<%= link_to "", '/index', :method => :get %><a href="index.html#news">
 										<li><!-- NEWS -->
-											<a href="genesis.html#news">
 												NEWS
 											</a>
 										</li>
+											<%= link_to "", '/index', :method => :get %><a href="index.html#contact">
 										<li><!-- OVERVIEW -->
-											<a href="genesis.html#contact">
 												CONTACT
 											</a>
 										</li>
+											<%= link_to "", '/index', :method => :get %><a href="index.html#clients">
 										<li><!-- CLIENTS -->
-											<a href="genesis.html#clients">
 												CLIENTS
 											</a>
 										</li>
+										<%=link_to "", '/emp-dashboard', :method => :get %>
+                                <li><!-- CLIENTS -->
+                                    <a href="/emp-dashboard">
+                                        EMPLOYEES
+                                    </a>
+                                </li>
 									</ul>
 	
 								</nav>
@@ -299,21 +255,6 @@
 								
 								<div class="card-footer">
 
-									<!-- Social Icons -->
-									<a href="https://www.facebook.com/AtlantaFX/" class="social-icon social-icon-sm social-icon-transparent social-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
-
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-
-									<a href="https://twitter.com/hashtag/atlanta" class="social-icon social-icon-sm social-icon-transparent social-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
-										<i class="icon-twitter"></i>
-										<i class="icon-twitter"></i>
-									</a>
-
-									<!-- /Social Icons -->
-
-								</div>
 
 							</div>
 
@@ -396,22 +337,5 @@
 		<!-- SCROLL TO TOP -->
 		<a href="#" id="toTop"></a>
 
-
-		<!-- PRELOADER -->
-		<div id="preloader">
-			<div class="inner">
-				<span class="loader"></span>
-			</div>
-		</div><!-- /PRELOADER -->
-
-
-		<!-- JAVASCRIPT FILES -->
-		<script>var plugin_path = 'assets/plugins/';</script>
-		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
-
-		<script src="assets/js/scripts.js"></script>
-		
-		<!-- STYLESWITCHER - REMOVE -->
-		
 	</body>
 </html>

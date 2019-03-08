@@ -34,32 +34,6 @@
 		<!-- wrapper -->
 		<div id="wrapper">
 
-			<!-- 
-				AVAILABLE HEADER CLASSES
-
-				Default nav height: 96px
-				.header-md 		= 70px nav height
-				.header-sm 		= 60px nav height
-
-				.b-0 		= remove bottom border (only with transparent use)
-				.transparent	= transparent header
-				.translucent	= translucent header
-				.sticky			= sticky header
-				.static			= static header
-				.dark			= dark header
-				.bottom			= header on bottom
-				
-				shadow-before-1 = shadow 1 header top
-				shadow-after-1 	= shadow 1 header bottom
-				shadow-before-2 = shadow 2 header top
-				shadow-after-2 	= shadow 2 header bottom
-				shadow-before-3 = shadow 3 header top
-				shadow-after-3 	= shadow 3 header bottom
-
-				.clearfix		= required for mobile menu, do not remove!
-
-				Example Usage:  class="clearfix sticky header-sm transparent b-0"
-			-->
 			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
 
 				<!-- TOP NAV -->
@@ -132,9 +106,9 @@
 											CLIENTS
 										</a>
 									</li>
-									  <%=link_to "", '/users/sign_in', :method => :get %>
+									  <%=link_to "", '/emp-dashboard', :method => :get %>
                                 <li><!-- CLIENTS -->
-                                    <a href="/users/sign_in.html">
+                                    <a href="/emp-dashboard">
                                         EMPLOYEES
                                     </a>
                                 </li>
@@ -154,34 +128,6 @@
 			<!-- REVOLUTION SLIDER -->
 
 			<div class="slider fullwidthbanner-container roundedcorners">
-				<!--
-					Navigation Styles:
-					
-						data-navigationStyle="" theme default navigation
-						
-						data-navigationStyle="preview1"
-						data-navigationStyle="preview2"
-						data-navigationStyle="preview3"
-						data-navigationStyle="preview4"
-						
-					Bottom Shadows
-						data-shadow="1"
-						data-shadow="2"
-						data-shadow="3"
-						
-					Slider Height (do not use on fullscreen mode)
-						data-height="300"
-						data-height="350"
-						data-height="400"
-						data-height="450"
-						data-height="500"
-						data-height="550"
-						data-height="600"
-						data-height="650"
-						data-height="700"
-						data-height="750"
-						data-height="800"
-				-->
 				<div class="fullwidthbanner" data-height="600" data-shadow="0" data-navigationStyle="preview2">
 					<ul class="hide">
 					
@@ -374,16 +320,6 @@
 
 			<hr class="m-0" /><!-- 1px line separator -->
 
-
-			<!-- BLUE BUTTON CALLOUT 
-
-			<a href="#" class="btn btn-xlg btn-primary fs-30 fullwidth m-0 rad-0 p-40">
-					<button>Awards and Projects </button>
-					<button>Residential's services</button>
-					<button>Corporate's services</button>
-			</a>-->
-
-			<!-- /BUTTON CALLOUT -->
 			
 			<!-- Services -->
 			<section id="services">
@@ -478,7 +414,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-complexevision.html">
+												<%=link_to "", '/work1', :method => :get %>
+												<a class="ico-rounded" href="work1.html">
 														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -512,7 +449,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-hotel-pur.html">
+												<%=link_to "", '/work2', :method => :get %>
+												<a class="ico-rounded" href="work2.html">
 														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -546,7 +484,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-atlanta.html">
+												<%=link_to "", '/work3', :method => :get %>
+												<a class="ico-rounded" href="work3.html">
 														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -581,7 +520,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfoli-single-slider-residential.html">
+												<%=link_to "", '/work4', :method => :get %>
+												<a class="ico-rounded" href="work4.html">
 													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -615,7 +555,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-popular.html">
+												<%=link_to "", '/work5', :method => :get %>
+												<a class="ico-rounded" href="work5.html">
 													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -649,7 +590,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-renovation.html">
+												<%=link_to "", '/work6', :method => :get %>
+												<a class="ico-rounded" href="work6.html">
 													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -683,7 +625,8 @@
 												<!-- lightbox -->
 
 												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider-dubai.html">
+												<%=link_to "", '/work7', :method => :get %>
+												<a class="ico-rounded" href="work7.html">
 													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -717,7 +660,8 @@
 												<!-- lightbox -->
 
 												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider-newyork.html">
+												<%=link_to "", '/work8', :method => :get %>
+												<a class="ico-rounded" href="work8.html">
 													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -750,7 +694,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-jd.html">
+												<%=link_to "", '/work9', :method => :get %>
+												<a class="ico-rounded" href="work9.html">
 														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -783,7 +728,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-nasa.html">
+												<%=link_to "", '/work10', :method => :get %>
+												<a class="ico-rounded" href="work10.html">
 														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -816,7 +762,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-richhouse.html">
+												<%=link_to "", '/work11', :method => :get %>
+												<a class="ico-rounded" href="work11.html">
 														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -849,7 +796,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-luxury.html">
+												<%=link_to "", '/work12', :method => :get %>
+												<a class="ico-rounded" href="work12.html">
 														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
