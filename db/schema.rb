@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_08_153428) do
+ActiveRecord::Schema.define(version: 2019_03_08_200244) do
+
+  create_table "Employee List", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "first_name"
+    t.text "last_name"
+    t.text "title"
+    t.text "email"
+  end
 
   create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "department"
@@ -41,7 +48,9 @@ ActiveRecord::Schema.define(version: 2019_03_08_153428) do
     t.string "reset_password_token"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "reset_password_sent_at"
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
 end
