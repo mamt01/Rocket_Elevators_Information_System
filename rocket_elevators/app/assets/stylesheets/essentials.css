@@ -4554,11 +4554,11 @@ section.dark h2.owl-featured {
 /* Et-Line */
 @font-face {
 	font-family: 'et-line';
-	src:url('../fonts/et-line.eot');
-	src:url('../fonts/et-line.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/et-line.woff') format('woff'),
-		url('../fonts/et-line.ttf') format('truetype'),
-		url('../fonts/et-line.svg#et-line') format('svg');
+	src:font-url('et-line.eot');
+	src:font-url('et-line.eot?#iefix') format('embedded-opentype'),
+		font-url('et-line.woff') format('woff'),
+		font-url('et-line.ttf') format('truetype'),
+		font-url('et-line.svg#et-line') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
