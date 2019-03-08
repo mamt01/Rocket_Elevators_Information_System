@@ -34,32 +34,6 @@
 		<!-- wrapper -->
 		<div id="wrapper">
 
-			<!-- 
-				AVAILABLE HEADER CLASSES
-
-				Default nav height: 96px
-				.header-md 		= 70px nav height
-				.header-sm 		= 60px nav height
-
-				.b-0 		= remove bottom border (only with transparent use)
-				.transparent	= transparent header
-				.translucent	= translucent header
-				.sticky			= sticky header
-				.static			= static header
-				.dark			= dark header
-				.bottom			= header on bottom
-				
-				shadow-before-1 = shadow 1 header top
-				shadow-after-1 	= shadow 1 header bottom
-				shadow-before-2 = shadow 2 header top
-				shadow-after-2 	= shadow 2 header bottom
-				shadow-before-3 = shadow 3 header top
-				shadow-after-3 	= shadow 3 header bottom
-
-				.clearfix		= required for mobile menu, do not remove!
-
-				Example Usage:  class="clearfix sticky header-sm transparent b-0"
-			-->
 			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
 
 				<!-- TOP NAV -->
@@ -132,9 +106,9 @@
 											CLIENTS
 										</a>
 									</li>
-									  <%=link_to "", '/users/sign_in', :method => :get %>
+									  <%=link_to "", '/emp-dashboard', :method => :get %>
                                 <li><!-- CLIENTS -->
-                                    <a href="/users/sign_in.html">
+                                    <a href="/emp-dashboard">
                                         EMPLOYEES
                                     </a>
                                 </li>
@@ -154,34 +128,6 @@
 			<!-- REVOLUTION SLIDER -->
 
 			<div class="slider fullwidthbanner-container roundedcorners">
-				<!--
-					Navigation Styles:
-					
-						data-navigationStyle="" theme default navigation
-						
-						data-navigationStyle="preview1"
-						data-navigationStyle="preview2"
-						data-navigationStyle="preview3"
-						data-navigationStyle="preview4"
-						
-					Bottom Shadows
-						data-shadow="1"
-						data-shadow="2"
-						data-shadow="3"
-						
-					Slider Height (do not use on fullscreen mode)
-						data-height="300"
-						data-height="350"
-						data-height="400"
-						data-height="450"
-						data-height="500"
-						data-height="550"
-						data-height="600"
-						data-height="650"
-						data-height="700"
-						data-height="750"
-						data-height="800"
-				-->
 				<div class="fullwidthbanner" data-height="600" data-shadow="0" data-navigationStyle="preview2">
 					<ul class="hide">
 					
@@ -374,16 +320,6 @@
 
 			<hr class="m-0" /><!-- 1px line separator -->
 
-
-			<!-- BLUE BUTTON CALLOUT 
-
-			<a href="#" class="btn btn-xlg btn-primary fs-30 fullwidth m-0 rad-0 p-40">
-					<button>Awards and Projects </button>
-					<button>Residential's services</button>
-					<button>Corporate's services</button>
-			</a>-->
-
-			<!-- /BUTTON CALLOUT -->
 			
 			<!-- Services -->
 			<section id="services">
@@ -471,6 +407,20 @@
 
 								<div class="item-box">
 									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+
+												<!-- details fonctionnel-->
+												<%=link_to "", '/work1', :method => :get %>
+												<a class="ico-rounded" href="work1.html">
+														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
 
 										<img class="img-fluid" src="http://www.magazineprestige.com/IMG/arton4160.jpg" width="600" height="399" alt="Complexe Vision" style="height:200px">
 									</figure>
@@ -492,6 +442,20 @@
 
 								<div class="item-box">
 									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+
+												<!-- details fonctionnel-->
+												<%=link_to "", '/work2', :method => :get %>
+												<a class="ico-rounded" href="work2.html">
+														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
 
 										<img class="img-fluid" src="http://www.lemaymichaud.com/wordpress/wp-content/uploads/2018/01/LemayMichaud_HotelPur_580x520_14.jpg" width="600" height="200" alt="" style="height:200px">
 									</figure>
@@ -513,6 +477,20 @@
 
 								<div class="item-box">
 									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+
+												<!-- details fonctionnel-->
+												<%=link_to "", '/work3', :method => :get %>
+												<a class="ico-rounded" href="work3.html">
+														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
 
 										<img class="img-fluid" src="https://www.langan.com/wp-content/uploads/2017/07/Atlanta-996x554.jpg" width="600" height="200" alt="" style="height:200px">
 									</figure>
@@ -535,6 +513,20 @@
 
 								<div class="item-box">
 									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+
+												<!-- details fonctionnel-->
+												<%=link_to "", '/work4', :method => :get %>
+												<a class="ico-rounded" href="work4.html">
+													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
 
 										<img class="img-fluid" src="https://homehealthsmith.com/wp-content/uploads/2017/02/elevator-900x490.jpg" width="600" height="399" alt="" style="height:200px"> 
 									</figure>
@@ -556,6 +548,20 @@
 
 								<div class="item-box">
 									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+
+												<!-- details fonctionnel-->
+												<%=link_to "", '/work5', :method => :get %>
+												<a class="ico-rounded" href="work5.html">
+													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
 
 										<img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZsncrOR_CmZdDTg-VXNtIMfWv5_gp9ItnlcPeE9bFev5ecQ9q" width="600" height="399" alt="People's Choice" style="height:200px">
 									</figure>
@@ -577,6 +583,20 @@
 
 								<div class="item-box">
 									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+
+												<!-- details fonctionnel-->
+												<%=link_to "", '/work6', :method => :get %>
+												<a class="ico-rounded" href="work6.html">
+													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
 
 										<img class="img-fluid" src="https://static.dezeen.com/uploads/2014/03/A-steel-clad-outdoor-elevator-connects-the-city-and-suburb-in-Pamplona-by-AH-Asociados-_dezeen_1sq.jpg" width="600" height="399" alt="outdoor elevator" style="height:200px">
 									</figure>
@@ -598,6 +618,20 @@
 
 								<div class="item-box">
 									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+
+												<!-- details -->
+												<%=link_to "", '/work7', :method => :get %>
+												<a class="ico-rounded" href="work7.html">
+													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
 
 										<img class="img-fluid" src="https://www.slh.com/globalassets/country-pages/hero-images/united_arab_emirates.jpg?width=1024" width="600" height="399" alt="dubai" style="height:200px">
 									</figure>
@@ -619,6 +653,20 @@
 
 								<div class="item-box">
 									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+
+												<!-- details -->
+												<%=link_to "", '/work8', :method => :get %>
+												<a class="ico-rounded" href="work8.html">
+													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
 
 										<img class="img-fluid" src="https://cbsnewyork.files.wordpress.com/2011/04/empire-state-building.jpg?w=420" width="600" height="399" alt="empire state building" style="height:200px">
 									</figure>
@@ -639,6 +687,20 @@
 
 								<div class="item-box">
 									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+
+												<!-- details fonctionnel-->
+												<%=link_to "", '/work9', :method => :get %>
+												<a class="ico-rounded" href="work9.html">
+														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
 
 										<img class="img-fluid" src="https://d1arsn5g9mfrlq.cloudfront.net/sites/default/files/Tile_Homepage_RatingsAwards.jpg" width="600" height="200" alt="" style="height:200px">
 									</figure>
@@ -659,6 +721,20 @@
 
 								<div class="item-box">
 									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+
+												<!-- details fonctionnel-->
+												<%=link_to "", '/work10', :method => :get %>
+												<a class="ico-rounded" href="work10.html">
+														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
 
 										<img class="img-fluid" src="https://cosmos-images2.imgix.net/file/spina/photo/15258/180606-elevator-full.jpg?ixlib=rails-2.1.4&auto=format&ch=Width%2CDPR&fit=max&w=835" width="600" height="200" alt="" style="height:200px">
 									</figure>
@@ -679,6 +755,20 @@
 
 								<div class="item-box">
 									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+
+												<!-- details fonctionnel-->
+												<%=link_to "", '/work11', :method => :get %>
+												<a class="ico-rounded" href="work11.html">
+														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
 
 										<img class="img-fluid" src="https://idahocustomlifts.com/wp-content/uploads/2013/11/custom-elevator.jpg" width="600" height="200" alt="" style="height:200px">
 									</figure>
@@ -699,6 +789,20 @@
 
 								<div class="item-box">
 									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+
+												<!-- details fonctionnel-->
+												<%=link_to "", '/work12', :method => :get %>
+												<a class="ico-rounded" href="work12.html">
+														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
 
 										<img class="img-fluid" src="https://homeelevators.com/wp-content/uploads/2018/02/Glass-elevator-for-home.png" width="600" height="200" alt="" style="height:200px">
 									</figure>
