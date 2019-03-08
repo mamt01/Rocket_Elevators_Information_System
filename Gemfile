@@ -20,6 +20,8 @@ gem 'bootstrap-sass', '~> 3.3.4'
 #
 gem 'font-awesome-sass', '~> 4.3.0'
 #
+gem 'font-awesome-rails'
+#
 gem 'jquery-ui-rails'
 #
 gem 'bootstrap-social-rails'
