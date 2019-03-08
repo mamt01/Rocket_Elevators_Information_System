@@ -11,6 +11,7 @@
 // about supported directives
 //
 // = require jquery
+//= require jquery_ujs
 // = require scripts
 // = require plugins/slider.revolution/js/jquery.themepunch.tools.min
 // = require plugins/slider.revolution/js/jquery.themepunch.revolution.min.js
