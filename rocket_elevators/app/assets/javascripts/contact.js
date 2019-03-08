@@ -155,6 +155,7 @@ var calculCommerce = function(){
 	else{
 		if(!isNaN(nbr_ascen)){
 			document.getElementById('float-right-1').innerHTML = nbr_ascen;
+			$("#quote_number_of_elevators").val(nbr_ascen);
 		}
 	}
 	return nbr_ascen;
@@ -194,6 +195,7 @@ var calculCorpo = function(){
 
 		if(!isNaN(total)){
 			document.getElementById('float-right-1').innerHTML = total;
+			$("#quote_number_of_elevators").val(total);
 			}
 		return total;
 	}
@@ -229,6 +231,7 @@ var calculResi = function(){
 
 		if(!isNaN(total)){
 		document.getElementById('float-right-1').innerHTML = total;
+		$("#quote_number_of_elevators").val(total);
 		}
 		return total;
 	}
@@ -261,6 +264,7 @@ var calculPrix = function(totalAscensor){
 
 	if(!isNaN(finalPrice)){
 		document.getElementById('float-right-3').innerHTML = finalPrice.toFixed(2) + " $";
+		$("#quote_total_cost").val(finalPrice);
 	}
 }
 // Function to show radio-button value-------------------------------------------------

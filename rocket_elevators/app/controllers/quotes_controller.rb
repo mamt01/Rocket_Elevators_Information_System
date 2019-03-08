@@ -28,7 +28,6 @@ class QuotesController < ApplicationController
     @quote = Quote.new(quote_params)
 
     if params[:quote][:department] == 'Residential'
-      puts 'RESIDENTIAL'
       @quote.number_of_apartments = params[:quote][:resi_number_of_apartments]
       @quote.number_of_floors = params[:quote][:resi_number_of_floors]
       @quote.number_of_basements = params[:quote][:resi_number_of_basements]
@@ -62,7 +61,7 @@ pp @quote
 
     respond_to do |format|
       if @quote.save
-        format.html { redirect_to "http://localhost:3000/gform.html", alert: "Quote was successfully created." }
+        format.html { redirect_to "http://localhost:3000/gform.html", alert: 'Quote was successfully created.' }
         format.json { render :show, status: :created, location: @quote }
       else
         format.html { render :new }
@@ -103,6 +102,6 @@ pp @quote
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def quote_params
-      params.require(:quote).permit(:department, :full_name, :company_name, :email, :phone_number, :number_of_floors, :number_of_basements, :number_of_parking, :number_of_stores, :max_occupancy_per_floor, :hours_of_activity, :service_level, :number_of_elevators, :installation_cost, :total_cost)
+      params.require(:quote).permit(:department, :full_name, :company_name, :email, :phone_number, :number_of_floors, :number_of_basements, :number_of_parking, :number_of_stores, :max_occupancy_per_floor, :hours_of_activity, :service_level, :number_of_elevators, :total_cost)
     end
 end

@@ -388,7 +388,8 @@
                                     <div class="toggle-content-1" style="display: block;">
                                         <span class="clearfix">
                                             <strong class="float-left">Total elevators:</strong>
-                                            <span id="float-right-1" name:'quote[number_of_elevators]'></span>
+                                            <span id="float-right-1"></span>
+                                            <%= form.hidden_field :'number_of_elevators', name:'quote[number_of_elevators]' %>
                                         </span>
 
                                         <hr>
@@ -398,13 +399,14 @@
                                             <strong class="float-left">Standard price unit:</strong><br>
                                             <span>Installation fee:</span>
                                             <span id="fees"></span>
+                                            <%= form.hidden_field :'installation_cost', name:'quote[installation_cost]' %>
                                         </span>
 
                                         <hr>
                                         <span class="clearfix">
-                                                <span id="float-right-3"></span>
                                                 <strong class="float-left">Approximate price:</strong>
                                                 <span id="float-right-3"></span>
+                                                <%= form.hidden_field :'total_cost', name:'quote[total_cost]' %>
 
                                         </span>
                                         <hr>

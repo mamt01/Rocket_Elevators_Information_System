@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_06_201513) do
+ActiveRecord::Schema.define(version: 2019_03_08_153428) do
 
   create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "department"
@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 2019_03_06_201513) do
     t.integer "hours_of_activity"
     t.string "service_level"
     t.integer "number_of_elevators"
-    t.float "installation_cost"
     t.float "total_cost"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
