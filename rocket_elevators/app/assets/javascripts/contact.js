@@ -250,15 +250,15 @@ var calculPrix = function(totalAscensor){
 		return radioValue;
 	})
 	var finalPrice;
-	if (radioValue === "7565"){
+	if (radioValue === "Standard"){
 		finalPrice = (totalAscensor * 7565) * 1.1;
 	}
 
-	else if (radioValue === "12345"){
+	else if (radioValue === "Premium"){
 		finalPrice = (totalAscensor * 12345) * 1.13;
 	}
 
-	else if (radioValue === "15400"){
+	else if (radioValue === "Excelium"){
 		finalPrice = (totalAscensor * 15400) * 1.16;
 	}
 
@@ -270,20 +270,20 @@ var calculPrix = function(totalAscensor){
 // Function to show radio-button value-------------------------------------------------
 var radioButton = function(){
 	var radioValue = $("input[name='quote[service_level]']:checked").val();
-	if (radioValue === "7565"){
+	if (radioValue === "Standard"){
 
 		document.getElementById('fees').innerHTML = "10%";
-		document.getElementById('float-right-2').innerHTML = radioValue + " $";
+		document.getElementById('float-right-2').innerHTML = 7565 + " $";
 	}
-	else if (radioValue === "12345"){
+	else if (radioValue === "Premium"){
 
 		document.getElementById('fees').innerHTML = "13%";
-		document.getElementById('float-right-2').innerHTML = radioValue + " $";
+		document.getElementById('float-right-2').innerHTML = 12345 + " $";
 	}
-	else if (radioValue === "15400"){
+	else if (radioValue === "Excelium"){
 
 		document.getElementById('fees').innerHTML = "16%";
-		document.getElementById('float-right-2').innerHTML = radioValue + " $";
+		document.getElementById('float-right-2').innerHTML = 15400 + " $";
 	}
 }
 
