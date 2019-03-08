@@ -97,8 +97,9 @@
                                 Add .external for an external link!
                             -->
                             <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+                            <%=link_to "", '/index', :method => :get %>
                                 <li class="active"><!-- HOME -->
-                                    <a href="genesis.html">
+                                    <a href="index.html">
                                         HOME
                                     </a>
                                 </li>
@@ -109,31 +110,35 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a href="index-onepage-parallax.html">Residential</a>
+                                        <%=link_to "", '/residential', :method => :get %><a  href="residential.html">Residential</a>
                                         </li>
                                         <li>
-                                            <a href="index-onepage-parallax-commercial.html">Commercial</a>
+                                        <%=link_to "", '/commercial', :method => :get %><a  href="commercial.html">Commercial</a>
                                         </li>
                                     </ul>
                                     
                                 </li>
+                                <%=link_to "", '/index', :method => :get %>
                                 <li><!-- WORK -->
-                                    <a href="genesis.html#work">
+                                    <a href="index.html#work">
                                         PORTFOLIO
                                     </a>
                                 </li>
+                                <%=link_to "", '/index', :method => :get %>
                                 <li><!-- NEWS -->
-                                    <a href="genesis.html#news">
+                                    <a href="index.html#news">
                                         NEWS
                                     </a>
                                 </li>
+                                <%=link_to "", '/index', :method => :get %>
                                 <li><!-- OVERVIEW -->
-                                    <a href="genesis.html#contact">
+                                    <a href="index.html#contact">
                                         CONTACT
                                     </a>
                                 </li>
+                                <%=link_to "", '/index', :method => :get %>
                                 <li><!-- CLIENTS -->
-                                    <a href="genesis.html#clients">
+                                    <a href="index.html#clients">
                                         CLIENTS
                                     </a>
                                 </li>
@@ -363,11 +368,11 @@
                                 <div class="row">
                                     <div class="col-md-4-1">
                                     <label class="label_form" for="radio-button">Service level *</label>
-                                    <%= form.radio_button(:service_level, '7565') %>
+                                    <%= form.radio_button(:service_level, 'Standard') %>
                                     <%= form.label :Standard %>
-                                    <%= form.radio_button(:service_level, '12345') %>
+                                    <%= form.radio_button(:service_level, 'Premium') %>
                                     <%= form.label :Premium %>
-                                    <%= form.radio_button(:service_level, '15400') %>
+                                    <%= form.radio_button(:service_level, 'Excelium') %>
                                     <%= form.label :Excelium %>
                                     </div>
                                 </div>
@@ -396,7 +401,8 @@
                                     <div class="toggle-content-1" style="display: block;">
                                         <span class="clearfix">
                                             <strong class="float-left">Total elevators:</strong>
-                                            <span id="float-right-1" name:'quote[number_of_elevators]'></span>
+                                            <span id="float-right-1"></span>
+                                            <%= form.hidden_field :'number_of_elevators', name:'quote[number_of_elevators]' %>
                                         </span>
 
                                         <hr>
@@ -406,18 +412,19 @@
                                             <strong class="float-left">Standard price unit:</strong><br>
                                             <span>Installation fee:</span>
                                             <span id="fees"></span>
+                                            <%= form.hidden_field :'installation_cost', name:'quote[installation_cost]' %>
                                         </span>
 
                                         <hr>
                                         <span class="clearfix">
-                                                <span id="float-right-3"></span>
                                                 <strong class="float-left">Approximate price:</strong>
                                                 <span id="float-right-3"></span>
+                                                <%= form.hidden_field :'total_cost', name:'quote[total_cost]' %>
 
                                         </span>
                                         <hr>
                                     <div class="actions"> 
-                                    <%= form.submit class: 'btn btn-primary btn-lg btn-block fs-15' %>
+                                    <%= form.submit class: 'btn btn-primary btn-lg btn-block fs-15', :onclick => "alert('The quote was sucessfully created')"%>
                                     </div>
                                     </div>
                                 </div>

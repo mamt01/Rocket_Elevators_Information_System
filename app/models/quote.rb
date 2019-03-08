@@ -5,6 +5,5 @@ class Quote < ApplicationRecord
     # validates :phone_number, presence: true 
     # validates :number_of_elevators, presence: true 
     # validates :service_level, presence: true 
-    # validates :installation_cost, presence: true 
     # validates :total_cost, presence: true 
 end
