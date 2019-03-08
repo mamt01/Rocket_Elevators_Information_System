@@ -28,6 +28,9 @@ gem 'jquery-rails'
 #
 gem 'owlcarousel-rails', '~> 1.1', '>= 1.1.3.3'
 #
+gem 'rails_admin'
+#
+gem 'devise'
 gem 'capistrano', '~> 3.10', require: false
 #
 gem 'capistrano-rails', '~> 1.4', require: false
