@@ -1,4 +1,13 @@
 # README
+MOTS DE PASSES:
+Nadya : 123456
+Felix-Antoine : 123456
+Philippe: 123456
+Serge: 123456
+Mathieu H.: 123456
+Mathieu L.: 123456
+Remi: 123456
+-------------------------------------------
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
