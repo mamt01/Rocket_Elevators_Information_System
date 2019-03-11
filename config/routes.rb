@@ -1,7 +1,16 @@
 Rails.application.routes.draw do
   devise_for :users
   mount RailsAdmin::Engine => '/emp-dashboard', as: 'rails_admin'
+  resources :elevators
+  resources :columns
+  resources :batteries
+  resources :building_details
+  resources :buildings
+  resources :customers
+  resources :addresses
+  resources :leads
   resources :quotes
+  
   get '/gform', to: 'pages#gform'
   get '/residential', to: 'pages#residential'
   get '/commercial', to: 'pages#commercial'
