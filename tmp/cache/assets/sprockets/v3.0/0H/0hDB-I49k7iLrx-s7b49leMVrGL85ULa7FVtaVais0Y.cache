@@ -1,50 +1,0 @@
-{:uriI"—file://app/assets/javascripts/plugins/chart.chartjs/samples/bar.html?type=text/html&id=36c766d457d3f3ee29def6f825dcc8afc303fe51f368b205cfc634ce9875fa98:ET:load_pathI"app/assets/javascripts;T:filenameI"Bapp/assets/javascripts/plugins/chart.chartjs/samples/bar.html;T:	nameI"&plugins/chart.chartjs/samples/bar;T:logical_pathI"+plugins/chart.chartjs/samples/bar.html;T:content_typeI"text/html;T:sourceI")<!doctype html>
-<html>
-	<head>
-		<title>Bar Chart</title>
-		<script src="../Chart.js"></script>
-	</head>
-	<body>
-		<div style="width: 50%">
-			<canvas id="canvas" height="450" width="600"></canvas>
-		</div>
-
-
-	<script>
-	var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
-
-	var barChartData = {
-		labels : ["January","February","March","April","May","June","July"],
-		datasets : [
-			{
-				fillColor : "rgba(220,220,220,0.5)",
-				strokeColor : "rgba(220,220,220,0.8)",
-				highlightFill: "rgba(220,220,220,0.75)",
-				highlightStroke: "rgba(220,220,220,1)",
-				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-			},
-			{
-				fillColor : "rgba(151,187,205,0.5)",
-				strokeColor : "rgba(151,187,205,0.8)",
-				highlightFill : "rgba(151,187,205,0.75)",
-				highlightStroke : "rgba(151,187,205,1)",
-				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-			}
-		]
-
-	}
-	window.onload = function(){
-		var ctx = document.getElementById("canvas").getContext("2d");
-		window.myBar = new Chart(ctx).Bar(barChartData, {
-			responsive : true
-		});
-	}
-
-	</script>
-	</body>
-</html>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Pfile-digest://app/assets/javascripts/plugins/chart.chartjs/samples/bar.html;TTF:charsetI"
-utf-8;F:digest"%ÃqËÌ~ûÕ  £!›˜Ó0¯„V{ÔÎHfè›ÚÆÁhØÇ:lengthi):dependencies_digest"%åj¾˜û><{vno~‘R‚Ÿ…šjìÖ‹4M´Î:idI"E36c766d457d3f3ee29def6f825dcc8afc303fe51f368b205cfc634ce9875fa98;F:
-mtimel+‹)€\

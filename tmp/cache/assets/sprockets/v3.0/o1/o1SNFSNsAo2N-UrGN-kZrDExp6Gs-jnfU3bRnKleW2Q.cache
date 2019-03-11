@@ -1,37 +1,0 @@
-{:uriI"¦file://app/assets/javascripts/plugins/bootstrap.daterangepicker/package.json?type=application/json&id=d0d44c30efa51d9e1f4cb7b81f282f9bf667c7c6eee925baa4a39103ef6f9a76:ET:load_pathI"app/assets/javascripts;T:filenameI"Japp/assets/javascripts/plugins/bootstrap.daterangepicker/package.json;T:	nameI".plugins/bootstrap.daterangepicker/package;T:logical_pathI"3plugins/bootstrap.daterangepicker/package.json;T:content_typeI"application/json;T:sourceI"F{
-  "name": "bootstrap-daterangepicker",
-  "version": "1.3.21",
-  "description": "Date range picker component for Bootstrap",
-  "main": "daterangepicker.js",
-  "style": "daterangepicker-bs3.css",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dangrossman/bootstrap-daterangepicker.git"
-  },
-  "author": {
-    "name": "Dan Grossman",
-    "email": "dan@dangrossman.info",
-    "url": "http://www.dangrossman.info"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dangrossman/bootstrap-daterangepicker/issues"
-  },
-  "homepage": "https://github.com/dangrossman/bootstrap-daterangepicker",
-  "engines": {
-    "node": "0.10.32",
-    "nmp": "1.4.28"
-  },
-  "dependencies": {
-    "jquery": "^1.10",
-    "moment": "^2.9.0"
-  }
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Xfile-digest://app/assets/javascripts/plugins/bootstrap.daterangepicker/package.json;TTF:charsetI"
-utf-8;F:digest"%H…Mqùæ9‰XÑÂ/%à,A!d1LÚ;¾'@Of@³:lengthiF:dependencies_digest"%ë.Y©¸ÅvïøyV0÷1V™¨<-í€VÄ5:idI"Ed0d44c30efa51d9e1f4cb7b81f282f9bf667c7c6eee925baa4a39103ef6f9a76;F:
-mtimel+‹)€\

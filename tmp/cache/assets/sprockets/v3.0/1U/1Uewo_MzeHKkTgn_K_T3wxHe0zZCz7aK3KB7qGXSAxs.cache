@@ -1,72 +1,0 @@
-{:uriI" file://app/assets/javascripts/plugins/slider.swiper/demos/35-effect-flip.html?type=text/html&id=79588d0e4f63ed8ca2024afe7d89e4cfd9bf8e014b0a683ea5a75faf26f72704:ET:load_pathI"app/assets/javascripts;T:filenameI"Kapp/assets/javascripts/plugins/slider.swiper/demos/35-effect-flip.html;T:	nameI"/plugins/slider.swiper/demos/35-effect-flip;T:logical_pathI"4plugins/slider.swiper/demos/35-effect-flip.html;T:content_typeI"text/html;T:sourceI"Œ<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Swiper demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="../dist/css/swiper.min.css">
-
-    <!-- Demo styles -->
-    <style>
-    body {
-        background: #fff;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color:#000;
-        margin: 0;
-        padding: 0;
-    }
-    .swiper-container {
-        width: 300px;
-        height: 300px;
-        padding: 50px;
-    }
-    .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 300px;
-        height: 300px;
-    }
-    </style>
-</head>
-<body>
-    <!-- Swiper -->
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/4)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/5)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/6)"></div>
-        </div>
-
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- Add Arrows -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </div>
-
-    <!-- Swiper JS -->
-    <script src="../dist/js/swiper.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        effect: 'flip',
-        grabCursor: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev'
-    });
-    </script>
-</body>
-</html>;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Yfile-digest://app/assets/javascripts/plugins/slider.swiper/demos/35-effect-flip.html;TTF:charsetI"
-utf-8;F:digest"%ø›İâÖ—`z×Šo£\n4ÜZCë•¨ÿoÙê4«:Ä:lengthiŒ:dependencies_digest"%¡wlğïG'$	_İØ“'õ™`dı T=›%“q-áñÔ:idI"E79588d0e4f63ed8ca2024afe7d89e4cfd9bf8e014b0a683ea5a75faf26f72704;F:
-mtimel+)€\

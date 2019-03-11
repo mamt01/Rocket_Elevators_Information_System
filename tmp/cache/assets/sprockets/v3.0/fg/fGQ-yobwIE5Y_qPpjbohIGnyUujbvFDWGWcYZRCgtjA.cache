@@ -1,27 +1,0 @@
-{:uriI"¤file://app/assets/javascripts/plugins/bootstrap.daterangepicker/bower.json?type=application/json&id=0a2caa6d6faac9a613805785cce3826200330c901f945beefbae77e6a23f3ee1:ET:load_pathI"app/assets/javascripts;T:filenameI"Happ/assets/javascripts/plugins/bootstrap.daterangepicker/bower.json;T:	nameI",plugins/bootstrap.daterangepicker/bower;T:logical_pathI"1plugins/bootstrap.daterangepicker/bower.json;T:content_typeI"application/json;T:sourceI"[{
-  "name": "bootstrap-daterangepicker",
-  "version": "1.3.21",
-  "main": [
-    "daterangepicker.js",
-    "daterangepicker-bs3.css"
-  ],
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests",
-    "moment.js",
-    "moment.min.js"
-  ],
-  "dependencies": {
-    "jquery": ">=1.10",
-    "moment": "~2.9.0"
- }
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Vfile-digest://app/assets/javascripts/plugins/bootstrap.daterangepicker/bower.json;TTF:charsetI"
-utf-8;F:digest"%°^m¾t›;¢Şõº
-¥#µ—£’î»u5Ú˜ïüô_’:lengthi[:dependencies_digest"%Î	ß ¨G7Å'ÚÈ‘Ÿõå;¦T9ñ2§`›“…c¸:idI"E0a2caa6d6faac9a613805785cce3826200330c901f945beefbae77e6a23f3ee1;F:
-mtimel+‹)€\

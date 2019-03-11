@@ -1,65 +1,0 @@
-{:uriI"žfile://app/assets/javascripts/plugins/chart.chartjs/samples/polar-area.html?type=text/html&id=e0022e25f44ae1c6028f2ce418160906bcdbb88ae6ca1f0bc38ba93dc82e9ec3:ET:load_pathI"app/assets/javascripts;T:filenameI"Iapp/assets/javascripts/plugins/chart.chartjs/samples/polar-area.html;T:	nameI"-plugins/chart.chartjs/samples/polar-area;T:logical_pathI"2plugins/chart.chartjs/samples/polar-area.html;T:content_typeI"text/html;T:sourceI"å<!doctype html>
-<html>
-	<head>
-		<title>Polar Area Chart</title>
-		<script src="../Chart.js"></script>
-	</head>
-	<body>
-		<div id="canvas-holder" style="width:30%">
-			<canvas id="chart-area" width="300" height="300"/>
-		</div>
-
-
-	<script>
-
-		var polarData = [
-				{
-					value: 300,
-					color:"#F7464A",
-					highlight: "#FF5A5E",
-					label: "Red"
-				},
-				{
-					value: 50,
-					color: "#46BFBD",
-					highlight: "#5AD3D1",
-					label: "Green"
-				},
-				{
-					value: 100,
-					color: "#FDB45C",
-					highlight: "#FFC870",
-					label: "Yellow"
-				},
-				{
-					value: 40,
-					color: "#949FB1",
-					highlight: "#A8B3C5",
-					label: "Grey"
-				},
-				{
-					value: 120,
-					color: "#4D5360",
-					highlight: "#616774",
-					label: "Dark Grey"
-				}
-
-			];
-
-			window.onload = function(){
-				var ctx = document.getElementById("chart-area").getContext("2d");
-				window.myPolarArea = new Chart(ctx).PolarArea(polarData, {
-					responsive:true
-				});
-			};
-
-
-
-	</script>
-	</body>
-</html>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Wfile-digest://app/assets/javascripts/plugins/chart.chartjs/samples/polar-area.html;TTF:charsetI"
-utf-8;F:digest"%³˜Ÿ¥î-»_3—vP`Íj´ÞÎáhÏ&ûð	n»Ÿ:lengthiå:dependencies_digest"%¹CBÉoÆ_ûfûM:;÷#®l0À?‘€D]¨<MÑŸ)$:idI"Ee0022e25f44ae1c6028f2ce418160906bcdbb88ae6ca1f0bc38ba93dc82e9ec3;F:
-mtimel+‹)€\
