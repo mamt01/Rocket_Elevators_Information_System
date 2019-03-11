@@ -58,7 +58,7 @@ class QuotesController < ApplicationController
 
     respond_to do |format|
       if @quote.save
-        format.html { redirect_to "http://localhost:3000/gform.html", notice: 'Quote was successfully created.' }
+        format.html { redirect_to "/gform", notice: 'Quote was successfully created.' }
         format.json { render :show, status: :created, location: @quote }
       else
         format.html { render :new }

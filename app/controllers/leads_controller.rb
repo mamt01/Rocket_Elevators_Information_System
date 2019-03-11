@@ -28,7 +28,7 @@ class LeadsController < ApplicationController
 
     respond_to do |format|
       if @lead.save
-        format.html { redirect_to @lead, notice: 'Lead was successfully created.' }
+        format.html { redirect_to "/index#contact"}
         format.json { render :show, status: :created, location: @lead }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class LeadsController < ApplicationController
   def update
     respond_to do |format|
       if @lead.update(lead_params)
-        format.html { redirect_to @lead, notice: 'Lead was successfully updated.' }
+        format.html { redirect_to "/index#contact", notice: 'Lead was successfully updated.' }
         format.json { render :show, status: :ok, location: @lead }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class LeadsController < ApplicationController
   def destroy
     @lead.destroy
     respond_to do |format|
-      format.html { redirect_to leads_url, notice: 'Lead was successfully destroyed.' }
+      format.html { redirect_to "/index#contact", notice: 'Lead was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -69,6 +69,6 @@ class LeadsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def lead_params
-      params.fetch(:lead, {})
+      params.require(:lead).permit(:full_name, :company_name, :email, :phone_number, :project_name, :project_description, :department_in_charge, :message, :attachment)
     end
 end

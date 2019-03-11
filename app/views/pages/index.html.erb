@@ -1,5 +1,3 @@
-<%= form_with(model: @lead, local: true) do |form| %>
-
 <!-- SLIDE TOP -->
 		<div id="slidetop">
 
@@ -1182,8 +1180,7 @@
 								<strong>Sorry!</strong> You need to complete all mandatory (*) fields!
 							</div><!-- /Alert Mandatory -->
 
-						
-							<form action="php/contact.php" method="post" enctype="multipart/form-data">
+							<%= form_with(model: @lead, local: true) do |form| %>	
 								<fieldset>
 									<input type="hidden" name="action" value="contact_send" />
 
@@ -1248,8 +1245,7 @@
 									<%= form.submit class: 'btn btn-primary', value: 'Send Message', :onclick => "alert('The demand was sucessfully sent')" %>	
 									</div>
 								</div>
-							</form>
-
+							<% end %>
 						</div>
 						<!-- /FORM -->
 
@@ -1381,5 +1377,3 @@
 		# 	GMAP.JS 
 		# 	http://hpneo.github.io/gmaps/
 		# -->
-
-		<% end %>
