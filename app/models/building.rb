@@ -1,2 +1,0 @@
-class Building < ApplicationRecord
-end
