@@ -1,0 +1,59 @@
+{:uriI"žfile://app/assets/javascripts/plugins/chart.chartjs/samples/line%20(1).html?type=text/html&id=ed768e9d50f5820aeca9d1432951bbf278310ff844a3d6afa80a7180b6889bf8:ET:load_pathI"app/assets/javascripts;T:filenameI"Gapp/assets/javascripts/plugins/chart.chartjs/samples/line (1).html;T:	nameI"+plugins/chart.chartjs/samples/line (1);T:logical_pathI"0plugins/chart.chartjs/samples/line (1).html;T:content_typeI"text/html;T:sourceI"<!doctype html>
+<html>
+	<head>
+		<title>Line Chart</title>
+		<script src="../Chart.js"></script>
+	</head>
+	<body>
+		<div style="width:30%">
+			<div>
+				<canvas id="canvas" height="450" width="600"></canvas>
+			</div>
+		</div>
+
+
+	<script>
+		var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+		var lineChartData = {
+			labels : ["January","February","March","April","May","June","July"],
+			datasets : [
+				{
+					label: "My First dataset",
+					fillColor : "rgba(220,220,220,0.2)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(220,220,220,1)",
+					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+				},
+				{
+					label: "My Second dataset",
+					fillColor : "rgba(151,187,205,0.2)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "rgba(151,187,205,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(151,187,205,1)",
+					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+				}
+			]
+
+		}
+
+	window.onload = function(){
+		var ctx = document.getElementById("canvas").getContext("2d");
+		window.myLine = new Chart(ctx).Line(lineChartData, {
+			responsive: true
+		});
+	}
+
+
+	</script>
+	</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Wfile-digest://app/assets/javascripts/plugins/chart.chartjs/samples/line%20(1).html;TTF:charsetI"
+utf-8;F:digest"%}Ôl8½)$Rt¥êhÇÉœ­	cÑ¸’Ùšá"«å:lengthi:dependencies_digest"%q$5>ëÉ¤äN«±+.úph0ý@a‡L˜P~«/f„µc:idI"Eed768e9d50f5820aeca9d1432951bbf278310ff844a3d6afa80a7180b6889bf8;F:
+mtimel+‹)€\

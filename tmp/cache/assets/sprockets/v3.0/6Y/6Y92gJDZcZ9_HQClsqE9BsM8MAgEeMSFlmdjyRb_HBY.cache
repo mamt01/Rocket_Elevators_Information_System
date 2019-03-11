@@ -1,0 +1,54 @@
+{:uriI"›file://app/assets/javascripts/plugins/chart.easypiechart/demo/index.html?type=text/html&id=534062f3006ebeba6188a449f9fc54159d86ed15e523a09e37b83d717b2ede32:ET:load_pathI"app/assets/javascripts;T:filenameI"Fapp/assets/javascripts/plugins/chart.easypiechart/demo/index.html;T:	nameI"*plugins/chart.easypiechart/demo/index;T:logical_pathI"/plugins/chart.easypiechart/demo/index.html;T:content_typeI"text/html;T:sourceI"¶<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>vanilla</title>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+	<ul>
+		<li><a href="index.html" class="active">Vanilla JS</a></li>
+		<li><a href="jquery.html">jQuery plugin</a></li>
+		<li><a href="angular.html">Angular module</a></li>
+		<li><a href="requirejs.html">RequireJS module</a></li>
+	</ul>
+
+	<span class="chart" data-percent="86">
+		<span class="percent"></span>
+	</span>
+
+	<span class="btn js_update">Update chart</span>
+
+	<script src="../dist/easypiechart.js"></script>
+	<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		var chart = window.chart = new EasyPieChart(document.querySelector('span'), {
+			easing: 'easeOutElastic',
+			delay: 3000,
+			barColor: '#69c',
+			trackColor: '#ace',
+			scaleColor: false,
+			lineWidth: 20,
+			trackWidth: 16,
+			lineCap: 'butt',
+			onStep: function(from, to, percent) {
+				this.el.children[0].innerHTML = Math.round(percent);
+			}
+		});
+
+		document.querySelector('.js_update').addEventListener('click', function(e) {
+			chart.update(Math.random()*200-100);
+		});
+
+	});
+	</script>
+</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Tfile-digest://app/assets/javascripts/plugins/chart.easypiechart/demo/index.html;TTF:charsetI"
+utf-8;F:digest"%2”7¤L’
+?ÙíF¬ë0”s¯XÚ•MZëB€¥ÞÄ­:lengthi¶:dependencies_digest"%Vò×x¬›úçË1W*´ÿöÝE¯=ÝN]ÎW=":idI"E534062f3006ebeba6188a449f9fc54159d86ed15e523a09e37b83d717b2ede32;F:
+mtimel+‹)€\

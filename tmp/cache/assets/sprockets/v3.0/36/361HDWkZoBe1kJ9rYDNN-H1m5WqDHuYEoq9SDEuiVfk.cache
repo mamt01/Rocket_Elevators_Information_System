@@ -1,0 +1,54 @@
+{:uriI"ùfile://app/assets/javascripts/plugins/chart.easypiechart/demo/angular.html?type=text/html&id=113db85a252c795eee876652153915423e4fbc7264bc56e4919898c40f2286c0:ET:load_pathI"app/assets/javascripts;T:filenameI"Happ/assets/javascripts/plugins/chart.easypiechart/demo/angular.html;T:	nameI",plugins/chart.easypiechart/demo/angular;T:logical_pathI"1plugins/chart.easypiechart/demo/angular.html;T:content_typeI"text/html;T:sourceI"8<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Angular</title>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+	<ul>
+		<li><a href="index.html">Vanilla JS</a></li>
+		<li><a href="jquery.html">jQuery plugin</a></li>
+		<li><a href="angular.html" class="active">Angular module</a></li>
+		<li><a href="requirejs.html">RequireJS module</a></li>
+	</ul>
+
+	<div class="angular" ng-controller="chartCtrl">
+		<span class="chart" easypiechart ng-init="options = { animate:false, barColor:'#E67E22', scaleColor:false, lineWidth:3, lineCap:'butt' }" percent="percent" options="options">
+			<span class="percent" ng-bind="percent"></span>
+		</span>
+		<input type="range" min="-100" max="100" step="1" ng-model="percent" />
+		<span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+			<span class="percent" ng-bind="percent"></span>
+		</span>
+		<input type="range" min="-100" max="100" step="1" ng-model="anotherPercent" />
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.js"></script>
+	<script src="../dist/angular.easypiechart.min.js"></script>
+	<script>
+		var app = angular.module('app', ['easypiechart']);
+		app.controller('chartCtrl', ['$scope', function ($scope) {
+			$scope.percent = 65;
+			$scope.anotherPercent = -45;
+			$scope.anotherOptions = {
+				animate:{
+					duration:0,
+					enabled:false
+				},
+				barColor:'#2C3E50',
+				scaleColor:false,
+				lineWidth:20,
+				lineCap:'circle'
+			};
+		}]);
+	</script>
+</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Vfile-digest://app/assets/javascripts/plugins/chart.easypiechart/demo/angular.html;TTF:charsetI"
+utf-8;F:digest"%h˛{XT)Û√l$®3qËmâ¢˝Áb^‹§ì∏?Î÷:lengthi8:dependencies_digest"%z’≥k0m’•∫¬ƒs<Åé')ÅOÓâqh'HKf:idI"E113db85a252c795eee876652153915423e4fbc7264bc56e4919898c40f2286c0;F:
+mtimel+ã)Ä\

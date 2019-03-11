@@ -1,0 +1,37 @@
+{:uriI"–file://app/assets/javascripts/plugins/countdown/countdownBasic.html?type=text/html&id=2d0bc90650e0aa029ef4fa14591a4d5a1bf0eb0728f41c2a1b4311539c9fe845:ET:load_pathI"app/assets/javascripts;T:filenameI"Aapp/assets/javascripts/plugins/countdown/countdownBasic.html;T:	nameI"%plugins/countdown/countdownBasic;T:logical_pathI"*plugins/countdown/countdownBasic.html;T:content_typeI"text/html;T:sourceI"¡<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>jQuery Countdown</title>
+<link rel="stylesheet" href="jquery.countdown.css">
+<style type="text/css">
+#defaultCountdown { width: 240px; height: 45px; }
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="jquery.plugin.js"></script>
+<script src="jquery.countdown.js"></script>
+<script>
+$(function () {
+	var austDay = new Date();
+	austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 26);
+	$('#defaultCountdown').countdown({until: austDay});
+	$('#year').text(austDay.getFullYear());
+});
+</script>
+</head>
+<body>
+<h1>jQuery Countdown Basics</h1>
+<p>This page demonstrates the very basics of the
+	<a href="http://keith-wood.name/countdown.html">jQuery Countdown plugin</a>.
+	It contains the minimum requirements for using the plugin and
+	can be used as the basis for your own experimentation.</p>
+<p>For more detail see the <a href="http://keith-wood.name/countdownRef.html">documentation reference</a> page.</p>
+<p>Counting down to 26 January <span id="year">2014</span>.</p>
+<div id="defaultCountdown"></div>
+</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ofile-digest://app/assets/javascripts/plugins/countdown/countdownBasic.html;TTF:charsetI"
+utf-8;F:digest"%]…V9L­²«Œðpê[ˆú&w- ‚ù¬ûå|äZ:lengthi¡:dependencies_digest"%þ¢ºô–ß`¨’àÎoT^lÃUÜÂCEñ®LMÏ0K˜:idI"E2d0bc90650e0aa029ef4fa14591a4d5a1bf0eb0728f41c2a1b4311539c9fe845;F:
+mtimel+‹)€\

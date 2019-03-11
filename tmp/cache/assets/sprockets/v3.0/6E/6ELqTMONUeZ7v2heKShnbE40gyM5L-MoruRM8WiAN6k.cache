@@ -1,0 +1,32 @@
+{:uriI"šfile://app/assets/javascripts/plugins/chart.chartjs/package.json?type=application/json&id=faa9809c4237c4fcc9e5f250b9c1c5ee118d2c2c0aa6dc521f7d64e7609e2281:ET:load_pathI"app/assets/javascripts;T:filenameI">app/assets/javascripts/plugins/chart.chartjs/package.json;T:	nameI""plugins/chart.chartjs/package;T:logical_pathI"'plugins/chart.chartjs/package.json;T:content_typeI"application/json;T:sourceI"˜{
+  "name": "chart.js",
+  "homepage": "http://www.chartjs.org",
+  "description": "Simple HTML5 charts using the canvas element.",
+  "version": "1.0.2",
+  "main": "Chart.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nnnick/Chart.js.git"
+  },
+  "dependences": {},
+  "devDependencies": {
+    "gulp": "3.5.x",
+    "gulp-concat": "~2.1.x",
+    "gulp-connect": "~2.0.5",
+    "gulp-jshint": "~1.5.1",
+    "gulp-replace": "^0.4.0",
+    "gulp-size": "~0.4.0",
+    "gulp-uglify": "~0.2.x",
+    "gulp-util": "~2.2.x",
+    "gulp-html-validator": "^0.0.2",
+    "inquirer": "^0.5.1",
+    "semver": "^3.0.1"
+  },
+  "spm": {
+    "main": "Chart.js"
+  }
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Lfile-digest://app/assets/javascripts/plugins/chart.chartjs/package.json;TTF:charsetI"
+utf-8;F:digest"%o¾H\žþ0£­ ³Š€alñS ñ1ùcõ/¨šŒšó?:lengthi˜:dependencies_digest"%ðßGÐt-Ô»Irï{|Ån	vx‘µ…õ „¯{OÆ]g:idI"Efaa9809c4237c4fcc9e5f250b9c1c5ee118d2c2c0aa6dc521f7d64e7609e2281;F:
+mtimel+‹)€\

@@ -1,0 +1,83 @@
+{:uriI"Ÿfile://app/assets/javascripts/plugins/chart.easypiechart/demo/requirejs.html?type=text/html&id=2b4862cb857ef4611dc888dcfd2c850c196e29ac6aae2468fb9ec3b684c34422:ET:load_pathI"app/assets/javascripts;T:filenameI"Japp/assets/javascripts/plugins/chart.easypiechart/demo/requirejs.html;T:	nameI".plugins/chart.easypiechart/demo/requirejs;T:logical_pathI"3plugins/chart.easypiechart/demo/requirejs.html;T:content_typeI"text/html;T:sourceI"t<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Angular</title>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+	<ul>
+		<li><a href="index.html">Vanilla JS</a></li>
+		<li><a href="jquery.html">jQuery plugin</a></li>
+		<li><a href="angular.html">Angular module</a></li>
+		<li><a href="requirejs.html" class="active">RequireJS module</a></li>
+	</ul>
+
+	<div class="span6">
+		<h2>Angular module</h2>
+		<div class="angular" ng-controller="chartCtrl">
+			<span class="chart" easypiechart ng-init="options = { animate:false, barColor:'#E67E22', scaleColor:false, lineWidth:3, lineCap:'butt' }" percent="percent" options="options">
+				<span class="percent" ng-bind="percent"></span>
+			</span>
+			<input type="range" min="-100" max="100" step="1" ng-model="percent" />
+		</div>
+	</div>
+
+	<div class="span6">
+		<h2>jQuery module</h2>
+		<span id="chart" class="chart" data-percent="12">
+			<span class="percent"></span>
+		</span>
+		<input type="range" min="-100" max="100" step="1" id="updater" />
+	</div>
+
+	<script src="../bower_components/requirejs/require.js"></script>
+	<script>
+		require.config({
+			paths: {
+				'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery',
+				'angular': 'https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular',
+				'angular-easypiechart': '../dist/angular.easypiechart',
+				'jquery-easypiechart': '../dist/jquery.easypiechart'
+			},
+			shim: {
+				'angular': { 'exports': 'angular' }
+			}
+		});
+
+		require([
+			'angular-easypiechart'
+		], function () {
+			angular.module('app', ['easypiechart'])
+
+				.controller('chartCtrl', ['$scope', function ($scope) {
+					$scope.percent = 65;
+				}]);
+
+			angular.bootstrap(document.getElementsByTagName('html')[0], ['app']);
+		});
+
+		require([
+			'jquery-easypiechart'
+		], function () {
+			var chart = $('#chart').easyPieChart({
+				onStep: function(from, to, percent) {
+					$(this.el).find('.percent').text(Math.round(percent));
+				}
+			}).data('easyPieChart');
+
+			$('#updater').on('change', function() {
+				chart.update($(this).val());
+			});
+		});
+	</script>
+</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Xfile-digest://app/assets/javascripts/plugins/chart.easypiechart/demo/requirejs.html;TTF:charsetI"
+utf-8;F:digest"% ªÜ÷#ÂU˜Ì<JôæfÙÂ~Ì>û ÷T\. ÝýÑØ÷Ñ:lengthit:dependencies_digest"%–Z<`
+™Æ„†"õÛ2Ž*ì›/™Ý3Š×ÈüJH!:idI"E2b4862cb857ef4611dc888dcfd2c850c196e29ac6aae2468fb9ec3b684c34422;F:
+mtimel+‹)€\

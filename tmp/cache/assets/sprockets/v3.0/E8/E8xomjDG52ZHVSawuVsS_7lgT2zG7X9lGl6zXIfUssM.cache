@@ -1,0 +1,35 @@
+{:uriI"Žfile://app/assets/javascripts/plugins/mdl/bower.json?type=application/json&id=f0e14e62f710b646d3b3a7022be219f6dbedadd6de5af1ba74ba1be1676a1fe5:ET:load_pathI"app/assets/javascripts;T:filenameI"2app/assets/javascripts/plugins/mdl/bower.json;T:	nameI"plugins/mdl/bower;T:logical_pathI"plugins/mdl/bower.json;T:content_typeI"application/json;T:sourceI"+{
+  "name": "material-design-lite",
+  "version": "1.3.0",
+  "homepage": "https://github.com/google/material-design-lite",
+  "authors": [
+    "Material Design Lite team"
+  ],
+  "description": "Material Design Components in CSS, JS and HTML",
+  "main": [
+    "material.min.css",
+    "material.min.js"
+  ],
+  "keywords": [
+    "material",
+    "design",
+    "styleguide",
+    "style",
+    "guide"
+  ],
+  "license": "Apache-2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./lib/.bower_components",
+    "test",
+    "tests"
+  ]
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"@file-digest://app/assets/javascripts/plugins/mdl/bower.json;TTF:charsetI"
+utf-8;F:digest"%ySïöP_R„%•{Nû•Hõq“)¹ºñ•$í|€:lengthi+:dependencies_digest"%ÒÝõˆ
+yŠ.P)3Jyan«Z”¾;‚|‰×íâé™á!É:idI"Ef0e14e62f710b646d3b3a7022be219f6dbedadd6de5af1ba74ba1be1676a1fe5;F:
+mtimel+Œ)€\

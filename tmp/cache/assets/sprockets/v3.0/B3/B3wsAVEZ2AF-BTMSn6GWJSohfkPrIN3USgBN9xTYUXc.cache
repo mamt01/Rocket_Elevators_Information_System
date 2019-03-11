@@ -1,0 +1,43 @@
+{:uriI"°file://app/assets/javascripts/plugins/datatables/extensions/ColVis/Readme.txt?type=text/plain&id=e48db78eb19eb332f3a3550b2847e63a7ebf46d2cdf01efc480ddbe58c72723f:ET:load_pathI"app/assets/javascripts;T:filenameI"Kapp/assets/javascripts/plugins/datatables/extensions/ColVis/Readme.txt;T:	nameI"0plugins/datatables/extensions/ColVis/Readme;T:logical_pathI"4plugins/datatables/extensions/ColVis/Readme.txt;T:content_typeI"text/plain;T:sourceI"Î# ColVis
+
+ColVis adds a button to the toolbars around DataTables which gives the end user of the table the ability to dynamically change the visibility of the columns in the table:
+
+* Dynamically show and hide columns in a table
+* Very easy integration with DataTables
+* Ability to exclude columns from being either hidden or shown
+* Save saving integration with DataTables
+
+
+# Installation
+
+To use ColVis, first download DataTables ( http://datatables.net/download ) and place the unzipped ColVis package into a `extensions` directory in the DataTables package. This will allow the pages in the examples to operate correctly. To see the examples running, open the `examples` directory in your web-browser.
+
+
+# Basic usage
+
+ColVis is initialised using the `C` option that it adds to DataTables' `dom` option. For example:
+
+```js
+$(document).ready( function () {
+    $('#example').dataTable( {
+        "dom": 'C<"clear">lfrtip'
+    } );
+} );
+```
+
+
+# Documentation / support
+
+* Documentation: http://datatables.net/extensions/colvis/
+* DataTables support forums: http://datatables.net/forums
+
+
+# GitHub
+
+If you fancy getting involved with the development of ColVis and help make it better, please refer to its GitHub repo: https://github.com/DataTables/ColVis
+
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"4processors:type=text/plain&file_type=text/plain;TTI"Yfile-digest://app/assets/javascripts/plugins/datatables/extensions/ColVis/Readme.txt;TTF:charsetI"
+utf-8;F:digest"%é	j_!™(ﬁB•q3jW˙≠˙WœÌ=^…˝¸[my`:lengthiÎ:dependencies_digest"%ÌOfë+'r∂&´ô&¨ﬂ_v'[ƒèK∫¢‹‚H:idI"Ee48db78eb19eb332f3a3550b2847e63a7ebf46d2cdf01efc480ddbe58c72723f;F:
+mtimel+ã)Ä\

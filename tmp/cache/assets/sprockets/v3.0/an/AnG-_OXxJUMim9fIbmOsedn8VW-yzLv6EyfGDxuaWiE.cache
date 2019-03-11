@@ -1,0 +1,46 @@
+{:uriI"¥file://app/assets/javascripts/plugins/datatables/extensions/TableTools/Readme.txt?type=text/plain&id=87b983d42e3ed7b8decd762084eace2326ff1b02e09c7c8c342736275e09d88e:ET:load_pathI"app/assets/javascripts;T:filenameI"Oapp/assets/javascripts/plugins/datatables/extensions/TableTools/Readme.txt;T:	nameI"4plugins/datatables/extensions/TableTools/Readme;T:logical_pathI"8plugins/datatables/extensions/TableTools/Readme.txt;T:content_typeI"text/plain;T:sourceI"3# TableTools
+
+TableTools is a plug-in for the DataTables HTML table enhancer, which adds a highly customisable button toolbar to a DataTable. Key features include:
+
+* Copy to clipboard
+* Save table data as CSV, XLS or PDF files
+* Print view for clean printing
+* Row selection options
+* Easy use predefined buttons
+* Simple customisation of buttons
+* Well defined API for advanced control
+
+
+# Installation
+
+To use TableTools, first download DataTables ( http://datatables.net/download ) and place the unzipped TableTools package into a `extensions` directory in the DataTables package (in DataTables 1.9- use the `extras` directory). This will allow the pages in the examples to operate correctly. To see the examples running, open the `examples` directory in your web-browser.
+
+
+# Basic usage
+
+TableTools is initialised using the `T` option that it adds to DataTables' `dom` option. For example:
+
+```js
+$(document).ready( function () {
+	$('#example').DataTable( {
+		dom: 'T<"clear">lfrtip'
+	} );
+} );
+```
+
+
+# Documentation / support
+
+* Documentation: http://datatables.net/extensions/TableTools/
+* DataTables support forums: http://datatables.net/forums
+
+
+# GitHub
+
+If you fancy getting involved with the development of TableTools and help make it better, please refer to its GitHub repo: https://github.com/DataTables/TableTools
+
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"4processors:type=text/plain&file_type=text/plain;TTI"]file-digest://app/assets/javascripts/plugins/datatables/extensions/TableTools/Readme.txt;TTF:charsetI"
+utf-8;F:digest"%f½ˆq«þ+\×ÒÚh-íÒý€Ý,dvEÜÌQ²:lengthi3:dependencies_digest"%+|R‹Ï þAˆ€4é/yq•ƒ(87ë‡Ð’µqb:idI"E87b983d42e3ed7b8decd762084eace2326ff1b02e09c7c8c342736275e09d88e;F:
+mtimel+‹)€\
