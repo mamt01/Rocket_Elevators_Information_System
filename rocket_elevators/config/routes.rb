@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :elevators
+  resources :columns
+  resources :batteries
+  resources :building_details
+  resources :buildings
+  resources :customers
+  resources :addresses
+  resources :leads
   resources :quotes
   get '/gform', to: 'pages#gform'
   get '/residential', to: 'pages#residential'

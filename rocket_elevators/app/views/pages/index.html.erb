@@ -1,3 +1,5 @@
+<%= form_with(model: @lead, local: true) do |form| %>
+
 <!-- SLIDE TOP -->
 		<div id="slidetop">
 
@@ -1180,14 +1182,14 @@
 								<strong>Sorry!</strong> You need to complete all mandatory (*) fields!
 							</div><!-- /Alert Mandatory -->
 
-
+						
 							<form action="php/contact.php" method="post" enctype="multipart/form-data">
 								<fieldset>
 									<input type="hidden" name="action" value="contact_send" />
 
 									<div class="row">
 											<div class="col-md-4">
-												<label for="contact:name">Full Name *</label>
+												<%= form.label :full_name for="contact:name" %>
 												<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
 											</div>
 											<div class="col-md-4">
@@ -1383,3 +1385,5 @@
 		# 	GMAP.JS 
 		# 	http://hpneo.github.io/gmaps/
 		# -->
+
+		<% end %>
