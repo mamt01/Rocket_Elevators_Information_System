@@ -240,7 +240,6 @@ var calculResi = function(){
 /*  Function for radio-button for standard/premium/excelium-------------------------------------------------
 		calcul final price for elevators and show it
  		param : le total d'ascensors 
-
  */
 var calculPrix = function(totalAscensor){
 
@@ -290,7 +289,6 @@ var radioButton = function(){
 
 /**
 	BROWSER HASH - from php/contact.php redirect!
-
 	#alert_success 		= email sent
 	#alert_failed		= email not sent - internal server error (404 error or SMTP problem)
 	#alert_mandatory	= email not sent - required fields empty

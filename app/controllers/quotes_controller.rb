@@ -38,7 +38,6 @@ class QuotesController < ApplicationController
       @quote.number_of_basements = params[:quote][:comm_number_of_basements]
       @quote.number_of_stores = params[:quote][:comm_number_of_stores]
 
-
     elsif params[:quote][:department] == 'Corporate' 
       @quote.number_of_floors = params[:quote][:corp_number_of_floors]
       @quote.number_of_basements = params[:quote][:corp_number_of_basements]
@@ -46,14 +45,12 @@ class QuotesController < ApplicationController
       @quote.number_of_stores = params[:quote][:corp_number_of_stores]
       @quote.number_of_parking = params[:quote][:corp_number_of_parking]
 
-
     elsif params[:quote][:department] == 'Hybrid' 
       @quote.number_of_floors = params[:quote][:hyb_number_of_floors]
       @quote.number_of_basements = params[:quote][:hyb_number_of_basements]
       @quote.max_occupancy_per_floor = params[:quote][:hyb_max_occupancy_per_floor]
       @quote.number_of_stores = params[:quote][:hyb_number_of_stores]
       @quote.number_of_parking = params[:quote][:hyb_number_of_parking]
-
     end
 
     respond_to do |format|

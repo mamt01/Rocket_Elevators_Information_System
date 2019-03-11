@@ -1,6 +1,8 @@
 <%= form_with(model: @quote, local: true) do |form| %>    
     
     <!-- SLIDE TOP -->
+
+
     <div id="slidetop">
 
         <div class="container">
@@ -138,6 +140,12 @@
                                 <li><!-- CLIENTS -->
                                     <a href="index.html#clients">
                                         CLIENTS
+                                    </a>
+                                </li>
+                                <%=link_to "", '/users/sign_in', :method => :get %>
+                                <li><!-- CLIENTS -->
+                                    <a href="/users/sign_in.html">
+                                        EMPLOYEES
                                     </a>
                                 </li>
                             </ul>
@@ -416,7 +424,7 @@
                                         </span>
                                         <hr>
                                     <div class="actions"> 
-                                    <%= form.submit class: 'btn btn-primary btn-lg btn-block fs-15', :onclick => "alert('The quote was sucessfully created')" %>
+                                    <%= form.submit class: 'btn btn-primary btn-lg btn-block fs-15', :onclick => "alert('The quote was sucessfully created')"%>
                                     </div>
                                     </div>
                                 </div>
@@ -528,7 +536,7 @@
 
         </footer>
         <!-- /FOOTER -->
-
+        
     </div>
     <%=javascript_include_tag "contact" %>
     <!-- /wrapper -->
@@ -536,6 +544,8 @@
 
     <!-- SCROLL TO TOP -->
     <a href="#" id="toTop"></a>
+
+    <% end %>
 
 
     <!-- PRELOADER -->
@@ -552,6 +562,6 @@
 
 
     <!-- PAGELEVEL SCRIPTS -->
-    <script src="assets/js/contact.js"></script>
+    
 
-    <% end %>
+

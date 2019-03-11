@@ -34,32 +34,6 @@
 		<!-- wrapper -->
 		<div id="wrapper">
 
-			<!-- 
-				AVAILABLE HEADER CLASSES
-
-				Default nav height: 96px
-				.header-md 		= 70px nav height
-				.header-sm 		= 60px nav height
-
-				.b-0 		= remove bottom border (only with transparent use)
-				.transparent	= transparent header
-				.translucent	= translucent header
-				.sticky			= sticky header
-				.static			= static header
-				.dark			= dark header
-				.bottom			= header on bottom
-				
-				shadow-before-1 = shadow 1 header top
-				shadow-after-1 	= shadow 1 header bottom
-				shadow-before-2 = shadow 2 header top
-				shadow-after-2 	= shadow 2 header bottom
-				shadow-before-3 = shadow 3 header top
-				shadow-after-3 	= shadow 3 header bottom
-
-				.clearfix		= required for mobile menu, do not remove!
-
-				Example Usage:  class="clearfix sticky header-sm transparent b-0"
-			-->
 			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
 
 				<!-- TOP NAV -->
@@ -132,6 +106,12 @@
 											CLIENTS
 										</a>
 									</li>
+									  <%=link_to "", '/emp-dashboard', :method => :get %>
+                                <li><!-- CLIENTS -->
+                                    <a href="/emp-dashboard">
+                                        EMPLOYEES
+                                    </a>
+                                </li>
 								</ul>
 
 							</nav>
@@ -148,34 +128,6 @@
 			<!-- REVOLUTION SLIDER -->
 
 			<div class="slider fullwidthbanner-container roundedcorners">
-				<!--
-					Navigation Styles:
-					
-						data-navigationStyle="" theme default navigation
-						
-						data-navigationStyle="preview1"
-						data-navigationStyle="preview2"
-						data-navigationStyle="preview3"
-						data-navigationStyle="preview4"
-						
-					Bottom Shadows
-						data-shadow="1"
-						data-shadow="2"
-						data-shadow="3"
-						
-					Slider Height (do not use on fullscreen mode)
-						data-height="300"
-						data-height="350"
-						data-height="400"
-						data-height="450"
-						data-height="500"
-						data-height="550"
-						data-height="600"
-						data-height="650"
-						data-height="700"
-						data-height="750"
-						data-height="800"
-				-->
 				<div class="fullwidthbanner" data-height="600" data-shadow="0" data-navigationStyle="preview2">
 					<ul class="hide">
 					
@@ -196,7 +148,7 @@
 								data-endelementdelay="0.1"
 								data-endspeed="1000"
 								style="z-index: 2; color: black; font-size:65px; line-height:100px; font-weight:bold; letter-spacing:0; text-shadow:none;">
-									Rocket Evelators
+									Rocket Elevators
 							</div>
 
 							<div class="tp-caption content_text_center skewfromleft tp-resizeme"
@@ -368,16 +320,6 @@
 
 			<hr class="m-0" /><!-- 1px line separator -->
 
-
-			<!-- BLUE BUTTON CALLOUT 
-
-			<a href="#" class="btn btn-xlg btn-primary fs-30 fullwidth m-0 rad-0 p-40">
-					<button>Awards and Projects </button>
-					<button>Residential's services</button>
-					<button>Corporate's services</button>
-			</a>-->
-
-			<!-- /BUTTON CALLOUT -->
 			
 			<!-- Services -->
 			<section id="services">
@@ -472,7 +414,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-complexevision.html">
+												<%=link_to "", '/work1', :method => :get %>
+												<a class="ico-rounded" href="work1.html">
 														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -506,7 +449,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-hotel-pur.html">
+												<%=link_to "", '/work2', :method => :get %>
+												<a class="ico-rounded" href="work2.html">
 														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -540,7 +484,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-atlanta.html">
+												<%=link_to "", '/work3', :method => :get %>
+												<a class="ico-rounded" href="work3.html">
 														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -575,7 +520,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfoli-single-slider-residential.html">
+												<%=link_to "", '/work4', :method => :get %>
+												<a class="ico-rounded" href="work4.html">
 													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -586,7 +532,7 @@
 									</figure>
 
 									<div class="item-box-desc">
-										<h3>Commoditys Project</h3>
+										<h3>Commodity Project</h3>
 											<ul class="list-inline categories m-0">
 											<p class="portf">For Mobility Reduction</p>
 											<p class="portf">2017</p>
@@ -609,7 +555,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-popular.html">
+												<%=link_to "", '/work5', :method => :get %>
+												<a class="ico-rounded" href="work5.html">
 													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -620,7 +567,7 @@
 									</figure>
 
 									<div class="item-box-desc">
-										<h3>Peoples Choice</h3>
+										<h3>People Choice</h3>
 										<ul class="list-inline categories m-0">
 											<p class="portf">Award Of The Most Popular Project</p>
 											<p class="portf">2016</p>
@@ -643,7 +590,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-renovation.html">
+												<%=link_to "", '/work6', :method => :get %>
+												<a class="ico-rounded" href="work6.html">
 													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -677,7 +625,8 @@
 												<!-- lightbox -->
 
 												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider-dubai.html">
+												<%=link_to "", '/work7', :method => :get %>
+												<a class="ico-rounded" href="work7.html">
 													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -711,7 +660,8 @@
 												<!-- lightbox -->
 
 												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider-newyork.html">
+												<%=link_to "", '/work8', :method => :get %>
+												<a class="ico-rounded" href="work8.html">
 													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -744,7 +694,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-jd.html">
+												<%=link_to "", '/work9', :method => :get %>
+												<a class="ico-rounded" href="work9.html">
 														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -777,7 +728,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-nasa.html">
+												<%=link_to "", '/work10', :method => :get %>
+												<a class="ico-rounded" href="work10.html">
 														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -810,7 +762,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-richhouse.html">
+												<%=link_to "", '/work11', :method => :get %>
+												<a class="ico-rounded" href="work11.html">
 														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -821,7 +774,7 @@
 									</figure>
 
 									<div class="item-box-desc">
-										<h3>Celebrity Houses</h3>
+										<h3>Celebrity House</h3>
 											<ul class="list-inline categories m-0">
 												<p class="portf">Famous People Are With Us.</p>
 												<p class="portf">2011</p>
@@ -843,7 +796,8 @@
 												<!-- lightbox -->
 
 												<!-- details fonctionnel-->
-												<a class="ico-rounded" href="portfolio-single-slider-luxury.html">
+												<%=link_to "", '/work12', :method => :get %>
+												<a class="ico-rounded" href="work12.html">
 														<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
@@ -948,7 +902,7 @@
 
 
 							<h4 class="text-left mt-20"><a href="https://www.star-telegram.com/news/local/community/fort-worth/article224927245.html">Injured patients</a></h4>
-							<p class="text-left">An accident happened in hospital elevator and an employee has been seriously injured. The cause remain unknown.</p>
+							<p class="text-left">An accident happened in hospital's elevator and an employee has been seriously injured. The cause remain unknown.</p>
 							<ul class="text-left fs-12 list-inline list-separator">
 								<li>
 									<i class="fa fa-calendar"></i> 
@@ -988,7 +942,7 @@
 								<img class="img-fluid" src="https://www.tvinsider.com/wp-content/uploads/2018/07/Untitled-design-60-1014x570.jpg" alt="" style="height:150px; width:250px">
 
 							<h4 class="text-left mt-20"><a href="https://www.eonline.com/ca/news/1006280/love-triangles-in-elevators-grey-s-anatomy-stars-talk-midseason-premiere">Grey's Anantomy Intrigue</a></h4>
-							<p class="text-left">Season premiere of Greys Anatomy to air tonight. Love triangle in the elevator in the air...</p>
+							<p class="text-left">Season premiere of Grey's Anatomy to air tonight. Love's triangle in the elevator in the air...</p>
 							<ul class="text-left fs-12 list-inline list-separator">
 								<li>
 									<i class="fa fa-calendar"></i> 
@@ -1001,7 +955,7 @@
 								<img class="img-fluid" src="http://www.dmu.ac.uk/webimages/About-DMU-images/Our-campus/your-campus-transformed-img-06.jpg" alt="" style="height:150px; width:250px">
 
 							<h4 class="text-left mt-20"><a href="https://fordhamobserver.com/37407/features/whats-up-with-the-mcmahon-elevators/">Campus's Nightmare</a></h4>
-							<p class="text-left">Fordham Lincoln Center is a campus that is known, in a mostly negative way, for its elevators. Students feelings regarding elevator usage.</p>
+							<p class="text-left">Fordham Lincoln Center is a campus that is known, in a mostly negative way, for its elevators. Students’ feelings regarding elevator usage.</p>
 							<ul class="text-left fs-12 list-inline list-separator">
 								<li>
 									<i class="fa fa-calendar"></i> 
@@ -1186,16 +1140,16 @@
 
 									<div class="row">
 											<div class="col-md-4">
-												<%= form.label :full_name  %>
-												<%= form.text_field :full_name, class: 'form-control' %>
+												<label for="contact:name">Full Name *</label>
+												<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
 											</div>
 											<div class="col-md-4">
-												<%= form.label :email %>
-												<%= form.text_field :email, class: 'form-control' %>
+												<label for="contact:email">E-mail Address *</label>
+												<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
 											</div>
 											<div class="col-md-4">
-												<%= form.label :phone_number  %>
-												<%= form.text_field :phone_number, class: 'form-control' %>
+												<label for="contact:phone">Phone</label>
+												<input type="text" value="" class="form-control" name="contact[phone]" id="contact:phone">
 											</div>
 											
 											

@@ -20,6 +20,8 @@ gem 'bootstrap-sass', '~> 3.3.4'
 #
 gem 'font-awesome-sass', '~> 4.3.0'
 #
+gem 'font-awesome-rails'
+#
 gem 'jquery-ui-rails'
 #
 gem 'bootstrap-social-rails'
@@ -27,6 +29,20 @@ gem 'bootstrap-social-rails'
 gem 'jquery-rails'
 #
 gem 'owlcarousel-rails', '~> 1.1', '>= 1.1.3.3'
+#
+gem 'rails_admin'
+#
+gem 'devise'
+#
+gem 'capistrano', '~> 3.10', require: false
+#
+gem 'capistrano-rails', '~> 1.4', require: false
+#
+gem 'capistrano-bundler', '>= 1.1.0'
+#
+gem 'rvm1-capistrano3', require: false
+#
+gem 'capistrano3-puma'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
