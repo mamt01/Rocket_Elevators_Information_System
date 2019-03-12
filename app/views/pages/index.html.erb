@@ -902,7 +902,7 @@
 
 
 							<h4 class="text-left mt-20"><a href="https://www.star-telegram.com/news/local/community/fort-worth/article224927245.html">Injured patients</a></h4>
-							<p class="text-left">An accident happened in hospital's elevator and an employee has been seriously injured. The cause remain unknown.</p>
+							<p class="text-left">An accident happened in hospitals elevator and an employee has been seriously injured. The cause remain unknown.</p>
 							<ul class="text-left fs-12 list-inline list-separator">
 								<li>
 									<i class="fa fa-calendar"></i> 
@@ -941,8 +941,8 @@
 			
 								<img class="img-fluid" src="https://www.tvinsider.com/wp-content/uploads/2018/07/Untitled-design-60-1014x570.jpg" alt="" style="height:150px; width:250px">
 
-							<h4 class="text-left mt-20"><a href="https://www.eonline.com/ca/news/1006280/love-triangles-in-elevators-grey-s-anatomy-stars-talk-midseason-premiere">Grey's Anantomy Intrigue</a></h4>
-							<p class="text-left">Season premiere of Grey's Anatomy to air tonight. Love's triangle in the elevator in the air...</p>
+							<h4 class="text-left mt-20"><a href="https://www.eonline.com/ca/news/1006280/love-triangles-in-elevators-grey-s-anatomy-stars-talk-midseason-premiere">Greys Anantomy Intrigue</a></h4>
+							<p class="text-left">Season premiere of Greys Anatomy to air tonight. Love triangle in the elevator in the air...</p>
 							<ul class="text-left fs-12 list-inline list-separator">
 								<li>
 									<i class="fa fa-calendar"></i> 
@@ -954,8 +954,8 @@
 
 								<img class="img-fluid" src="http://www.dmu.ac.uk/webimages/About-DMU-images/Our-campus/your-campus-transformed-img-06.jpg" alt="" style="height:150px; width:250px">
 
-							<h4 class="text-left mt-20"><a href="https://fordhamobserver.com/37407/features/whats-up-with-the-mcmahon-elevators/">Campus's Nightmare</a></h4>
-							<p class="text-left">Fordham Lincoln Center is a campus that is known, in a mostly negative way, for its elevators. Students’ feelings regarding elevator usage.</p>
+							<h4 class="text-left mt-20"><a href="https://fordhamobserver.com/37407/features/whats-up-with-the-mcmahon-elevators/">Campus Nightmare</a></h4>
+							<p class="text-left">Fordham Lincoln Center is a campus that is known, in a mostly negative way, for its elevators. Students feelings regarding elevator usage.</p>
 							<ul class="text-left fs-12 list-inline list-separator">
 								<li>
 									<i class="fa fa-calendar"></i> 
@@ -1140,16 +1140,16 @@
 
 									<div class="row">
 											<div class="col-md-4">
-												<label for="contact:name">Full Name *</label>
-												<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
+												<%= form.label :full_name %>
+												<%= form.text_field :full_name, class: 'form-control' %>
 											</div>
 											<div class="col-md-4">
-												<label for="contact:email">E-mail Address *</label>
-												<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
+												<%= form.label :email %>
+												<%= form.text_field :email, class: 'form-control' %>
 											</div>
 											<div class="col-md-4">
-												<label for="contact:phone">Phone</label>
-												<input type="text" value="" class="form-control" name="contact[phone]" id="contact:phone">
+												<%= form.label :phone_number %>
+												<%= form.text_field :phone_number, class: 'form-control' %>	
 											</div>
 											
 											
