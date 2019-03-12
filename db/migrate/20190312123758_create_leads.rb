@@ -1,6 +1,7 @@
 class CreateLeads < ActiveRecord::Migration[5.2]
   def change
     create_table :leads do |t|
+      t.references :customer, foreign_key: {on_delete: :cascade, on_update: :cascade}
       t.string :full_name
       t.string :company_name
       t.string :email
