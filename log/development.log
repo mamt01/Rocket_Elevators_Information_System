@@ -50237,3 +50237,460 @@ Processing by RailsAdmin::MainController#index as HTML
 Completed 200 OK in 147ms (Views: 133.8ms | ActiveRecord: 1.9ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-03-12 16:22:08 -0400
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (158.6ms)
+Completed 200 OK in 55475ms (Views: 55374.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-12 16:23:06 -0400
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `batteries`[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `buildings`[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `building_details`[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `columns`[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `elevators`[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mLead Load (0.4ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `quotes`[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuote Load (0.1ms)[0m  [1m[34mSELECT  `quotes`.* FROM `quotes` ORDER BY `quotes`.`id` DESC LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (34.3ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.6ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (14.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (10.1ms)
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (6.8ms)
+Completed 200 OK in 3575ms (Views: 970.1ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/emp-dashboard/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-03-12 16:24:36 -0400
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY users.id desc LIMIT 20 OFFSET 0[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (49.0ms)
+Completed 200 OK in 82ms (Views: 75.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/emp-dashboard/user/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-03-12 16:25:08 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (3.5ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (31.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_datetime.html.haml (2.5ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_submit_buttons.html.haml (8.0ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (126.0ms)
+Completed 200 OK in 185ms (Views: 165.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/emp-dashboard/user/new" for 127.0.0.1 at 2019-03-12 16:25:33 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xJKakjmm612qUbU0DJeOBD5rKAuMQEGB4/gVb86tDoz59WM9JrdU9f9keUSiYVVZDLKC9J0w1vQ9pXwN5vyDmQ==", "user"=>{"first_name"=>"Nadya", "last_name"=>"Fortier", "title"=>"Director", "email"=>"nadya.fortier@codeboxx.biz", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "reset_password_sent_at"=>"[FILTERED]"}, "return_to"=>"http://localhost:3000/emp-dashboard/user", "_save"=>"", "model_name"=>"user"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nadya.fortier@codeboxx.biz' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`first_name`, `last_name`, `title`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('Nadya', 'Fortier', 'Director', 'nadya.fortier@codeboxx.biz', '$2a$11$6PwN6q5cN2CuEg6ULlNH1egxKOpYQ5sknxuwBV4CeLOJn1k37X8mm', '2019-03-12 20:25:33', '2019-03-12 20:25:33')[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (27.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/emp-dashboard/user
+Completed 302 Found in 235ms (ActiveRecord: 28.7ms)
+
+
+Started GET "/emp-dashboard/user" for 127.0.0.1 at 2019-03-12 16:25:33 -0400
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY users.id desc LIMIT 20 OFFSET 0[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (57.6ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.5ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (10.7ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.6ms)
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (3.9ms)
+Completed 200 OK in 228ms (Views: 219.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/emp-dashboard/user/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-03-12 16:25:34 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (1.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_datetime.html.haml (2.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_submit_buttons.html.haml (4.0ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (53.1ms)
+Completed 200 OK in 83ms (Views: 74.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/emp-dashboard/user/new" for 127.0.0.1 at 2019-03-12 16:25:52 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2qy/WlwYowLdd1aeS4EwHRzV9mPX5bOFzDtC/KSVoObny0b1QwkcqohCmu7ld+tALgxcnMaVJPASZiuejMQt8w==", "user"=>{"first_name"=>"Serge", "last_name"=>"Savoie", "title"=>"Engineer", "email"=>"serge.savoie@codeboxx.biz", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "reset_password_sent_at"=>"[FILTERED]"}, "return_to"=>"http://localhost:3000/emp-dashboard/user", "_save"=>"", "model_name"=>"user"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (101.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'serge.savoie@codeboxx.biz' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO `users` (`first_name`, `last_name`, `title`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('Serge', 'Savoie', 'Engineer', 'serge.savoie@codeboxx.biz', '$2a$11$PxIoOAzxyeHQVEfM8AqXAOxaM2QW8FWUTyHcdqAl6PHLtbujiG04m', '2019-03-12 20:25:53', '2019-03-12 20:25:53')[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (17.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/emp-dashboard/user
+Completed 302 Found in 251ms (ActiveRecord: 120.8ms)
+
+
+Started GET "/emp-dashboard/user" for 127.0.0.1 at 2019-03-12 16:25:53 -0400
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY users.id desc LIMIT 20 OFFSET 0[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (36.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (9.8ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.4ms)
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (3.7ms)
+Completed 200 OK in 246ms (Views: 229.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/emp-dashboard/user/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-03-12 16:25:55 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (2.7ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_datetime.html.haml (1.6ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_submit_buttons.html.haml (3.9ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (51.1ms)
+Completed 200 OK in 71ms (Views: 64.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/emp-dashboard/user/new" for 127.0.0.1 at 2019-03-12 16:26:36 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b7YrCpZE8SPN2t7BC73dKxNcDWvu4t3JGL+MZFw+ie9S0dKliVVOi5jvErGlSwZ2IYWnlP+SSrzG4uUGdG8E+g==", "user"=>{"first_name"=>"Remi", "last_name"=>"Gagnon", "title"=>"Engineer", "email"=>"remi.gagnon@codeboxx.biz", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "reset_password_sent_at"=>"[FILTERED]"}, "return_to"=>"http://localhost:3000/emp-dashboard/user", "_save"=>"", "model_name"=>"user"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'remi.gagnon@codeboxx.biz' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`first_name`, `last_name`, `title`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('Remi', 'Gagnon', 'Engineer', 'remi.gagnon@codeboxx.biz', '$2a$11$/pIgoKIMcHNShNnXdg2qcOyfiTogDB.TgmcG.0UBuipU1DPIPl1gm', '2019-03-12 20:26:36', '2019-03-12 20:26:36')[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (11.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/emp-dashboard/user
+Completed 302 Found in 162ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/emp-dashboard/user" for 127.0.0.1 at 2019-03-12 16:26:36 -0400
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY users.id desc LIMIT 20 OFFSET 0[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (35.0ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.5ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (10.6ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.8ms)
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (4.3ms)
+Completed 200 OK in 213ms (Views: 202.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/emp-dashboard/user/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-03-12 16:26:40 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (2.0ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.7ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_datetime.html.haml (1.5ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_submit_buttons.html.haml (19.5ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (65.2ms)
+Completed 200 OK in 92ms (Views: 82.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/emp-dashboard/user/new" for 127.0.0.1 at 2019-03-12 16:27:06 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BaiA1XbMmyeWFjO6MlMuocMoJQgefuNJ5R+awPFSo4g4z3l6ad0kj8Mj/8qcpfX88fGP9w8OdDw7QvOi2QMunQ==", "user"=>{"first_name"=>"Mathieu", "last_name"=>"Houde", "title"=>"Engineer", "email"=>"mathieu.houde@codeboxx.biz", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "reset_password_sent_at"=>"[FILTERED]"}, "return_to"=>"http://localhost:3000/emp-dashboard/user", "_save"=>"", "model_name"=>"user"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'mathieu.houde@codeboxx.biz' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`first_name`, `last_name`, `title`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('Mathieu', 'Houde', 'Engineer', 'mathieu.houde@codeboxx.biz', '$2a$11$4Tx/rKb/guVTMCkrBnpeGeWoGrHMX7OISuNMFnJF8sAj56VrR48Aa', '2019-03-12 20:27:07', '2019-03-12 20:27:07')[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (241.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/emp-dashboard/user
+Completed 302 Found in 404ms (ActiveRecord: 243.1ms)
+
+
+Started GET "/emp-dashboard/user" for 127.0.0.1 at 2019-03-12 16:27:07 -0400
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY users.id desc LIMIT 20 OFFSET 0[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (46.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (9.5ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.4ms)
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (3.4ms)
+Completed 200 OK in 243ms (Views: 219.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/emp-dashboard/user/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-03-12 16:27:10 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (3.0ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_datetime.html.haml (1.5ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_submit_buttons.html.haml (3.8ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (49.9ms)
+Completed 200 OK in 74ms (Views: 63.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/emp-dashboard/user/new" for 127.0.0.1 at 2019-03-12 16:27:33 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZJite5Z8o+Rh91sz9oGTMv2ZMm2vQrlCdGA24uL5qYdZ/1TUiW0cTDTCl0NYd0hvz0CYkr4yLjeqPV+Ayqgkkg==", "user"=>{"first_name"=>"Mathieu", "last_name"=>"LeFrancois", "title"=>"Engineer", "email"=>"mathieu.lefrancois@codeboxx.biz", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "reset_password_sent_at"=>"[FILTERED]"}, "return_to"=>"http://localhost:3000/emp-dashboard/user", "_save"=>"", "model_name"=>"user"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'mathieu.lefrancois@codeboxx.biz' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`first_name`, `last_name`, `title`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('Mathieu', 'LeFrancois', 'Engineer', 'mathieu.lefrancois@codeboxx.biz', '$2a$11$K9euLa1k2bFHY5e3vyE4ceZMuCuXmo0Ei54OaLg6.Er52bXIH3oMu', '2019-03-12 20:27:33', '2019-03-12 20:27:33')[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (20.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/emp-dashboard/user
+Completed 302 Found in 164ms (ActiveRecord: 21.7ms)
+
+
+Started GET "/emp-dashboard/user" for 127.0.0.1 at 2019-03-12 16:27:33 -0400
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY users.id desc LIMIT 20 OFFSET 0[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (36.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.3ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (9.9ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.3ms)
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (3.7ms)
+Completed 200 OK in 211ms (Views: 204.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/emp-dashboard/user/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-03-12 16:27:38 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.9ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_datetime.html.haml (1.7ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_submit_buttons.html.haml (3.8ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (47.6ms)
+Completed 200 OK in 75ms (Views: 65.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/emp-dashboard/user/new" for 127.0.0.1 at 2019-03-12 16:28:09 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OtUCjQjzG+LM59epzqVvirMW/jx8eKUvRLsfx6YyshwHsvsiF+KkSpnSG9lgU7TXgc9Uw20IMlqa5naljmM/CQ==", "user"=>{"first_name"=>"Felix-Antoine", "last_name"=>"Paradis", "title"=>"Engineer", "email"=>"felix-antoine.paradis@codeboxx.biz", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "reset_password_sent_at"=>"[FILTERED]"}, "return_to"=>"http://localhost:3000/emp-dashboard/user", "_save"=>"", "model_name"=>"user"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'felix-antoine.paradis@codeboxx.biz' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`first_name`, `last_name`, `title`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('Felix-Antoine', 'Paradis', 'Engineer', 'felix-antoine.paradis@codeboxx.biz', '$2a$11$EZ.pOQCkRByAuhKND5c5neDOVS6QJX94Cj6r5GrbFc5bJS0qDE5Ku', '2019-03-12 20:28:09', '2019-03-12 20:28:09')[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (9.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/emp-dashboard/user
+Completed 302 Found in 161ms (ActiveRecord: 10.6ms)
+
+
+Started GET "/emp-dashboard/user" for 127.0.0.1 at 2019-03-12 16:28:09 -0400
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY users.id desc LIMIT 20 OFFSET 0[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (53.5ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.4ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (10.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (4.4ms)
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (3.6ms)
+Completed 200 OK in 235ms (Views: 228.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/emp-dashboard/user/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-03-12 16:28:11 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (1.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_datetime.html.haml (1.5ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_submit_buttons.html.haml (3.6ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (47.5ms)
+Completed 200 OK in 80ms (Views: 64.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/emp-dashboard/user/new" for 127.0.0.1 at 2019-03-12 16:28:41 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3QYmscyB1F1SJkGEMzFQ6IT1qgmuzfWx08gt1i97vzfgYd8e05Br9QcTjfSdx4u1tiwA9r+9YsQNlUS0ByoyIg==", "user"=>{"first_name"=>"Raphaël", "last_name"=>"Vallée", "title"=>"Developer", "email"=>"raphael.vallee28@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "reset_password_sent_at"=>"[FILTERED]"}, "return_to"=>"http://localhost:3000/emp-dashboard/user", "_save"=>"", "model_name"=>"user"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'raphael.vallee28@gmail.com' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`first_name`, `last_name`, `title`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('Raphaël', 'Vallée', 'Developer', 'raphael.vallee28@gmail.com', '$2a$11$QACD4TKmvhwlBRQsGXyZDebQHRHJYyG8NzUtQxQfkYcTr4YnrEkQ6', '2019-03-12 20:28:41', '2019-03-12 20:28:41')[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (405.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/emp-dashboard/user
+Completed 302 Found in 560ms (ActiveRecord: 407.2ms)
+
+
+Started GET "/emp-dashboard/user" for 127.0.0.1 at 2019-03-12 16:28:41 -0400
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY users.id desc LIMIT 20 OFFSET 0[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (162.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.7ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (10.9ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.8ms)
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (5.6ms)
+Completed 200 OK in 354ms (Views: 340.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/emp-dashboard/user/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-03-12 16:29:08 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (1.0ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_datetime.html.haml (1.6ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_submit_buttons.html.haml (3.9ms)
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (52.8ms)
+Completed 200 OK in 107ms (Views: 86.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/emp-dashboard/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-03-12 16:29:25 -0400
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY users.id desc LIMIT 20 OFFSET 0[0m
+  ↳ /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /root/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (34.5ms)
+Completed 200 OK in 52ms (Views: 46.2ms | ActiveRecord: 0.7ms)
+
+
