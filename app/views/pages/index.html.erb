@@ -902,7 +902,7 @@
 
 
 							<h4 class="text-left mt-20"><a href="https://www.star-telegram.com/news/local/community/fort-worth/article224927245.html">Injured patients</a></h4>
-							<p class="text-left">An accident happened in hospital's elevator and an employee has been seriously injured. The cause remain unknown.</p>
+							<p class="text-left">An accident happened in hospitals elevator and an employee has been seriously injured. The cause remain unknown.</p>
 							<ul class="text-left fs-12 list-inline list-separator">
 								<li>
 									<i class="fa fa-calendar"></i> 
@@ -941,8 +941,8 @@
 			
 								<img class="img-fluid" src="https://www.tvinsider.com/wp-content/uploads/2018/07/Untitled-design-60-1014x570.jpg" alt="" style="height:150px; width:250px">
 
-							<h4 class="text-left mt-20"><a href="https://www.eonline.com/ca/news/1006280/love-triangles-in-elevators-grey-s-anatomy-stars-talk-midseason-premiere">Grey's Anantomy Intrigue</a></h4>
-							<p class="text-left">Season premiere of Grey's Anatomy to air tonight. Love's triangle in the elevator in the air...</p>
+							<h4 class="text-left mt-20"><a href="https://www.eonline.com/ca/news/1006280/love-triangles-in-elevators-grey-s-anatomy-stars-talk-midseason-premiere">Greys Anantomy Intrigue</a></h4>
+							<p class="text-left">Season premiere of Greys Anatomy to air tonight. Love triangle in the elevator in the air...</p>
 							<ul class="text-left fs-12 list-inline list-separator">
 								<li>
 									<i class="fa fa-calendar"></i> 
@@ -954,8 +954,8 @@
 
 								<img class="img-fluid" src="http://www.dmu.ac.uk/webimages/About-DMU-images/Our-campus/your-campus-transformed-img-06.jpg" alt="" style="height:150px; width:250px">
 
-							<h4 class="text-left mt-20"><a href="https://fordhamobserver.com/37407/features/whats-up-with-the-mcmahon-elevators/">Campus's Nightmare</a></h4>
-							<p class="text-left">Fordham Lincoln Center is a campus that is known, in a mostly negative way, for its elevators. Students’ feelings regarding elevator usage.</p>
+							<h4 class="text-left mt-20"><a href="https://fordhamobserver.com/37407/features/whats-up-with-the-mcmahon-elevators/">Campus Nightmare</a></h4>
+							<p class="text-left">Fordham Lincoln Center is a campus that is known, in a mostly negative way, for its elevators. Students feelings regarding elevator usage.</p>
 							<ul class="text-left fs-12 list-inline list-separator">
 								<li>
 									<i class="fa fa-calendar"></i> 
@@ -1134,65 +1134,60 @@
 								<strong>Sorry!</strong> You need to complete all mandatory (*) fields!
 							</div><!-- /Alert Mandatory -->
 
-
-							<form action="php/contact.php" method="post" enctype="multipart/form-data">
+							<%= form_with(model: @lead, local: true) do |form| %>	
 								<fieldset>
 									<input type="hidden" name="action" value="contact_send" />
 
 									<div class="row">
 											<div class="col-md-4">
-												<label for="contact:name">Full Name *</label>
-												<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
+												<%= form.label :full_name %>
+												<%= form.text_field :full_name, class: 'form-control' %>
 											</div>
 											<div class="col-md-4">
-												<label for="contact:email">E-mail Address *</label>
-												<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
+												<%= form.label :email %>
+												<%= form.text_field :email, class: 'form-control' %>
 											</div>
 											<div class="col-md-4">
-												<label for="contact:phone">Phone</label>
-												<input type="text" value="" class="form-control" name="contact[phone]" id="contact:phone">
+												<%= form.label :phone_number %>
+												<%= form.text_field :phone_number, class: 'form-control' %>	
 											</div>
 											
 											
 									</div>
 									<div class="row">
 									<div class="col-md-8">
-											<label for="contact:subject">Subject *</label>
-											<input required type="text" value="" class="form-control" name="contact[subject][required]" id="contact:subject">
+											<%= form.label :project_name %>
+											<%= form.text_field :project_name, class: 'form-control' %>
 										</div>
 										</div>
 									<div class="row">
 
 											<div class="col-md-4">
-													<label for=contact:company>Company's name</label>
-													<input type="text" value="" class="form-control" name="contact[phone]" id="contact:company">
+													<%= form.label :company_name  %>
+													<%= form.text_field :company_name, class: 'form-control' %>
 												</div>
 
 											<div class="col-md-4">
-												<label for="contact_department">Department</label>
-												<select class="form-control pointer" name="contact[department]">
-													<option value="">--- Select ---</option>
-													<option value="Marketing">Marketing</option>
-													<option value="Webdesign">Webdesign</option>
-													<option value="Architecture">Architecture</option>
-													<option value="Construction">Construction</option>
-													<option value="Finance">Finance</option>
-												</select>
+												<%= form.label :department_in_charge %>
+												<%= form.select :department_in_charge, [['-', '-'], ['Marketing','Marketing'], ['Webdesign','Webdesign'], ['Architecture','Architecture'], ['Construction','Construction']] %>	
 											</div>
 									</div>
 									<div class="row">
 											<div class="col-md-12">
-												<label for="contact:message">Message *</label>
-												<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message]" id="contact:message"></textarea>
+												<%= form.label :project_description %>
+												<%= form.text_area :project_description, class: 'form-control', rows: '6' %>
 											</div>
 									</div>
 									<div class="row">
+										<div class="col-md-12">
+											<%= form.label :message %>
+											<%= form.text_area :message, class: 'form-control', rows: '6' %>
+										</div>
+									</div>
+									<div class="row">
 											<div class="col-md-12">
-												<label for="contact:attachment">File Attachment</label>
-
-												<!-- custom file upload -->
-												<input class="custom-file-upload" type="file" id="file" name="contact[attachment]" id="contact:attachment" data-btn-text="Select a File" />
-		
+											<%= form.label :attachment %>
+											<%= form.file_field :attachment, class: 'custom-file-upload'%>
 
 											</div>
 									</div>
@@ -1201,11 +1196,10 @@
 
 								<div class="row">
 									<div class="col-md-12">
-										<button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> SEND MESSAGE</button>
+									<%= form.submit class: 'btn btn-primary', value: 'Send Message', :onclick => "alert('The demand was sucessfully sent')" %>	
 									</div>
 								</div>
-							</form>
-
+							<% end %>
 						</div>
 						<!-- /FORM -->
 
