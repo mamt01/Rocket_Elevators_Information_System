@@ -51669,3 +51669,407 @@ Migrating to ChangeBodyTypeInBuildingDetails (20190312143359)
   [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
   ↳ /Users/apple/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
 >>>>>>> 0277ea4039f31b446c77959db25c1622c7614fc5
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT GET_LOCK('3829273841036322840', 0)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateAddresses (20190311224130)
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE `addresses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `address_type` varchar(255) NOT NULL, `status` varchar(255), `entity` varchar(255) NOT NULL, `number_street` varchar(255) NOT NULL, `apt_number` varchar(255), `city` varchar(255) NOT NULL, `postal_code` varchar(255) NOT NULL, `country` varchar(255) NOT NULL, `notes` text)[0m
+  ↳ db/migrate/20190311224130_create_addresses.rb:3
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('3829273841036322840')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (383.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `rocket_elevators_development`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (3.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS `rocket_elevators_test`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (19.0ms)[0m  [1m[35mCREATE DATABASE `rocket_elevators_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE DATABASE `rocket_elevators_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (70.3ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (57.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('3829273841036322840', 0)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateQuotes (20190306201513)
+  [1m[35m (57.4ms)[0m  [1m[35mCREATE TABLE `quotes` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `department` varchar(255), `full_name` varchar(255), `company_name` varchar(255), `email` varchar(255), `phone_number` varchar(255), `number_of_apartments` int, `number_of_floors` int, `number_of_basements` int, `number_of_parking` int, `number_of_stores` int, `max_occupancy_per_floor` int, `hours_of_activity` int, `service_level` varchar(255), `number_of_elevators` int, `installation_cost` int, `total_cost` float(24), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190306201513_create_quotes.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190306201513')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to DeviseCreateUsers (20190307181722)
+  [1m[35m (68.8ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `title` varchar(255), `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190307181722_devise_create_users.rb:5
+  [1m[35m (59.8ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  ↳ db/migrate/20190307181722_devise_create_users.rb:42
+  [1m[35m (51.4ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  ↳ db/migrate/20190307181722_devise_create_users.rb:43
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190307181722')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (13.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to AddResetPasswordSentAtToUsers (20190308195207)
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE `users` ADD `reset_password_sent_at` varchar(255)[0m
+  ↳ db/migrate/20190308195207_add_reset_password_sent_at_to_users.rb:3
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('3829273841036322840')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('3829273841036322840', 0)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateAddresses (20190311224130)
+  [1m[35m (82.9ms)[0m  [1m[35mCREATE TABLE `addresses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `address_type` varchar(255) NOT NULL, `status` varchar(255), `entity` varchar(255) NOT NULL, `number_street` varchar(255) NOT NULL, `apt_number` varchar(255), `city` varchar(255) NOT NULL, `postal_code` varchar(255) NOT NULL, `country` varchar(255) NOT NULL, `notes` text)[0m
+  ↳ db/migrate/20190311224130_create_addresses.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190311224130')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateCustomers (20190312123044)
+  [1m[35m (114.1ms)[0m  [1m[35mCREATE TABLE `customers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `address_id` bigint NOT NULL, `user_id` bigint NOT NULL, `date_of_creation` date, `company_name` varchar(255) NOT NULL, `company_hq_adress` varchar(255) NOT NULL, `full_name_contact_person` varchar(255), `phone_number_contact_person` varchar(255), `email_contact_person` varchar(255), `company_description` text, `full_name_service_person` varchar(255), `phone_number_service_person` varchar(255), `email_service_person` varchar(255),  INDEX `index_customers_on_address_id`  (`address_id`),  INDEX `index_customers_on_user_id`  (`user_id`), CONSTRAINT `fk_rails_3f9404ba26`
+FOREIGN KEY (`address_id`)
+  REFERENCES `addresses` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE, CONSTRAINT `fk_rails_9917eeaf5d`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312123044_create_customers.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312123044')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (13.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateLeads (20190312123758)
+  [1m[35m (76.8ms)[0m  [1m[35mCREATE TABLE `leads` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `customer_id` bigint, `full_name` varchar(255), `company_name` varchar(255), `email` varchar(255), `phone_number` varchar(255), `project_name` varchar(255), `project_description` text, `department_in_charge` varchar(255), `message` text, `attachment` blob, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_leads_on_customer_id`  (`customer_id`), CONSTRAINT `fk_rails_da25e077a0`
+FOREIGN KEY (`customer_id`)
+  REFERENCES `customers` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312123758_create_leads.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312123758')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateBuildings (20190312131340)
+  [1m[35m (92.5ms)[0m  [1m[35mCREATE TABLE `buildings` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `address_id` bigint NOT NULL, `customer_id` bigint NOT NULL, `building_address` varchar(255) NOT NULL, `full_name_admin_person` varchar(255), `email_admin_person` varchar(255), `phone_number_admin_person` varchar(255), `full_name_tech_person` varchar(255), `email_tech_person` varchar(255), `phone_number_tech_person` varchar(255),  INDEX `index_buildings_on_address_id`  (`address_id`),  INDEX `index_buildings_on_customer_id`  (`customer_id`), CONSTRAINT `fk_rails_6dc7a885ab`
+FOREIGN KEY (`address_id`)
+  REFERENCES `addresses` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE, CONSTRAINT `fk_rails_c29cbe7fb8`
+FOREIGN KEY (`customer_id`)
+  REFERENCES `customers` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312131340_create_buildings.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312131340')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateBuildingDetails (20190312133528)
+  [1m[35m (84.3ms)[0m  [1m[35mCREATE TABLE `building_details` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `building_id` bigint NOT NULL, `info_key` varchar(255), `value` varchar(255),  INDEX `index_building_details_on_building_id`  (`building_id`), CONSTRAINT `fk_rails_51749f8eac`
+FOREIGN KEY (`building_id`)
+  REFERENCES `buildings` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312133528_create_building_details.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312133528')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateBatteries (20190312134749)
+  [1m[35m (92.5ms)[0m  [1m[35mCREATE TABLE `batteries` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `building_id` bigint NOT NULL, `user_id` bigint, `building_type` varchar(255) NOT NULL, `status` varchar(255), `date_of_instal` date, `date_of_inspect` date, `inspect_certificate` int, `information` text, `notes` text,  INDEX `index_batteries_on_building_id`  (`building_id`),  INDEX `index_batteries_on_user_id`  (`user_id`), CONSTRAINT `fk_rails_fc40470545`
+FOREIGN KEY (`building_id`)
+  REFERENCES `buildings` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE, CONSTRAINT `fk_rails_8b1b9d5a4c`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312134749_create_batteries.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312134749')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (8.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateColumns (20190312135120)
+  [1m[35m (73.9ms)[0m  [1m[35mCREATE TABLE `columns` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `battery_id` bigint NOT NULL, `building_type` varchar(255) NOT NULL, `number_of_floors` int NOT NULL, `status` varchar(255), `information` text, `notes` text,  INDEX `index_columns_on_battery_id`  (`battery_id`), CONSTRAINT `fk_rails_021eb14ac4`
+FOREIGN KEY (`battery_id`)
+  REFERENCES `batteries` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312135120_create_columns.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312135120')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateElevators (20190312135450)
+  [1m[35m (59.8ms)[0m  [1m[35mCREATE TABLE `elevators` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `column_id` bigint NOT NULL, `serial_number` int NOT NULL, `model_type` varchar(255) NOT NULL, `building_type` varchar(255) NOT NULL, `status` varchar(255), `date_of_instal` date, `date_of_inspect` date, `inspect_certificate` varchar(255), `information` text, `notes` text,  INDEX `index_elevators_on_column_id`  (`column_id`), CONSTRAINT `fk_rails_69442d7bc2`
+FOREIGN KEY (`column_id`)
+  REFERENCES `columns` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312135450_create_elevators.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312135450')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to ChangeBodyTypeInBuildingDetails (20190312143359)
+  [1m[35m (11.9ms)[0m  [1m[35mALTER TABLE `building_details` CHANGE `info_key` `info_key` varchar(255) DEFAULT NULL[0m
+  ↳ db/migrate/20190312143359_change_body_type_in_building_details.rb:3
+  [1m[35m (11.1ms)[0m  [1m[35mALTER TABLE `building_details` CHANGE `value` `value` varchar(255) DEFAULT NULL[0m
+  ↳ db/migrate/20190312143359_change_body_type_in_building_details.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312143359')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-03-12 15:08:37', '2019-03-12 15:08:37')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('3829273841036322840')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE `rocket_elevators_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `rocket_elevators_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (361.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `rocket_elevators_development`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (2.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS `rocket_elevators_test`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE DATABASE `rocket_elevators_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE DATABASE `rocket_elevators_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (66.1ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (61.8ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('3829273841036322840', 0)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateQuotes (20190306201513)
+  [1m[35m (56.6ms)[0m  [1m[35mCREATE TABLE `quotes` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `department` varchar(255), `full_name` varchar(255), `company_name` varchar(255), `email` varchar(255), `phone_number` varchar(255), `number_of_apartments` int, `number_of_floors` int, `number_of_basements` int, `number_of_parking` int, `number_of_stores` int, `max_occupancy_per_floor` int, `hours_of_activity` int, `service_level` varchar(255), `number_of_elevators` int, `installation_cost` int, `total_cost` float(24), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190306201513_create_quotes.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190306201513')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to DeviseCreateUsers (20190307181722)
+  [1m[35m (67.6ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `title` varchar(255), `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190307181722_devise_create_users.rb:5
+  [1m[35m (57.6ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  ↳ db/migrate/20190307181722_devise_create_users.rb:42
+  [1m[35m (57.0ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  ↳ db/migrate/20190307181722_devise_create_users.rb:43
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190307181722')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (15.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateAddresses (20190311224130)
+  [1m[35m (76.5ms)[0m  [1m[35mCREATE TABLE `addresses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `address_type` varchar(255) NOT NULL, `status` varchar(255), `entity` varchar(255) NOT NULL, `number_street` varchar(255) NOT NULL, `apt_number` varchar(255), `city` varchar(255) NOT NULL, `postal_code` varchar(255) NOT NULL, `country` varchar(255) NOT NULL, `notes` text)[0m
+  ↳ db/migrate/20190311224130_create_addresses.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190311224130')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateCustomers (20190312123044)
+  [1m[35m (71.9ms)[0m  [1m[35mCREATE TABLE `customers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `address_id` bigint NOT NULL, `user_id` bigint NOT NULL, `date_of_creation` date, `company_name` varchar(255) NOT NULL, `company_hq_adress` varchar(255) NOT NULL, `full_name_contact_person` varchar(255), `phone_number_contact_person` varchar(255), `email_contact_person` varchar(255), `company_description` text, `full_name_service_person` varchar(255), `phone_number_service_person` varchar(255), `email_service_person` varchar(255),  INDEX `index_customers_on_address_id`  (`address_id`),  INDEX `index_customers_on_user_id`  (`user_id`), CONSTRAINT `fk_rails_3f9404ba26`
+FOREIGN KEY (`address_id`)
+  REFERENCES `addresses` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE, CONSTRAINT `fk_rails_9917eeaf5d`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312123044_create_customers.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312123044')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateLeads (20190312123758)
+  [1m[35m (79.0ms)[0m  [1m[35mCREATE TABLE `leads` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `customer_id` bigint, `full_name` varchar(255), `company_name` varchar(255), `email` varchar(255), `phone_number` varchar(255), `project_name` varchar(255), `project_description` text, `department_in_charge` varchar(255), `message` text, `attachment` blob, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_leads_on_customer_id`  (`customer_id`), CONSTRAINT `fk_rails_da25e077a0`
+FOREIGN KEY (`customer_id`)
+  REFERENCES `customers` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312123758_create_leads.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312123758')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateBuildings (20190312131340)
+  [1m[35m (93.0ms)[0m  [1m[35mCREATE TABLE `buildings` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `address_id` bigint NOT NULL, `customer_id` bigint NOT NULL, `building_address` varchar(255) NOT NULL, `full_name_admin_person` varchar(255), `email_admin_person` varchar(255), `phone_number_admin_person` varchar(255), `full_name_tech_person` varchar(255), `email_tech_person` varchar(255), `phone_number_tech_person` varchar(255),  INDEX `index_buildings_on_address_id`  (`address_id`),  INDEX `index_buildings_on_customer_id`  (`customer_id`), CONSTRAINT `fk_rails_6dc7a885ab`
+FOREIGN KEY (`address_id`)
+  REFERENCES `addresses` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE, CONSTRAINT `fk_rails_c29cbe7fb8`
+FOREIGN KEY (`customer_id`)
+  REFERENCES `customers` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312131340_create_buildings.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312131340')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateBuildingDetails (20190312133528)
+  [1m[35m (89.7ms)[0m  [1m[35mCREATE TABLE `building_details` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `building_id` bigint NOT NULL, `info_key` varchar(255), `value` varchar(255),  INDEX `index_building_details_on_building_id`  (`building_id`), CONSTRAINT `fk_rails_51749f8eac`
+FOREIGN KEY (`building_id`)
+  REFERENCES `buildings` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312133528_create_building_details.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312133528')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateBatteries (20190312134749)
+  [1m[35m (102.9ms)[0m  [1m[35mCREATE TABLE `batteries` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `building_id` bigint NOT NULL, `user_id` bigint, `building_type` varchar(255) NOT NULL, `status` varchar(255), `date_of_instal` date, `date_of_inspect` date, `inspect_certificate` int, `information` text, `notes` text,  INDEX `index_batteries_on_building_id`  (`building_id`),  INDEX `index_batteries_on_user_id`  (`user_id`), CONSTRAINT `fk_rails_fc40470545`
+FOREIGN KEY (`building_id`)
+  REFERENCES `buildings` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE, CONSTRAINT `fk_rails_8b1b9d5a4c`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312134749_create_batteries.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312134749')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (7.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateColumns (20190312135120)
+  [1m[35m (81.0ms)[0m  [1m[35mCREATE TABLE `columns` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `battery_id` bigint NOT NULL, `building_type` varchar(255) NOT NULL, `number_of_floors` int NOT NULL, `status` varchar(255), `information` text, `notes` text,  INDEX `index_columns_on_battery_id`  (`battery_id`), CONSTRAINT `fk_rails_021eb14ac4`
+FOREIGN KEY (`battery_id`)
+  REFERENCES `batteries` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312135120_create_columns.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312135120')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateElevators (20190312135450)
+  [1m[35m (75.9ms)[0m  [1m[35mCREATE TABLE `elevators` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `column_id` bigint NOT NULL, `serial_number` int NOT NULL, `model_type` varchar(255) NOT NULL, `building_type` varchar(255) NOT NULL, `status` varchar(255), `date_of_instal` date, `date_of_inspect` date, `inspect_certificate` varchar(255), `information` text, `notes` text,  INDEX `index_elevators_on_column_id`  (`column_id`), CONSTRAINT `fk_rails_69442d7bc2`
+FOREIGN KEY (`column_id`)
+  REFERENCES `columns` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312135450_create_elevators.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312135450')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to ChangeBodyTypeInBuildingDetails (20190312143359)
+  [1m[35m (12.0ms)[0m  [1m[35mALTER TABLE `building_details` CHANGE `info_key` `info_key` varchar(255) DEFAULT NULL[0m
+  ↳ db/migrate/20190312143359_change_body_type_in_building_details.rb:3
+  [1m[35m (12.3ms)[0m  [1m[35mALTER TABLE `building_details` CHANGE `value` `value` varchar(255) DEFAULT NULL[0m
+  ↳ db/migrate/20190312143359_change_body_type_in_building_details.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312143359')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (11.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-03-12 16:01:10', '2019-03-12 16:01:10')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('3829273841036322840')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
