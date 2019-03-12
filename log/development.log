@@ -40575,3 +40575,86 @@ Processing by PagesController#gform as HTML
 Completed 200 OK in 198ms (Views: 50.6ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (370.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS `rocket_elevators_development`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (3.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `rocket_elevators_test`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE DATABASE `rocket_elevators_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE DATABASE `rocket_elevators_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (67.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (62.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT GET_LOCK('3829273841036322840', 0)[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateQuotes (20190306201513)
+  [1m[35m (64.3ms)[0m  [1m[35mCREATE TABLE `quotes` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `department` varchar(255), `full_name` varchar(255), `company_name` varchar(255), `email` varchar(255), `phone_number` varchar(255), `number_of_apartments` int, `number_of_floors` int, `number_of_basements` int, `number_of_parking` int, `number_of_stores` int, `max_occupancy_per_floor` int, `hours_of_activity` int, `service_level` varchar(255), `number_of_elevators` int, `installation_cost` int, `total_cost` float(24), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190306201513_create_quotes.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190306201513')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to DeviseCreateUsers (20190307181722)
+  [1m[35m (72.6ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `title` varchar(255), `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190307181722_devise_create_users.rb:5
+  [1m[35m (54.0ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  ↳ db/migrate/20190307181722_devise_create_users.rb:42
+  [1m[35m (53.9ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  ↳ db/migrate/20190307181722_devise_create_users.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190307181722')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (13.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to RemoveColumn (20190308153428)
+  [1m[35m (119.8ms)[0m  [1m[35mALTER TABLE `quotes` DROP COLUMN `installation_cost`[0m
+  ↳ db/migrate/20190308153428_remove_column.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190308153428')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to Alter (20190308194332)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190308194332')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (7.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to AddResetPasswordSentAtToUsers (20190308195207)
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE `users` ADD `reset_password_sent_at` varchar(255)[0m
+  ↳ db/migrate/20190308195207_add_reset_password_sent_at_to_users.rb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('3829273841036322840')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
