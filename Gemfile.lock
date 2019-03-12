@@ -160,12 +160,9 @@ GEM
     multi_json (1.13.1)
     mysql2 (0.5.2)
     nested_form (0.3.2)
-<<<<<<< HEAD:rocket_elevators/Gemfile.lock
-=======
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (5.1.0)
->>>>>>> 35ec2e2a6b62f22340cfb5637ad02f319db90a1f:Gemfile.lock
     nio4r (2.3.1)
     nokogiri (1.10.1)
       mini_portile2 (~> 2.4.0)
@@ -223,12 +220,9 @@ GEM
       ffi (~> 1.0)
     regexp_parser (1.3.0)
     remotipart (1.4.2)
-<<<<<<< HEAD:rocket_elevators/Gemfile.lock
-=======
     responders (2.4.1)
       actionpack (>= 4.2.0, < 6.0)
       railties (>= 4.2.0, < 6.0)
->>>>>>> 35ec2e2a6b62f22340cfb5637ad02f319db90a1f:Gemfile.lock
     ruby_dep (1.5.0)
     rubyzip (1.2.2)
     rvm1-capistrano3 (1.4.0)
@@ -260,12 +254,9 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-<<<<<<< HEAD:rocket_elevators/Gemfile.lock
-=======
     sshkit (1.18.2)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
->>>>>>> 35ec2e2a6b62f22340cfb5637ad02f319db90a1f:Gemfile.lock
     temple (0.8.1)
     thor (0.20.3)
     thread_safe (0.3.6)
@@ -305,12 +296,8 @@ DEPENDENCIES
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
-<<<<<<< HEAD:rocket_elevators/Gemfile.lock
-  font-awesome-rails (~> 4.7, >= 4.7.0.4)
-=======
   devise
   font-awesome-rails
->>>>>>> 35ec2e2a6b62f22340cfb5637ad02f319db90a1f:Gemfile.lock
   font-awesome-sass (~> 4.3.0)
   jbuilder (~> 2.5)
   jquery-rails
@@ -321,10 +308,7 @@ DEPENDENCIES
   puma (~> 3.11)
   rails (~> 5.2.2)
   rails_admin
-<<<<<<< HEAD:rocket_elevators/Gemfile.lock
-=======
   rvm1-capistrano3
->>>>>>> 35ec2e2a6b62f22340cfb5637ad02f319db90a1f:Gemfile.lock
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
@@ -339,7 +323,4 @@ RUBY VERSION
 
 BUNDLED WITH
    2.0.1
-<<<<<<< HEAD:rocket_elevators/Gemfile.lock
-=======
    
->>>>>>> 35ec2e2a6b62f22340cfb5637ad02f319db90a1f:Gemfile.lock

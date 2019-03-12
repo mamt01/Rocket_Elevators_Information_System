@@ -39848,3 +39848,730 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/sign_in.html" for 127.0.0.1 at 2019-03-11 16:01:21 -0400
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-11 16:01:23 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT GET_LOCK('3829273841036322840', 0)[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to RemoveColumn (20190308153428)
+  [1m[35m (129.6ms)[0m  [1m[35mALTER TABLE `quotes` DROP COLUMN `installation_cost`[0m
+  ↳ db/migrate/20190308153428_remove_column.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (1.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190308153428')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to Alter (20190308194332)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190308194332')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (16.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to AddResetPasswordSentAtToUsers (20190308195207)
+  [1m[35m (127.1ms)[0m  [1m[35mALTER TABLE `users` ADD `reset_password_sent_at` varchar(255)[0m
+  ↳ db/migrate/20190308195207_add_reset_password_sent_at_to_users.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190308195207')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to AddResetPasswordSentAtFromUsers (20190308222222)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190308222222')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (12.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateLeads (20190311142825)
+  [1m[35m (83.6ms)[0m  [1m[35mCREATE TABLE `leads` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `full_name` varchar(255), `company_name` varchar(255), `email` varchar(255), `phone_number` varchar(255), `project_name` varchar(255), `project_description` text, `department_in_charge` varchar(255), `message` text, `attachment` blob, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190311142825_create_leads.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190311142825')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateAddresses (20190311144717)
+  [1m[35m (77.2ms)[0m  [1m[35mCREATE TABLE `addresses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `address_type` varchar(255), `status` varchar(255), `entity` varchar(255), `number_street` varchar(255), `apt_number` varchar(255), `city` varchar(255), `postal_code` varchar(255), `country` varchar(255), `notes` text)[0m
+  ↳ db/migrate/20190311144717_create_addresses.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190311144717')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateCustomers (20190311145734)
+  [1m[35m (79.6ms)[0m  [1m[35mCREATE TABLE `customers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `date_of_creation` date, `company_name` varchar(255), `company_hq_adress` varchar(255), `full_name_contact_person` varchar(255), `phone_number_contact_person` varchar(255), `email_contact_person` varchar(255), `company_description` text, `full_name_service_person` varchar(255), `phone_number_service_person` varchar(255), `email_service_person` varchar(255))[0m
+  ↳ db/migrate/20190311145734_create_customers.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190311145734')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateBuildings (20190311153119)
+  [1m[35m (72.7ms)[0m  [1m[35mCREATE TABLE `buildings` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `customer_id` int, `building_address` varchar(255), `full_name_admin_person` varchar(255), `email_admin_person` varchar(255), `phone_number_admin_person` varchar(255), `full_name_tech_person` varchar(255), `email_tech_person` varchar(255), `phone_number_tech_person` varchar(255))[0m
+  ↳ db/migrate/20190311153119_create_buildings.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190311153119')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (8.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateBuildingDetails (20190311154901)
+  [1m[35m (93.5ms)[0m  [1m[35mCREATE TABLE `building_details` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `building_id` int, `info_key` int, `value` int)[0m
+  ↳ db/migrate/20190311154901_create_building_details.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190311154901')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (13.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateBatteries (20190311155300)
+  [1m[35m (80.8ms)[0m  [1m[35mCREATE TABLE `batteries` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `building_id` int, `building_type` varchar(255), `status` varchar(255), `employee_id` int, `date_of_instal` date, `date_of_inspect` date, `inspect_certificate` int, `Information` text, `notes` text)[0m
+  ↳ db/migrate/20190311155300_create_batteries.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190311155300')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateColumns (20190311160419)
+  [1m[35m (306.8ms)[0m  [1m[35mCREATE TABLE `columns` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `battery_id` int, `building_type` varchar(255), `number_of_floors` int, `status` varchar(255), `information` text, `notes` text)[0m
+  ↳ db/migrate/20190311160419_create_columns.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190311160419')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateElevators (20190311160629)
+  [1m[35m (77.6ms)[0m  [1m[35mCREATE TABLE `elevators` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `column_id` int, `serial_number` int, `model_type` varchar(255), `building_type` varchar(255), `status` varchar(255), `date_of_instal` date, `date_of_inspect` date, `inspect_certificate` varchar(255), `information` text, `notes` text)[0m
+  ↳ db/migrate/20190311160629_create_elevators.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190311160629')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (8.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (3.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('3829273841036322840')[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2019-03-11 16:03:01 -0400
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 57435ms (Views: 57373.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-11 16:05:13 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 414ms (Views: 148.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-11 16:05:16 -0400
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `batteries`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `buildings`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `building_details`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `columns`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `elevators`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mLead Load (0.8ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `quotes`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuote Load (0.3ms)[0m  [1m[34mSELECT  `quotes`.* FROM `quotes` ORDER BY `quotes`.`id` DESC LIMIT 1[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (43.0ms)
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (9.1ms)
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (30.6ms)
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (10.5ms)
+  Rendering /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (7.0ms)
+Completed 200 OK in 6599ms (Views: 2755.8ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-11 16:08:06 -0400
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `batteries`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `buildings`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `building_details`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `columns`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `elevators`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mLead Load (0.3ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `quotes`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuote Load (0.2ms)[0m  [1m[34mSELECT  `quotes`.* FROM `quotes` ORDER BY `quotes`.`id` DESC LIMIT 1[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (20.4ms)
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.9ms)
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (12.3ms)
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (4.3ms)
+  Rendering /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (6.6ms)
+Completed 200 OK in 311ms (Views: 278.1ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-11 16:25:48 -0400
+  [1m[35m (4.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `batteries`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `buildings`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `building_details`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `columns`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `elevators`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mLead Load (0.4ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `quotes`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuote Load (0.3ms)[0m  [1m[34mSELECT  `quotes`.* FROM `quotes` ORDER BY `quotes`.`id` DESC LIMIT 1[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (48.2ms)
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-11 16:25:48 -0400
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `batteries`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `buildings`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `building_details`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `columns`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `elevators`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mLead Load (0.3ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `quotes`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuote Load (1.0ms)[0m  [1m[34mSELECT  `quotes`.* FROM `quotes` ORDER BY `quotes`.`id` DESC LIMIT 1[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.6ms)
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (26.3ms)
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (16.6ms)
+  [1m[36mUser Load (13.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  Rendering /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (101.6ms)
+Completed 200 OK in 820ms (Views: 772.1ms | ActiveRecord: 11.9ms)
+
+
+  Rendering /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (23.1ms)
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (6.6ms)
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (21.0ms)
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.8ms)
+  Rendering /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (4.6ms)
+Completed 200 OK in 650ms (Views: 400.5ms | ActiveRecord: 32.4ms)
+
+
+Started GET "/users/sign_in.html" for 127.0.0.1 at 2019-03-11 16:40:45 -0400
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (74.3ms)
+Completed 200 OK in 202ms (Views: 166.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/assets/plugins/smoothscroll.js" for 127.0.0.1 at 2019-03-11 16:40:46 -0400
+Started GET "/users/assets/plugins/bootstrap/js/bootstrap.min.js" for 127.0.0.1 at 2019-03-11 16:40:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/assets/plugins/smoothscroll.js"):
+  
+ActionController::RoutingError (No route matches [GET] "/users/assets/plugins/bootstrap/js/bootstrap.min.js"):
+  
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/sign_in.html" for 127.0.0.1 at 2019-03-11 17:05:40 -0400
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (74.4ms)
+Started GET "/" for 127.0.0.1 at 2019-03-11 17:05:47 -0400
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 47594ms (Views: 47577.5ms | ActiveRecord: 1.4ms)
+
+
+Processing by PagesController#index as HTML
+Started GET "/" for 127.0.0.1 at 2019-03-11 17:06:28 -0400
+Started GET "/" for 127.0.0.1 at 2019-03-11 17:06:28 -0400
+Processing by PagesController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.0ms)
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 282ms (Views: 231.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 281ms (Views: 235.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 292ms (Views: 243.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-11 17:08:22 -0400
+Processing by RailsAdmin::MainController#dashboard as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-03-11 17:08:22 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 83ms (Views: 80.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/assets/plugins/bootstrap/js/bootstrap.min.js" for 127.0.0.1 at 2019-03-11 17:08:22 -0400
+Started GET "/users/assets/plugins/smoothscroll.js" for 127.0.0.1 at 2019-03-11 17:08:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/assets/plugins/bootstrap/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/users/assets/plugins/smoothscroll.js"):
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/gform.html" for 127.0.0.1 at 2019-03-11 17:09:34 -0400
+Processing by PagesController#gform as HTML
+  Rendering pages/gform.html.erb within layouts/application
+  Rendered pages/gform.html.erb within layouts/application (683.0ms)
+Completed 200 OK in 914ms (Views: 719.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/gform.html" for 127.0.0.1 at 2019-03-11 17:10:22 -0400
+Processing by PagesController#gform as HTML
+  Rendering pages/gform.html.erb within layouts/application
+  Rendered pages/gform.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 90ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-11 17:20:16 -0400
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/stephane3677/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 112ms (Views: 99.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-11 17:21:30 -0400
+Processing by RailsAdmin::MainController#dashboard as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-03-11 17:21:30 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 64ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/assets/plugins/bootstrap/js/bootstrap.min.js" for 127.0.0.1 at 2019-03-11 17:21:30 -0400
+Started GET "/users/assets/plugins/smoothscroll.js" for 127.0.0.1 at 2019-03-11 17:21:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/assets/plugins/bootstrap/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/users/assets/plugins/smoothscroll.js"):
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/gform.html" for 127.0.0.1 at 2019-03-11 17:21:42 -0400
+Processing by PagesController#gform as HTML
+  Rendering pages/gform.html.erb within layouts/application
+  Rendered pages/gform.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 62ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/residential.html" for 127.0.0.1 at 2019-03-11 17:25:22 -0400
+Processing by PagesController#residential as HTML
+  Rendering pages/residential.html.erb within layouts/application
+  Rendered pages/residential.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 118ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gform-rocket-elevator.html" for 127.0.0.1 at 2019-03-11 17:25:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/gform-rocket-elevator.html"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/index.html" for 127.0.0.1 at 2019-03-11 17:26:27 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 64ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gform.html" for 127.0.0.1 at 2019-03-11 17:26:31 -0400
+Processing by PagesController#gform as HTML
+  Rendering pages/gform.html.erb within layouts/application
+  Rendered pages/gform.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 198ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+

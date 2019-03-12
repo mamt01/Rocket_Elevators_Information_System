@@ -14,11 +14,7 @@ default: &default
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-<<<<<<< HEAD:rocket_elevators/config/database.yml
   password: root
-=======
-  password: root	
->>>>>>> 35ec2e2a6b62f22340cfb5637ad02f319db90a1f:config/database.yml
   socket: /var/run/mysqld/mysqld.sock
 
 development:
@@ -56,7 +52,4 @@ production:
   database: rocket_elevators_production
   username: rocket_elevators
   password: <%= ENV['root'] %>
-<<<<<<< HEAD:rocket_elevators/config/database.yml
   socket: /var/run/mysqld/mysqld.sock
-=======
->>>>>>> 35ec2e2a6b62f22340cfb5637ad02f319db90a1f:config/database.yml
