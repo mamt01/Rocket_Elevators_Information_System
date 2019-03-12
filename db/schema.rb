@@ -71,7 +71,7 @@ ActiveRecord::Schema.define(version: 2019_03_12_143359) do
 
   create_table "customers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "address_id", null: false
-    t.bigint "user_id", null: false
+    t.bigint "user_id"
     t.date "date_of_creation"
     t.string "company_name", null: false
     t.string "company_hq_adress", null: false
