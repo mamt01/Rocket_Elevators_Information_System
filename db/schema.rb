@@ -13,14 +13,14 @@
 ActiveRecord::Schema.define(version: 2019_03_12_143359) do
 
   create_table "addresses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "address_type"
+    t.string "address_type", null: false
     t.string "status"
-    t.string "entity"
-    t.string "number_street"
+    t.string "entity", null: false
+    t.string "number_street", null: false
     t.string "apt_number"
-    t.string "city"
-    t.string "postal_code"
-    t.string "country"
+    t.string "city", null: false
+    t.string "postal_code", null: false
+    t.string "country", null: false
     t.text "notes"
   end
 
@@ -70,11 +70,11 @@ ActiveRecord::Schema.define(version: 2019_03_12_143359) do
   end
 
   create_table "customers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "address_id"
-    t.bigint "user_id"
+    t.bigint "address_id", null: false
+    t.bigint "user_id", null: false
     t.date "date_of_creation"
-    t.string "company_name"
-    t.string "company_hq_adress"
+    t.string "company_name", null: false
+    t.string "company_hq_adress", null: false
     t.string "full_name_contact_person"
     t.string "phone_number_contact_person"
     t.string "email_contact_person"
@@ -131,6 +131,7 @@ ActiveRecord::Schema.define(version: 2019_03_12_143359) do
     t.integer "hours_of_activity"
     t.string "service_level"
     t.integer "number_of_elevators"
+    t.integer "installation_cost"
     t.float "total_cost"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -157,7 +158,7 @@ ActiveRecord::Schema.define(version: 2019_03_12_143359) do
   add_foreign_key "buildings", "customers", on_update: :cascade, on_delete: :cascade
   add_foreign_key "columns", "batteries", on_update: :cascade, on_delete: :cascade
   add_foreign_key "customers", "addresses", on_update: :cascade, on_delete: :cascade
-  add_foreign_key "customers", "users"
+  add_foreign_key "customers", "users", on_update: :cascade, on_delete: :cascade
   add_foreign_key "elevators", "columns", on_update: :cascade, on_delete: :cascade
   add_foreign_key "leads", "customers", on_update: :cascade, on_delete: :cascade
 end
