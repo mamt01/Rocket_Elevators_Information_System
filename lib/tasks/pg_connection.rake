@@ -9,8 +9,7 @@ namespace :export do
         conn.exec ("TRUNCATE factquotes RESTART IDENTITY")
         Quote.all.each do |quote|
             conn.exec("INSERT INTO \"factquotes\" (quote_id, creation_date, business_name, email, no_of_elevators) 
-            VALUES (#{quote.id}, '#{quote.created_at}', '#{quote.company_name}', '#{quote.email}', #{quote.number_of_elevators})")
-            #conn.exec("INSERT INTO \"dimcustomers\")
+            VALUES (#{quote.id}, '#{quote.created_at}', '#{quote.company_name}', '#{quote.email}', #{quote.number_of_elevators})")          
         end
 
         conn.exec ("TRUNCATE factcontact RESTART IDENTITY")
@@ -29,8 +28,6 @@ namespace :export do
         Customer.all.each do |customer|
             no_elevators = 0
             customer.buildings.all.each do |building|
-
-
                 building.batteries.all.each do |battery|
                     battery.columns.all.each do |column|
                         no_elevators += column.elevators.count
@@ -41,7 +38,6 @@ namespace :export do
                         VALUES ('#{customer.date_of_creation}', '#{customer.company_name}', '#{customer.full_name_contact_person}', '#{customer.email_contact_person}', #{no_elevators}, '#{customer.address.city}')")
                         conn.exec(sql)
         end
-
 
     end
 end

@@ -46,6 +46,8 @@ gem 'capistrano3-puma'
 #
 gem 'pg', '~> 1.1', '>= 1.1.4'
 #
+gem 'whenever', require: false
+#
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
