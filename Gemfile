@@ -45,12 +45,10 @@ gem 'rvm1-capistrano3', require: false
 gem 'capistrano3-puma'
 #
 gem 'pg', '~> 1.1', '>= 1.1.4'
-<<<<<<< HEAD
-=======
 #
 gem 'whenever', require: false
 #
->>>>>>> e604b87ea5d7158cd293198f60842c2b77d1bd79
+gem 'chartkick', '~> 3.0', '>= 3.0.2'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
