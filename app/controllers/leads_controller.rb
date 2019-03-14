@@ -25,6 +25,13 @@ class LeadsController < ApplicationController
   # POST /leads.json
   def create
     @lead = Lead.new(lead_params)
+
+    # #ADDED FOLLOWING CODE TO TRY TO SOLVE THE O'HARA PROBLEMS
+    if @lead.full_name.include? "'"
+      sentence["'"] = " "
+    end
+    #   #ADDED THE UPPER LINES TO TRY AND SOLVE THE O'HARA PROBLEM
+
  
     @customer = Customer.find_by company_name: params[:lead][:company_name]
     if @customer != nil
