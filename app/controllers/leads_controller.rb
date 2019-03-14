@@ -27,9 +27,9 @@ class LeadsController < ApplicationController
     @lead = Lead.new(lead_params)
 
     # #ADDED FOLLOWING CODE TO TRY TO SOLVE THE O'HARA PROBLEMS
-    if @lead.full_name.include? "'"
-      sentence["'"] = " "
-    end
+    # if @lead.full_name.include? "'"
+    #   sentence["'"] = " "
+    # end
     #   #ADDED THE UPPER LINES TO TRY AND SOLVE THE O'HARA PROBLEM
 
  
