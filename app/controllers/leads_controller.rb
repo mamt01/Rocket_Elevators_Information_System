@@ -26,6 +26,9 @@ class LeadsController < ApplicationController
   def create
     @lead = Lead.new(lead_params)
 
+    @customer = Customer.find_by company_name: params[:lead][:company_name]
+    @lead.customer_id = @customer.id
+
     respond_to do |format|
       if @lead.save
         format.html { redirect_to "/index.html#contact", notice: 'Lead was successfully created.' }
