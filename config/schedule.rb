@@ -22,11 +22,11 @@
 # set :output, "#{path}/log/development.log"
 #job_type :script, "'#{path}/lib/tasks/:task' :output" #could comment this, if I do, uncomment #rake 'pg_connection'
 
-every 2.minutes do
-    #script "pg_connection.rake"
-    #rake 'pg_connection'
-    rake "export:datawarehouse"
-end
-
 set :output, "log/development.log"
 env :PATH, ENV['PATH']
+
+every 2.minutes do
+    #script "pg_connection.rake"
+    rake "pg_connection"
+    # rake "export:datawarehouse"
+end
