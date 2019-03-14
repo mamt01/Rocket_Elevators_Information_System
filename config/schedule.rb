@@ -6,13 +6,11 @@
 # Example:
 #
 # set :output, "/path/to/my/cron_log.log"
-
 # every 2.hours do
 #   command "/usr/bin/some_great_command"
 #   runner "MyModel.some_method"
 #   rake "some:great:rake:task"
 # end
-
 # every 4.days do
 #   runner "AnotherModel.prune_old_records"
 # end
@@ -22,11 +20,13 @@
 # set :output, "#{path}/log/development.log"
 #job_type :script, "'#{path}/lib/tasks/:task' :output" #could comment this, if I do, uncomment #rake 'pg_connection'
 
-every 2.minutes do
-    #script "pg_connection.rake"
-    #rake 'pg_connection'
-    rake "export:datawarehouse"
-end
+env :PATH, ENV['PATH']
 
 set :output, "log/development.log"
-env :PATH, ENV['PATH']
+set :environment, "development"
+
+every 2.minutes do
+    #script "pg_connection.rake"
+    # rake "pg_connection"
+    rake "export:datawarehouse"
+end

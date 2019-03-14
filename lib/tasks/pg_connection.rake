@@ -14,8 +14,8 @@ namespace :export do
 
         conn.exec ("TRUNCATE factcontact RESTART IDENTITY")
         Lead.all.each do |lead|
-            conn.exec("INSERT INTO \"factcontact\" (contact_id, date_of_creation, business_name, email, project_name)
-            VALUES ( #{lead.id}, '#{lead.created_at}', '#{lead.company_name}', '#{lead.email}', '#{lead.project_name}')")
+            conn.exec("INSERT INTO \"factcontact\" (contact_id, date_of_creation, business_name, email, project_name) 
+            VALUES (#{lead.id}, '#{lead.created_at}', '#{lead.company_name}', '#{lead.email}', '#{lead.project_name}')")
         end
 
         conn.exec ("TRUNCATE factelevator RESTART IDENTITY")
