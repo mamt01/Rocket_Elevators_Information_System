@@ -19271,3 +19271,823 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (318.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS `rocket_elevators_development`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (2.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `rocket_elevators_test`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE DATABASE `rocket_elevators_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE DATABASE `rocket_elevators_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (65.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (49.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('3829273841036322840', 0)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateQuotes (20190306201513)
+  [1m[35m (58.8ms)[0m  [1m[35mCREATE TABLE `quotes` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `department` varchar(255), `full_name` varchar(255), `company_name` varchar(255), `email` varchar(255), `phone_number` varchar(255), `number_of_apartments` int, `number_of_floors` int, `number_of_basements` int, `number_of_parking` int, `number_of_stores` int, `max_occupancy_per_floor` int, `hours_of_activity` int, `service_level` varchar(255), `number_of_elevators` int, `installation_cost` int, `total_cost` float(24), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190306201513_create_quotes.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190306201513')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to DeviseCreateUsers (20190307181722)
+  [1m[35m (56.5ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `title` varchar(255), `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190307181722_devise_create_users.rb:5
+  [1m[35m (47.1ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  ↳ db/migrate/20190307181722_devise_create_users.rb:42
+  [1m[35m (45.3ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  ↳ db/migrate/20190307181722_devise_create_users.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190307181722')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (10.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateAddresses (20190311224130)
+  [1m[35m (83.3ms)[0m  [1m[35mCREATE TABLE `addresses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `address_type` varchar(255) NOT NULL, `status` varchar(255), `entity` varchar(255) NOT NULL, `number_street` varchar(255) NOT NULL, `apt_number` varchar(255), `city` varchar(255) NOT NULL, `postal_code` varchar(255) NOT NULL, `country` varchar(255) NOT NULL, `notes` text)[0m
+  ↳ db/migrate/20190311224130_create_addresses.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190311224130')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateCustomers (20190312123044)
+  [1m[35m (101.1ms)[0m  [1m[35mCREATE TABLE `customers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `address_id` bigint NOT NULL, `user_id` bigint, `date_of_creation` date, `company_name` varchar(255) NOT NULL, `full_name_contact_person` varchar(255), `phone_number_contact_person` varchar(255), `email_contact_person` varchar(255), `company_description` text, `full_name_service_person` varchar(255), `phone_number_service_person` varchar(255), `email_service_person` varchar(255),  INDEX `index_customers_on_address_id`  (`address_id`),  INDEX `index_customers_on_user_id`  (`user_id`), CONSTRAINT `fk_rails_3f9404ba26`
+FOREIGN KEY (`address_id`)
+  REFERENCES `addresses` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE, CONSTRAINT `fk_rails_9917eeaf5d`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312123044_create_customers.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312123044')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateLeads (20190312123758)
+  [1m[35m (70.2ms)[0m  [1m[35mCREATE TABLE `leads` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `customer_id` bigint, `full_name` varchar(255), `company_name` varchar(255), `email` varchar(255), `phone_number` varchar(255), `project_name` varchar(255), `project_description` text, `department_in_charge` varchar(255), `message` text, `attachment` blob, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_leads_on_customer_id`  (`customer_id`), CONSTRAINT `fk_rails_da25e077a0`
+FOREIGN KEY (`customer_id`)
+  REFERENCES `customers` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312123758_create_leads.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312123758')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateBuildings (20190312131340)
+  [1m[35m (86.3ms)[0m  [1m[35mCREATE TABLE `buildings` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `address_id` bigint NOT NULL, `customer_id` bigint NOT NULL, `full_name_admin_person` varchar(255), `email_admin_person` varchar(255), `phone_number_admin_person` varchar(255), `full_name_tech_person` varchar(255), `email_tech_person` varchar(255), `phone_number_tech_person` varchar(255),  INDEX `index_buildings_on_address_id`  (`address_id`),  INDEX `index_buildings_on_customer_id`  (`customer_id`), CONSTRAINT `fk_rails_6dc7a885ab`
+FOREIGN KEY (`address_id`)
+  REFERENCES `addresses` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE, CONSTRAINT `fk_rails_c29cbe7fb8`
+FOREIGN KEY (`customer_id`)
+  REFERENCES `customers` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312131340_create_buildings.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312131340')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateBuildingDetails (20190312133528)
+  [1m[35m (71.5ms)[0m  [1m[35mCREATE TABLE `building_details` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `building_id` bigint NOT NULL, `info_key` varchar(255), `value` varchar(255),  INDEX `index_building_details_on_building_id`  (`building_id`), CONSTRAINT `fk_rails_51749f8eac`
+FOREIGN KEY (`building_id`)
+  REFERENCES `buildings` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312133528_create_building_details.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312133528')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateBatteries (20190312134749)
+  [1m[35m (92.3ms)[0m  [1m[35mCREATE TABLE `batteries` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `building_id` bigint NOT NULL, `user_id` bigint, `building_type` varchar(255) NOT NULL, `status` varchar(255), `date_of_instal` date, `date_of_inspect` date, `inspect_certificate` int, `information` text, `notes` text,  INDEX `index_batteries_on_building_id`  (`building_id`),  INDEX `index_batteries_on_user_id`  (`user_id`), CONSTRAINT `fk_rails_fc40470545`
+FOREIGN KEY (`building_id`)
+  REFERENCES `buildings` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE, CONSTRAINT `fk_rails_8b1b9d5a4c`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312134749_create_batteries.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312134749')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateColumns (20190312135120)
+  [1m[35m (74.2ms)[0m  [1m[35mCREATE TABLE `columns` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `battery_id` bigint NOT NULL, `building_type` varchar(255) NOT NULL, `number_of_floors` int NOT NULL, `status` varchar(255), `information` text, `notes` text,  INDEX `index_columns_on_battery_id`  (`battery_id`), CONSTRAINT `fk_rails_021eb14ac4`
+FOREIGN KEY (`battery_id`)
+  REFERENCES `batteries` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312135120_create_columns.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312135120')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Migrating to CreateElevators (20190312135450)
+  [1m[35m (76.2ms)[0m  [1m[35mCREATE TABLE `elevators` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `column_id` bigint NOT NULL, `serial_number` int NOT NULL, `model_type` varchar(255) NOT NULL, `building_type` varchar(255) NOT NULL, `status` varchar(255), `date_of_instal` date, `date_of_inspect` date, `inspect_certificate` varchar(255), `information` text, `notes` text,  INDEX `index_elevators_on_column_id`  (`column_id`), CONSTRAINT `fk_rails_69442d7bc2`
+FOREIGN KEY (`column_id`)
+  REFERENCES `columns` (`id`)
+ ON DELETE CASCADE ON UPDATE CASCADE)[0m
+  ↳ db/migrate/20190312135450_create_elevators.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190312135450')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-03-14 17:06:00', '2019-03-14 17:06:00')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('3829273841036322840')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('3829273841036322840', 0)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('3829273841036322840')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2019-03-14 13:08:03 -0400
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (11.0ms)
+Started GET "/" for 127.0.0.1 at 2019-03-14 13:08:07 -0400
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 29893ms (Views: 29875.5ms | ActiveRecord: 1.4ms)
+
+
+Completed 200 OK in 26235ms (Views: 26231.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-14 13:08:36 -0400
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `batteries`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `buildings`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `building_details`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `columns`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `elevators`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mLead Load (0.3ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `quotes`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuote Load (0.2ms)[0m  [1m[34mSELECT  `quotes`.* FROM `quotes` ORDER BY `quotes`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (28.7ms)
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-14 13:08:37 -0400
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `batteries`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `buildings`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `building_details`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `columns`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `elevators`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mLead Load (0.3ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `quotes`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuote Load (0.2ms)[0m  [1m[34mSELECT  `quotes`.* FROM `quotes` ORDER BY `quotes`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (25.2ms)
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-14 13:08:38 -0400
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `batteries`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `buildings`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `building_details`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `columns`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `elevators`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mLead Load (1.0ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `quotes`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuote Load (0.3ms)[0m  [1m[34mSELECT  `quotes`.* FROM `quotes` ORDER BY `quotes`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (23.1ms)
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-14 13:08:38 -0400
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `batteries`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `buildings`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `building_details`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `columns`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `elevators`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mLead Load (1.1ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `quotes`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuote Load (0.7ms)[0m  [1m[34mSELECT  `quotes`.* FROM `quotes` ORDER BY `quotes`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (19.2ms)
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-14 13:08:38 -0400
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `batteries`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `buildings`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `building_details`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `columns`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `elevators`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mLead Load (0.8ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `quotes`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuote Load (1.0ms)[0m  [1m[34mSELECT  `quotes`.* FROM `quotes` ORDER BY `quotes`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (20.5ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.2ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (22.9ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.0ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (5.1ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (28.7ms)
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (2.5ms)
+Completed 200 OK in 2644ms (Views: 1778.0ms | ActiveRecord: 11.8ms)
+
+
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (4.4ms)
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-14 13:08:38 -0400
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (2.4ms)
+Completed 200 OK in 787ms (Views: 741.4ms | ActiveRecord: 9.7ms)
+
+
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `batteries`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `buildings`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `building_details`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `columns`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `elevators`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mLead Load (1.2ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `quotes`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuote Load (1.9ms)[0m  [1m[34mSELECT  `quotes`.* FROM `quotes` ORDER BY `quotes`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (14.1ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.5ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (13.9ms)
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-14 13:08:39 -0400
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (5.8ms)
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (4.8ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `batteries`[0m
+Completed 200 OK in 897ms (Views: 845.8ms | ActiveRecord: 12.0ms)
+
+
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `buildings`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `building_details`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `columns`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `elevators`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mLead Load (1.4ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `quotes`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuote Load (0.7ms)[0m  [1m[34mSELECT  `quotes`.* FROM `quotes` ORDER BY `quotes`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (12.4ms)
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-14 13:08:39 -0400
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `batteries`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `buildings`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `building_details`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `columns`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `elevators`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mLead Load (2.0ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `quotes`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuote Load (1.3ms)[0m  [1m[34mSELECT  `quotes`.* FROM `quotes` ORDER BY `quotes`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (13.8ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (16.6ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (31.2ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (5.0ms)
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (3.3ms)
+Completed 200 OK in 1082ms (Views: 990.6ms | ActiveRecord: 26.7ms)
+
+
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.4ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (12.7ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.4ms)
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (2.6ms)
+Completed 200 OK in 1029ms (Views: 970.2ms | ActiveRecord: 16.0ms)
+
+
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.7ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (10.4ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.9ms)
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (4.0ms)
+Completed 200 OK in 953ms (Views: 885.7ms | ActiveRecord: 16.5ms)
+
+
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.9ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (11.9ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.6ms)
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (2.5ms)
+Completed 200 OK in 849ms (Views: 799.4ms | ActiveRecord: 9.7ms)
+
+
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.0ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (10.8ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.4ms)
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (2.4ms)
+Completed 200 OK in 759ms (Views: 693.4ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/emp-dashboard/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-03-14 13:09:10 -0400
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY users.id desc LIMIT 20 OFFSET 0[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (19.2ms)
+Completed 200 OK in 42ms (Views: 34.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 13:09:23 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 59ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gform.html" for 127.0.0.1 at 2019-03-14 13:57:17 -0400
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#gform as HTML
+  Rendering pages/gform.html.erb within layouts/application
+Started GET "/gform.html" for 127.0.0.1 at 2019-03-14 13:57:18 -0400
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#gform as HTML
+  Rendering pages/gform.html.erb within layouts/application
+Started GET "/gform.html" for 127.0.0.1 at 2019-03-14 13:57:18 -0400
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#gform as HTML
+  Rendering pages/gform.html.erb within layouts/application
+Started GET "/gform.html" for 127.0.0.1 at 2019-03-14 13:57:18 -0400
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#gform as HTML
+  Rendering pages/gform.html.erb within layouts/application
+Started GET "/gform.html" for 127.0.0.1 at 2019-03-14 13:57:19 -0400
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#gform as HTML
+  Rendering pages/gform.html.erb within layouts/application
+  Rendered pages/gform.html.erb within layouts/application (7869.9ms)
+Completed 500 Internal Server Error in 7889ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid argument @ apply2files - /mnt/c/code/Rocket_Elevators_Information_System/tmp/cache/assets/sprockets/v3.0/rZ/rZxr-i3QMjiGPUbILk2gf8oKOwLk5LocvTw4wlUMxkY.cache):
+    538:         <!-- /FOOTER -->
+    539:         
+    540:     </div>
+    541:     <%=javascript_include_tag "contact" %>
+    542:     <!-- /wrapper -->
+    543: 
+    544: 
+  
+app/views/pages/gform.html.erb:541:in `block in _app_views_pages_gform_html_erb___2835546867382486461_69925232078480'
+app/views/pages/gform.html.erb:1:in `_app_views_pages_gform_html_erb___2835546867382486461_69925232078480'
+  Rendered pages/gform.html.erb within layouts/application (19141.5ms)
+Completed 500 Internal Server Error in 19156ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid argument @ apply2files - /mnt/c/code/Rocket_Elevators_Information_System/tmp/cache/assets/sprockets/v3.0/Dm/DmbYFZMHXWQCuoOgPSBId09Elx3iIn_Tpf_aENGooOk.cache):
+    538:         <!-- /FOOTER -->
+    539:         
+    540:     </div>
+    541:     <%=javascript_include_tag "contact" %>
+    542:     <!-- /wrapper -->
+    543: 
+    544: 
+  
+app/views/pages/gform.html.erb:541:in `block in _app_views_pages_gform_html_erb___2835546867382486461_69925234410220'
+app/views/pages/gform.html.erb:1:in `_app_views_pages_gform_html_erb___2835546867382486461_69925234410220'
+Started GET "/gform.html" for 127.0.0.1 at 2019-03-14 13:57:39 -0400
+Processing by PagesController#gform as HTML
+  Rendering pages/gform.html.erb within layouts/application
+  Rendered pages/gform.html.erb within layouts/application (20452.3ms)
+Completed 500 Internal Server Error in 20471ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid argument @ apply2files - /mnt/c/code/Rocket_Elevators_Information_System/tmp/cache/assets/sprockets/v3.0/hM/hMmZuUY0axEP0WD2b_pJiJJOAUCH4rrU_LTZQLh4JmI.cache):
+    538:         <!-- /FOOTER -->
+    539:         
+    540:     </div>
+    541:     <%=javascript_include_tag "contact" %>
+    542:     <!-- /wrapper -->
+    543: 
+    544: 
+  
+app/views/pages/gform.html.erb:541:in `block in _app_views_pages_gform_html_erb___2835546867382486461_69925229289480'
+app/views/pages/gform.html.erb:1:in `_app_views_pages_gform_html_erb___2835546867382486461_69925229289480'
+  Rendered pages/gform.html.erb within layouts/application (23383.0ms)
+Completed 500 Internal Server Error in 23431ms (ActiveRecord: 2.7ms)
+
+
+  
+ActionView::Template::Error (Invalid argument @ rb_sysopen - /mnt/c/code/Rocket_Elevators_Information_System/tmp/cache/assets/sprockets/v3.0/Sj/SjfsP_gMdxt2hJRXeMJRvY-TKQi3jMhBJ19wJ4C40f4.cache):
+    538:         <!-- /FOOTER -->
+    539:         
+    540:     </div>
+    541:     <%=javascript_include_tag "contact" %>
+    542:     <!-- /wrapper -->
+    543: 
+    544: 
+  
+app/views/pages/gform.html.erb:541:in `block in _app_views_pages_gform_html_erb___2835546867382486461_69925391277560'
+app/views/pages/gform.html.erb:1:in `_app_views_pages_gform_html_erb___2835546867382486461_69925391277560'
+Started GET "/gform.html" for 127.0.0.1 at 2019-03-14 13:57:47 -0400
+Processing by PagesController#gform as HTML
+Started GET "/gform.html" for 127.0.0.1 at 2019-03-14 13:57:47 -0400
+  Rendering pages/gform.html.erb within layouts/application
+Processing by PagesController#gform as HTML
+  Rendering pages/gform.html.erb within layouts/application
+  Rendered pages/gform.html.erb within layouts/application (42150.3ms)
+Completed 500 Internal Server Error in 42168ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid argument @ rb_sysopen - /mnt/c/code/Rocket_Elevators_Information_System/tmp/cache/assets/sprockets/v3.0/ju/jutOZF6xJXQjtObxP1PBoTlUG-eWL8pIYBgXN_3iRME.cache):
+    538:         <!-- /FOOTER -->
+    539:         
+    540:     </div>
+    541:     <%=javascript_include_tag "contact" %>
+    542:     <!-- /wrapper -->
+    543: 
+    544: 
+  
+app/views/pages/gform.html.erb:541:in `block in _app_views_pages_gform_html_erb___2835546867382486461_69925366631100'
+app/views/pages/gform.html.erb:1:in `_app_views_pages_gform_html_erb___2835546867382486461_69925366631100'
+  Rendered pages/gform.html.erb within layouts/application (63639.2ms)
+Completed 200 OK in 64080ms (Views: 64076.3ms | ActiveRecord: 0.0ms)
+
+
+  Rendered pages/gform.html.erb within layouts/application (52824.6ms)
+  Rendered pages/gform.html.erb within layouts/application (52852.6ms)
+Completed 200 OK in 53037ms (Views: 53031.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 53065ms (Views: 53059.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 13:58:48 -0400
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (37.3ms)
+Started GET "/" for 127.0.0.1 at 2019-03-14 13:58:52 -0400
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 8475ms (Views: 8432.2ms | ActiveRecord: 3.0ms)
+
+
+Completed 200 OK in 8119ms (Views: 8115.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gform.html" for 127.0.0.1 at 2019-03-14 13:59:18 -0400
+Processing by PagesController#gform as HTML
+  Rendering pages/gform.html.erb within layouts/application
+  Rendered pages/gform.html.erb within layouts/application (63.5ms)
+Completed 200 OK in 178ms (Views: 109.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/quotes" for 127.0.0.1 at 2019-03-14 13:59:24 -0400
+Processing by QuotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HkI6nex4s9YTguKzrpbAqTJ3B+4aJ6+LZXgb5xN6kx3/127XMcX3gH1uCPESPE8/ahVus5T8cWgMJnPqhiCAfQ==", "quote"=>{"full_name"=>"", "company_name"=>"", "email"=>"", "phone_number"=>"", "department"=>"-", "resi_number_of_apartments"=>"", "resi_number_of_floors"=>"", "resi_number_of_basements"=>"", "number_of_elevators"=>"", "comm_number_of_apartments"=>"", "comm_number_of_parking"=>"", "comm_number_of_basements"=>"", "comm_number_of_stores"=>"", "corp_number_of_floors"=>"", "corp_number_of_basements"=>"", "corp_max_occupancy_per_floor"=>"", "corp_number_of_stores"=>"", "corp_number_of_parking"=>"", "hyb_number_of_floors"=>"", "hyb_number_of_basements"=>"", "hyb_max_occupancy_per_floor"=>"", "hyb_number_of_parking"=>"", "hyb_number_of_stores"=>"", "hour_of_activity"=>"", "service_level"=>"Standard", "installation_cost"=>"", "total_cost"=>""}, "commit"=>"Create Quote", "email"=>""}
+Unpermitted parameters: :resi_number_of_apartments, :resi_number_of_floors, :resi_number_of_basements, :comm_number_of_apartments, :comm_number_of_parking, :comm_number_of_basements, :comm_number_of_stores, :corp_number_of_floors, :corp_number_of_basements, :corp_max_occupancy_per_floor, :corp_number_of_stores, :corp_number_of_parking, :hyb_number_of_floors, :hyb_number_of_basements, :hyb_max_occupancy_per_floor, :hyb_number_of_parking, :hyb_number_of_stores, :hour_of_activity, :installation_cost
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/quotes_controller.rb:57
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/quotes_controller.rb:57
+  Rendering quotes/new.html.erb within layouts/application
+  Rendered quotes/_form.html.erb (2.4ms)
+  Rendered quotes/new.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/mnt/c/code/Rocket_Elevators_Information_System/app/views/quotes/_form.html.erb:20: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/quotes/_form.html.erb:20: syntax error, unexpected end-of-input, expecting end
+app/views/quotes/new.html.erb:1:in `_app_views_quotes_new_html_erb___459716903616912902_69936579728580'
+app/controllers/quotes_controller.rb:61:in `block (2 levels) in create'
+app/controllers/quotes_controller.rb:56:in `create'
+Started POST "/__web_console/repl_sessions/1043780f2d46a179606ef84506c7acf7/trace" for 127.0.0.1 at 2019-03-14 13:59:49 -0400
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT GET_LOCK('3829273841036322840', 0)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('3829273841036322840')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2019-03-14 14:02:43 -0400
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (11.9ms)
+Started GET "/" for 127.0.0.1 at 2019-03-14 14:02:47 -0400
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 8266ms (Views: 8246.8ms | ActiveRecord: 1.2ms)
+
+
+Completed 200 OK in 7605ms (Views: 7602.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gform.html" for 127.0.0.1 at 2019-03-14 14:03:01 -0400
+Processing by PagesController#gform as HTML
+  Rendering pages/gform.html.erb within layouts/application
+  Rendered pages/gform.html.erb within layouts/application (60.3ms)
+Completed 200 OK in 137ms (Views: 113.1ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/quotes" for 127.0.0.1 at 2019-03-14 14:03:07 -0400
+Processing by QuotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YLJKw3xq6UCg4FaVIHgFy+lEdLQQ1o1Ec2OUYD7eWs+BJx6JodetFs4MvNec0opdsSYd6Z4NU6caPfxtq4RJrw==", "quote"=>{"full_name"=>"", "company_name"=>"", "email"=>"", "phone_number"=>"", "department"=>"-", "resi_number_of_apartments"=>"", "resi_number_of_floors"=>"", "resi_number_of_basements"=>"", "number_of_elevators"=>"", "comm_number_of_apartments"=>"", "comm_number_of_parking"=>"", "comm_number_of_basements"=>"", "comm_number_of_stores"=>"", "corp_number_of_floors"=>"", "corp_number_of_basements"=>"", "corp_max_occupancy_per_floor"=>"", "corp_number_of_stores"=>"", "corp_number_of_parking"=>"", "hyb_number_of_floors"=>"", "hyb_number_of_basements"=>"", "hyb_max_occupancy_per_floor"=>"", "hyb_number_of_parking"=>"", "hyb_number_of_stores"=>"", "hour_of_activity"=>"", "service_level"=>"Standard", "installation_cost"=>"", "total_cost"=>""}, "commit"=>"Create Quote", "email"=>""}
+Unpermitted parameters: :resi_number_of_apartments, :resi_number_of_floors, :resi_number_of_basements, :comm_number_of_apartments, :comm_number_of_parking, :comm_number_of_basements, :comm_number_of_stores, :corp_number_of_floors, :corp_number_of_basements, :corp_max_occupancy_per_floor, :corp_number_of_stores, :corp_number_of_parking, :hyb_number_of_floors, :hyb_number_of_basements, :hyb_max_occupancy_per_floor, :hyb_number_of_parking, :hyb_number_of_stores, :hour_of_activity, :installation_cost
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/quotes_controller.rb:57
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/quotes_controller.rb:57
+  Rendering quotes/new.html.erb within layouts/application
+  Rendered quotes/_form.html.erb (0.4ms)
+  Rendered quotes/new.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 1.1ms)
+
+
+  
+SyntaxError (/mnt/c/code/Rocket_Elevators_Information_System/app/views/quotes/_form.html.erb:20: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/quotes/_form.html.erb:20: syntax error, unexpected end-of-input, expecting end
+app/views/quotes/new.html.erb:1:in `_app_views_quotes_new_html_erb___4106704402788335787_69840714888520'
+app/controllers/quotes_controller.rb:61:in `block (2 levels) in create'
+app/controllers/quotes_controller.rb:56:in `create'
+Started POST "/quotes" for 127.0.0.1 at 2019-03-14 14:05:37 -0400
+Processing by QuotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YLJKw3xq6UCg4FaVIHgFy+lEdLQQ1o1Ec2OUYD7eWs+BJx6JodetFs4MvNec0opdsSYd6Z4NU6caPfxtq4RJrw==", "quote"=>{"full_name"=>"asddaa", "company_name"=>"dasdsa", "email"=>"dsad", "phone_number"=>"asdas", "department"=>"Commercial", "resi_number_of_apartments"=>"", "resi_number_of_floors"=>"", "resi_number_of_basements"=>"", "number_of_elevators"=>"211", "comm_number_of_apartments"=>"1212", "comm_number_of_parking"=>"121", "comm_number_of_basements"=>"1212", "comm_number_of_stores"=>"21212", "corp_number_of_floors"=>"", "corp_number_of_basements"=>"", "corp_max_occupancy_per_floor"=>"", "corp_number_of_stores"=>"", "corp_number_of_parking"=>"", "hyb_number_of_floors"=>"", "hyb_number_of_basements"=>"", "hyb_max_occupancy_per_floor"=>"", "hyb_number_of_parking"=>"", "hyb_number_of_stores"=>"", "hour_of_activity"=>"", "service_level"=>"Standard", "installation_cost"=>"", "total_cost"=>"1755836.5000000002"}, "commit"=>"Create Quote", "email"=>""}
+Unpermitted parameters: :resi_number_of_apartments, :resi_number_of_floors, :resi_number_of_basements, :comm_number_of_apartments, :comm_number_of_parking, :comm_number_of_basements, :comm_number_of_stores, :corp_number_of_floors, :corp_number_of_basements, :corp_max_occupancy_per_floor, :corp_number_of_stores, :corp_number_of_parking, :hyb_number_of_floors, :hyb_number_of_basements, :hyb_max_occupancy_per_floor, :hyb_number_of_parking, :hyb_number_of_stores, :hour_of_activity, :installation_cost
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/quotes_controller.rb:57
+  [1m[36mQuote Create (9.7ms)[0m  [1m[32mINSERT INTO `quotes` (`department`, `full_name`, `company_name`, `email`, `phone_number`, `number_of_apartments`, `number_of_basements`, `number_of_parking`, `number_of_stores`, `service_level`, `number_of_elevators`, `total_cost`, `created_at`, `updated_at`) VALUES ('Commercial', 'asddaa', 'dasdsa', 'dsad', 'asdas', 1212, 1212, 121, 21212, 'Standard', 211, 1755836.5000000002, '2019-03-14 18:05:37', '2019-03-14 18:05:37')[0m
+  ↳ app/controllers/quotes_controller.rb:57
+  [1m[35m (9.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/quotes_controller.rb:57
+Redirected to http://localhost:3000/gform
+Completed 302 Found in 37ms (ActiveRecord: 19.7ms)
+
+
+Started GET "/gform" for 127.0.0.1 at 2019-03-14 14:05:37 -0400
+Processing by PagesController#gform as HTML
+  Rendering pages/gform.html.erb within layouts/application
+  Rendered pages/gform.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 77ms (Views: 74.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/quotes" for 127.0.0.1 at 2019-03-14 14:07:30 -0400
+Processing by QuotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gw/2o7QObLy2oHbVN02dhPNZ0n14VyGcSGUH6kjG8fJimqLpabMo6thMnJeL5xISqzu7IPaM/38hO2/n3Zzikg==", "quote"=>{"full_name"=>"", "company_name"=>"", "email"=>"", "phone_number"=>"", "department"=>"-", "resi_number_of_apartments"=>"", "resi_number_of_floors"=>"", "resi_number_of_basements"=>"", "number_of_elevators"=>"", "comm_number_of_apartments"=>"", "comm_number_of_parking"=>"", "comm_number_of_basements"=>"", "comm_number_of_stores"=>"", "corp_number_of_floors"=>"", "corp_number_of_basements"=>"", "corp_max_occupancy_per_floor"=>"", "corp_number_of_stores"=>"", "corp_number_of_parking"=>"", "hyb_number_of_floors"=>"", "hyb_number_of_basements"=>"", "hyb_max_occupancy_per_floor"=>"", "hyb_number_of_parking"=>"", "hyb_number_of_stores"=>"", "hour_of_activity"=>"", "installation_cost"=>"", "total_cost"=>""}, "commit"=>"Create Quote", "email"=>""}
+Unpermitted parameters: :resi_number_of_apartments, :resi_number_of_floors, :resi_number_of_basements, :comm_number_of_apartments, :comm_number_of_parking, :comm_number_of_basements, :comm_number_of_stores, :corp_number_of_floors, :corp_number_of_basements, :corp_max_occupancy_per_floor, :corp_number_of_stores, :corp_number_of_parking, :hyb_number_of_floors, :hyb_number_of_basements, :hyb_max_occupancy_per_floor, :hyb_number_of_parking, :hyb_number_of_stores, :hour_of_activity, :installation_cost
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/quotes_controller.rb:57
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/quotes_controller.rb:57
+  Rendering quotes/new.html.erb within layouts/application
+  Rendered quotes/_form.html.erb (0.7ms)
+  Rendered quotes/new.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/mnt/c/code/Rocket_Elevators_Information_System/app/views/quotes/_form.html.erb:20: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/quotes/_form.html.erb:20: syntax error, unexpected end-of-input, expecting end
+app/views/quotes/new.html.erb:1:in `_app_views_quotes_new_html_erb___4106704402788335787_69840539919280'
+app/controllers/quotes_controller.rb:61:in `block (2 levels) in create'
+app/controllers/quotes_controller.rb:56:in `create'

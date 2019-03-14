@@ -53,11 +53,6 @@ GEM
       execjs
     bcrypt (3.1.12)
     bindex (0.5.0)
-    blazer (2.0.1)
-      activerecord (>= 4.2)
-      chartkick
-      railties (>= 4.2)
-      safely_block (>= 0.1.1)
     bootsnap (1.4.1)
       msgpack (~> 1.0)
     bootstrap-sass (3.3.7)
@@ -111,7 +106,6 @@ GEM
       railties (>= 4.1.0, < 6.0)
       responders
       warden (~> 1.2.3)
-    errbase (0.1.1)
     erubi (1.8.0)
     execjs (2.7.0)
     ffi (1.10.0)
@@ -237,8 +231,6 @@ GEM
     rvm1-capistrano3 (1.4.0)
       capistrano (~> 3.0)
       sshkit (>= 1.2)
-    safely_block (0.2.1)
-      errbase
     sass (3.7.3)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -298,7 +290,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  blazer
   bootsnap (>= 1.1.0)
   bootstrap-sass (~> 3.3.4)
   bootstrap-social-rails
@@ -308,6 +299,7 @@ DEPENDENCIES
   capistrano-rails (~> 1.4)
   capistrano3-puma
   capybara (>= 2.15)
+  chartkick (~> 3.0, >= 3.0.2)
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
