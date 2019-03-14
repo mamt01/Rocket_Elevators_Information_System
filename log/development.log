@@ -18828,3 +18828,446 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('3829273841036322840', 0)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('3829273841036322840')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('3829273841036322840', 0)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('3829273841036322840')[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2019-03-14 12:54:53 -0400
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (14.0ms)
+Started GET "/" for 127.0.0.1 at 2019-03-14 12:54:56 -0400
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 8241ms (Views: 8217.5ms | ActiveRecord: 1.8ms)
+
+
+Completed 200 OK in 7442ms (Views: 7438.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-14 12:56:55 -0400
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 741ms (ActiveRecord: 1.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Table 'rocket_elevators_development.blazer_audits' doesn't exist: SHOW FULL FIELDS FROM `blazer_audits`):
+  
+mysql2 (0.5.2) lib/mysql2/client.rb:131:in `_query'
+mysql2 (0.5.2) lib/mysql2/client.rb:131:in `block in query'
+mysql2 (0.5.2) lib/mysql2/client.rb:130:in `handle_interrupt'
+mysql2 (0.5.2) lib/mysql2/client.rb:130:in `query'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:187:in `block (2 levels) in execute'
+activesupport (5.2.2) lib/active_support/dependencies/interlock.rb:48:in `block in permit_concurrent_loads'
+activesupport (5.2.2) lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+activesupport (5.2.2) lib/active_support/dependencies/interlock.rb:47:in `permit_concurrent_loads'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:186:in `block in execute'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_adapter.rb:579:in `block (2 levels) in log'
+/home/andrew/.rbenv/versions/2.6.1/lib/ruby/2.6.0/monitor.rb:230:in `mon_synchronize'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_adapter.rb:578:in `block in log'
+activesupport (5.2.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_adapter.rb:569:in `log'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:185:in `execute'
+activerecord (5.2.2) lib/active_record/connection_adapters/mysql/database_statements.rb:28:in `execute'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:196:in `execute_and_free'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:793:in `column_definitions'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/schema_statements.rb:113:in `columns'
+activerecord (5.2.2) lib/active_record/connection_adapters/schema_cache.rb:69:in `columns'
+activerecord (5.2.2) lib/active_record/connection_adapters/schema_cache.rb:75:in `columns_hash'
+activerecord (5.2.2) lib/active_record/model_schema.rb:466:in `load_schema!'
+activerecord (5.2.2) lib/active_record/attributes.rb:234:in `load_schema!'
+activerecord (5.2.2) lib/active_record/attribute_decorators.rb:51:in `load_schema!'
+activerecord (5.2.2) lib/active_record/model_schema.rb:459:in `block in load_schema'
+/home/andrew/.rbenv/versions/2.6.1/lib/ruby/2.6.0/monitor.rb:230:in `mon_synchronize'
+activerecord (5.2.2) lib/active_record/model_schema.rb:456:in `load_schema'
+activerecord (5.2.2) lib/active_record/model_schema.rb:346:in `attribute_types'
+activerecord (5.2.2) lib/active_record/attribute_methods.rb:230:in `has_attribute?'
+activerecord (5.2.2) lib/active_record/relation/calculations.rb:245:in `aggregate_column'
+activerecord (5.2.2) lib/active_record/relation/calculations.rb:268:in `execute_simple_calculation'
+activerecord (5.2.2) lib/active_record/relation/calculations.rb:238:in `perform_calculation'
+activerecord (5.2.2) lib/active_record/relation/calculations.rb:145:in `calculate'
+activerecord (5.2.2) lib/active_record/relation/calculations.rb:52:in `count'
+rails_admin (1.4.2) lib/rails_admin/adapters/active_record.rb:43:in `count'
+rails_admin (1.4.2) lib/rails_admin/config/actions/dashboard.rb:30:in `block (3 levels) in <class:Dashboard>'
+rails_admin (1.4.2) lib/rails_admin/config/actions/dashboard.rb:28:in `each'
+rails_admin (1.4.2) lib/rails_admin/config/actions/dashboard.rb:28:in `block (2 levels) in <class:Dashboard>'
+rails_admin (1.4.2) app/controllers/rails_admin/main_controller.rb:22:in `instance_eval'
+rails_admin (1.4.2) app/controllers/rails_admin/main_controller.rb:22:in `dashboard'
+actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.2) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.2) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.2) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.2) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.2) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+railties (5.2.2) lib/rails/railtie.rb:190:in `public_send'
+railties (5.2.2) lib/rails/railtie.rb:190:in `method_missing'
+actionpack (5.2.2) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+actionpack (5.2.2) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+remotipart (1.4.2) lib/remotipart/middleware.rb:32:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-14 12:57:26 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 64ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-14 12:57:27 -0400
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 2.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Table 'rocket_elevators_development.blazer_audits' doesn't exist: SHOW FULL FIELDS FROM `blazer_audits`):
+  
+mysql2 (0.5.2) lib/mysql2/client.rb:131:in `_query'
+mysql2 (0.5.2) lib/mysql2/client.rb:131:in `block in query'
+mysql2 (0.5.2) lib/mysql2/client.rb:130:in `handle_interrupt'
+mysql2 (0.5.2) lib/mysql2/client.rb:130:in `query'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:187:in `block (2 levels) in execute'
+activesupport (5.2.2) lib/active_support/dependencies/interlock.rb:48:in `block in permit_concurrent_loads'
+activesupport (5.2.2) lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+activesupport (5.2.2) lib/active_support/dependencies/interlock.rb:47:in `permit_concurrent_loads'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:186:in `block in execute'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_adapter.rb:579:in `block (2 levels) in log'
+/home/andrew/.rbenv/versions/2.6.1/lib/ruby/2.6.0/monitor.rb:230:in `mon_synchronize'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_adapter.rb:578:in `block in log'
+activesupport (5.2.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_adapter.rb:569:in `log'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:185:in `execute'
+activerecord (5.2.2) lib/active_record/connection_adapters/mysql/database_statements.rb:28:in `execute'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:196:in `execute_and_free'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:793:in `column_definitions'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/schema_statements.rb:113:in `columns'
+activerecord (5.2.2) lib/active_record/connection_adapters/schema_cache.rb:69:in `columns'
+activerecord (5.2.2) lib/active_record/connection_adapters/schema_cache.rb:75:in `columns_hash'
+activerecord (5.2.2) lib/active_record/model_schema.rb:466:in `load_schema!'
+activerecord (5.2.2) lib/active_record/attributes.rb:234:in `load_schema!'
+activerecord (5.2.2) lib/active_record/attribute_decorators.rb:51:in `load_schema!'
+activerecord (5.2.2) lib/active_record/model_schema.rb:459:in `block in load_schema'
+/home/andrew/.rbenv/versions/2.6.1/lib/ruby/2.6.0/monitor.rb:230:in `mon_synchronize'
+activerecord (5.2.2) lib/active_record/model_schema.rb:456:in `load_schema'
+activerecord (5.2.2) lib/active_record/model_schema.rb:346:in `attribute_types'
+activerecord (5.2.2) lib/active_record/attribute_methods.rb:230:in `has_attribute?'
+activerecord (5.2.2) lib/active_record/relation/calculations.rb:245:in `aggregate_column'
+activerecord (5.2.2) lib/active_record/relation/calculations.rb:268:in `execute_simple_calculation'
+activerecord (5.2.2) lib/active_record/relation/calculations.rb:238:in `perform_calculation'
+activerecord (5.2.2) lib/active_record/relation/calculations.rb:145:in `calculate'
+activerecord (5.2.2) lib/active_record/relation/calculations.rb:52:in `count'
+rails_admin (1.4.2) lib/rails_admin/adapters/active_record.rb:43:in `count'
+rails_admin (1.4.2) lib/rails_admin/config/actions/dashboard.rb:30:in `block (3 levels) in <class:Dashboard>'
+rails_admin (1.4.2) lib/rails_admin/config/actions/dashboard.rb:28:in `each'
+rails_admin (1.4.2) lib/rails_admin/config/actions/dashboard.rb:28:in `block (2 levels) in <class:Dashboard>'
+rails_admin (1.4.2) app/controllers/rails_admin/main_controller.rb:22:in `instance_eval'
+rails_admin (1.4.2) app/controllers/rails_admin/main_controller.rb:22:in `dashboard'
+actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.2) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.2) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.2) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.2) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.2) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+railties (5.2.2) lib/rails/railtie.rb:190:in `public_send'
+railties (5.2.2) lib/rails/railtie.rb:190:in `method_missing'
+actionpack (5.2.2) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+actionpack (5.2.2) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+remotipart (1.4.2) lib/remotipart/middleware.rb:32:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/emp-dashboard" for 127.0.0.1 at 2019-03-14 12:57:29 -0400
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.8ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Table 'rocket_elevators_development.blazer_audits' doesn't exist: SHOW FULL FIELDS FROM `blazer_audits`):
+  
+mysql2 (0.5.2) lib/mysql2/client.rb:131:in `_query'
+mysql2 (0.5.2) lib/mysql2/client.rb:131:in `block in query'
+mysql2 (0.5.2) lib/mysql2/client.rb:130:in `handle_interrupt'
+mysql2 (0.5.2) lib/mysql2/client.rb:130:in `query'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:187:in `block (2 levels) in execute'
+activesupport (5.2.2) lib/active_support/dependencies/interlock.rb:48:in `block in permit_concurrent_loads'
+activesupport (5.2.2) lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+activesupport (5.2.2) lib/active_support/dependencies/interlock.rb:47:in `permit_concurrent_loads'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:186:in `block in execute'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_adapter.rb:579:in `block (2 levels) in log'
+/home/andrew/.rbenv/versions/2.6.1/lib/ruby/2.6.0/monitor.rb:230:in `mon_synchronize'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_adapter.rb:578:in `block in log'
+activesupport (5.2.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_adapter.rb:569:in `log'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:185:in `execute'
+activerecord (5.2.2) lib/active_record/connection_adapters/mysql/database_statements.rb:28:in `execute'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:196:in `execute_and_free'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:793:in `column_definitions'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/schema_statements.rb:113:in `columns'
+activerecord (5.2.2) lib/active_record/connection_adapters/schema_cache.rb:69:in `columns'
+activerecord (5.2.2) lib/active_record/connection_adapters/schema_cache.rb:75:in `columns_hash'
+activerecord (5.2.2) lib/active_record/model_schema.rb:466:in `load_schema!'
+activerecord (5.2.2) lib/active_record/attributes.rb:234:in `load_schema!'
+activerecord (5.2.2) lib/active_record/attribute_decorators.rb:51:in `load_schema!'
+activerecord (5.2.2) lib/active_record/model_schema.rb:459:in `block in load_schema'
+/home/andrew/.rbenv/versions/2.6.1/lib/ruby/2.6.0/monitor.rb:230:in `mon_synchronize'
+activerecord (5.2.2) lib/active_record/model_schema.rb:456:in `load_schema'
+activerecord (5.2.2) lib/active_record/model_schema.rb:346:in `attribute_types'
+activerecord (5.2.2) lib/active_record/attribute_methods.rb:230:in `has_attribute?'
+activerecord (5.2.2) lib/active_record/relation/calculations.rb:245:in `aggregate_column'
+activerecord (5.2.2) lib/active_record/relation/calculations.rb:268:in `execute_simple_calculation'
+activerecord (5.2.2) lib/active_record/relation/calculations.rb:238:in `perform_calculation'
+activerecord (5.2.2) lib/active_record/relation/calculations.rb:145:in `calculate'
+activerecord (5.2.2) lib/active_record/relation/calculations.rb:52:in `count'
+rails_admin (1.4.2) lib/rails_admin/adapters/active_record.rb:43:in `count'
+rails_admin (1.4.2) lib/rails_admin/config/actions/dashboard.rb:30:in `block (3 levels) in <class:Dashboard>'
+rails_admin (1.4.2) lib/rails_admin/config/actions/dashboard.rb:28:in `each'
+rails_admin (1.4.2) lib/rails_admin/config/actions/dashboard.rb:28:in `block (2 levels) in <class:Dashboard>'
+rails_admin (1.4.2) app/controllers/rails_admin/main_controller.rb:22:in `instance_eval'
+rails_admin (1.4.2) app/controllers/rails_admin/main_controller.rb:22:in `dashboard'
+actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.2) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.2) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.2) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.2) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.2) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+railties (5.2.2) lib/rails/railtie.rb:190:in `public_send'
+railties (5.2.2) lib/rails/railtie.rb:190:in `method_missing'
+actionpack (5.2.2) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+actionpack (5.2.2) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+remotipart (1.4.2) lib/remotipart/middleware.rb:32:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
