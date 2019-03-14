@@ -38,6 +38,5 @@ namespace :export do
                         VALUES ('#{customer.date_of_creation}', '#{customer.company_name}', '#{customer.full_name_contact_person}', '#{customer.email_contact_person}', #{no_elevators}, '#{customer.address.city}')")
                         conn.exec(sql)
         end
-
     end
 end
