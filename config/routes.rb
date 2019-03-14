@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+  mount Blazer::Engine, at: "blazer"
   mount RailsAdmin::Engine => '/emp-dashboard', as: 'rails_admin'
   resources :elevators
   resources :columns

@@ -28,3 +28,4 @@ tmp/
 /config/database.yml
 
 .vscode
+development.log

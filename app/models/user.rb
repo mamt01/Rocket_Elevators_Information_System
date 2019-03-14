@@ -5,5 +5,5 @@ class User < ApplicationRecord
          :recoverable, :validatable
   def name
     id 
-  end
+  end 
 end

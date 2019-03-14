@@ -16391,3 +16391,721 @@ Completed 200 OK in 9739ms (Views: 9099.9ms | ActiveRecord: 5.8ms)
   ↳ lib/tasks/pg_connection.rake:33
   [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT  `addresses`.* FROM `addresses` WHERE `addresses`.`id` = 200 LIMIT 1[0m
   ↳ lib/tasks/pg_connection.rake:38
+Started GET "/emp-dashboard/lead" for 127.0.0.1 at 2019-03-14 09:12:42 -0400
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"lead"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mLead Load (0.4ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY leads.id desc LIMIT 20 OFFSET 0[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` IN (3, 200, 199, 198, 197, 196, 195, 194, 193, 192, 191, 190, 189, 188, 187, 186, 185, 184, 183, 182)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (219.8ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.1ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (14.5ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (5.6ms)
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (6.3ms)
+Completed 200 OK in 8595ms (Views: 7995.6ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/emp-dashboard/lead/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-03-14 09:12:53 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"lead"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_filtering_select.html.haml (12.5ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (1.9ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_text.html.haml (1.8ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_text.html.haml (0.2ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_submit_buttons.html.haml (4.5ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (98.8ms)
+Completed 200 OK in 146ms (Views: 136.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/emp-dashboard/customer?associated_collection=customer&compact=true&current_action=create&source_abstract_model=lead&query=" for 127.0.0.1 at 2019-03-14 09:12:55 -0400
+Processing by RailsAdmin::MainController#index as JSON
+  Parameters: {"associated_collection"=>"customer", "compact"=>"true", "current_action"=>"create", "source_abstract_model"=>"lead", "query"=>"", "model_name"=>"customer"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mLead Load (0.3ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` WHERE `leads`.`id` IS NULL ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` ORDER BY customers.id desc LIMIT 30[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mAddress Load (0.8ms)[0m  [1m[34mSELECT `addresses`.* FROM `addresses` WHERE `addresses`.`id` IN (200, 199, 198, 197, 196, 195, 194, 193, 192, 191, 190, 189, 188, 187, 186, 185, 184, 183, 182, 181, 180, 179, 178, 177, 176, 175, 174, 173, 172, 171)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (5, 4, 3, 2, 8, 7, 6)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 57ms (Views: 0.4ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/emp-dashboard/customer?associated_collection=customer&compact=true&current_action=create&source_abstract_model=lead&query=skip" for 127.0.0.1 at 2019-03-14 09:13:01 -0400
+Processing by RailsAdmin::MainController#index as JSON
+  Parameters: {"associated_collection"=>"customer", "compact"=>"true", "current_action"=>"create", "source_abstract_model"=>"lead", "query"=>"skip", "model_name"=>"customer"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mLead Load (0.3ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` WHERE `leads`.`id` IS NULL ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` WHERE ((LOWER(customers.company_name) LIKE '%skip%') OR (LOWER(customers.full_name_contact_person) LIKE '%skip%') OR (LOWER(customers.phone_number_contact_person) LIKE '%skip%') OR (LOWER(customers.email_contact_person) LIKE '%skip%') OR (LOWER(customers.company_description) LIKE '%skip%') OR (LOWER(customers.full_name_service_person) LIKE '%skip%') OR (LOWER(customers.phone_number_service_person) LIKE '%skip%') OR (LOWER(customers.email_service_person) LIKE '%skip%')) ORDER BY customers.id desc LIMIT 30[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mAddress Load (0.4ms)[0m  [1m[34mSELECT `addresses`.* FROM `addresses` WHERE `addresses`.`id` IN (157, 139, 78, 3)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (4, 7, 2)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 30ms (Views: 0.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/emp-dashboard/customer?associated_collection=customer&compact=true&current_action=create&source_abstract_model=lead&query=" for 127.0.0.1 at 2019-03-14 09:13:04 -0400
+Processing by RailsAdmin::MainController#index as JSON
+  Parameters: {"associated_collection"=>"customer", "compact"=>"true", "current_action"=>"create", "source_abstract_model"=>"lead", "query"=>"", "model_name"=>"customer"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mLead Load (0.3ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` WHERE `leads`.`id` IS NULL ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` ORDER BY customers.id desc LIMIT 30[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mAddress Load (0.3ms)[0m  [1m[34mSELECT `addresses`.* FROM `addresses` WHERE `addresses`.`id` IN (200, 199, 198, 197, 196, 195, 194, 193, 192, 191, 190, 189, 188, 187, 186, 185, 184, 183, 182, 181, 180, 179, 178, 177, 176, 175, 174, 173, 172, 171)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (5, 4, 3, 2, 8, 7, 6)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 25ms (Views: 0.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/emp-dashboard/customer?associated_collection=customer&compact=true&current_action=create&source_abstract_model=lead&query=1" for 127.0.0.1 at 2019-03-14 09:13:04 -0400
+Processing by RailsAdmin::MainController#index as JSON
+  Parameters: {"associated_collection"=>"customer", "compact"=>"true", "current_action"=>"create", "source_abstract_model"=>"lead", "query"=>"1", "model_name"=>"customer"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mLead Load (0.3ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` WHERE `leads`.`id` IS NULL ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` WHERE ((customers.id = 1) OR (customers.address_id = 1) OR (customers.user_id = 1) OR (LOWER(customers.company_name) LIKE '%1%') OR (LOWER(customers.full_name_contact_person) LIKE '%1%') OR (LOWER(customers.phone_number_contact_person) LIKE '%1%') OR (LOWER(customers.email_contact_person) LIKE '%1%') OR (LOWER(customers.company_description) LIKE '%1%') OR (LOWER(customers.full_name_service_person) LIKE '%1%') OR (LOWER(customers.phone_number_service_person) LIKE '%1%') OR (LOWER(customers.email_service_person) LIKE '%1%')) ORDER BY customers.id desc LIMIT 30[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mAddress Load (0.3ms)[0m  [1m[34mSELECT `addresses`.* FROM `addresses` WHERE `addresses`.`id` IN (200, 199, 196, 195, 194, 193, 192, 191, 190, 189, 187, 186, 185, 184, 183, 182, 181, 180, 179, 178, 177, 176, 174, 173, 172, 171, 170, 169, 168, 167)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (5, 4, 8, 7, 6, 3, 2)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/emp-dashboard/customer?associated_collection=customer&compact=true&current_action=create&source_abstract_model=lead&query=" for 127.0.0.1 at 2019-03-14 09:13:06 -0400
+Processing by RailsAdmin::MainController#index as JSON
+  Parameters: {"associated_collection"=>"customer", "compact"=>"true", "current_action"=>"create", "source_abstract_model"=>"lead", "query"=>"", "model_name"=>"customer"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mLead Load (0.3ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` WHERE `leads`.`id` IS NULL ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` ORDER BY customers.id desc LIMIT 30[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mAddress Load (0.5ms)[0m  [1m[34mSELECT `addresses`.* FROM `addresses` WHERE `addresses`.`id` IN (200, 199, 198, 197, 196, 195, 194, 193, 192, 191, 190, 189, 188, 187, 186, 185, 184, 183, 182, 181, 180, 179, 178, 177, 176, 175, 174, 173, 172, 171)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (5, 4, 3, 2, 8, 7, 6)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 27ms (Views: 0.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/emp-dashboard/customer?associated_collection=customer&compact=true&current_action=create&source_abstract_model=lead&query=" for 127.0.0.1 at 2019-03-14 09:13:27 -0400
+Processing by RailsAdmin::MainController#index as JSON
+  Parameters: {"associated_collection"=>"customer", "compact"=>"true", "current_action"=>"create", "source_abstract_model"=>"lead", "query"=>"", "model_name"=>"customer"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mLead Load (0.4ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` WHERE `leads`.`id` IS NULL ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` ORDER BY customers.id desc LIMIT 30[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mAddress Load (0.3ms)[0m  [1m[34mSELECT `addresses`.* FROM `addresses` WHERE `addresses`.`id` IN (200, 199, 198, 197, 196, 195, 194, 193, 192, 191, 190, 189, 188, 187, 186, 185, 184, 183, 182, 181, 180, 179, 178, 177, 176, 175, 174, 173, 172, 171)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (5, 4, 3, 2, 8, 7, 6)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/emp-dashboard/lead/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-03-14 09:13:34 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"lead"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_filtering_select.html.haml (8.0ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (1.8ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_text.html.haml (1.9ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.7ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_text.html.haml (0.4ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/_submit_buttons.html.haml (6.0ms)
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (99.8ms)
+Completed 200 OK in 129ms (Views: 116.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/emp-dashboard/lead?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-03-14 09:13:38 -0400
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"lead"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mLead Load (0.6ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY leads.id desc LIMIT 20 OFFSET 0[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` IN (3, 200, 199, 198, 197, 196, 195, 194, 193, 192, 191, 190, 189, 188, 187, 186, 185, 184, 183, 182)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (135.5ms)
+Completed 200 OK in 164ms (Views: 150.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/emp-dashboard/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-03-14 09:13:42 -0400
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY users.id desc LIMIT 20 OFFSET 0[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (41.1ms)
+Completed 200 OK in 69ms (Views: 57.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/emp-dashboard/customer?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-03-14 09:13:58 -0400
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"customer"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` ORDER BY customers.id desc LIMIT 20 OFFSET 0[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mAddress Load (0.3ms)[0m  [1m[34mSELECT `addresses`.* FROM `addresses` WHERE `addresses`.`id` IN (200, 199, 198, 197, 196, 195, 194, 193, 192, 191, 190, 189, 188, 187, 186, 185, 184, 183, 182, 181)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (5, 4, 3, 2, 8, 7, 6)[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `customers`[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (154.5ms)
+Completed 200 OK in 180ms (Views: 167.8ms | ActiveRecord: 1.9ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT GET_LOCK('3829273841036322840', 0)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Migrating to InstallBlazer (20190314133314)
+  [1m[35m (82.2ms)[0m  [1m[35mCREATE TABLE `blazer_queries` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `creator_id` bigint, `name` varchar(255), `description` text, `statement` text, `data_source` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_blazer_queries_on_creator_id`  (`creator_id`))[0m
+  ↳ db/migrate/20190314133314_install_blazer.rb:3
+  [1m[35m (109.0ms)[0m  [1m[35mCREATE TABLE `blazer_audits` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` bigint, `query_id` bigint, `statement` text, `data_source` varchar(255), `created_at` timestamp NULL,  INDEX `index_blazer_audits_on_user_id`  (`user_id`),  INDEX `index_blazer_audits_on_query_id`  (`query_id`))[0m
+  ↳ db/migrate/20190314133314_install_blazer.rb:12
+  [1m[35m (71.7ms)[0m  [1m[35mCREATE TABLE `blazer_dashboards` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `creator_id` bigint, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_blazer_dashboards_on_creator_id`  (`creator_id`))[0m
+  ↳ db/migrate/20190314133314_install_blazer.rb:20
+  [1m[35m (94.3ms)[0m  [1m[35mCREATE TABLE `blazer_dashboard_queries` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `dashboard_id` bigint, `query_id` bigint, `position` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_blazer_dashboard_queries_on_dashboard_id`  (`dashboard_id`),  INDEX `index_blazer_dashboard_queries_on_query_id`  (`query_id`))[0m
+  ↳ db/migrate/20190314133314_install_blazer.rb:26
+  [1m[35m (106.3ms)[0m  [1m[35mCREATE TABLE `blazer_checks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `creator_id` bigint, `query_id` bigint, `state` varchar(255), `schedule` varchar(255), `emails` text, `slack_channels` text, `check_type` varchar(255), `message` text, `last_run_at` timestamp NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_blazer_checks_on_creator_id`  (`creator_id`),  INDEX `index_blazer_checks_on_query_id`  (`query_id`))[0m
+  ↳ db/migrate/20190314133314_install_blazer.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190314133314')[0m
+  ↳ bin/rails:9
+  [1m[35m (9.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (6.9ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('3829273841036322840')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2019-03-14 09:46:49 -0400
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 34633ms (Views: 34530.3ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 09:47:30 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PTHS2QnWnArCcQbpOFlsQnhZ0gtIrdj+aF3RcVtfj0fjbFCXOXppIWSl6QzAPM6XMJv4zMspj3ntKRj/s+e+rQ==", "lead"=>{"full_name"=>"", "email"=>"", "phone_number"=>"", "project_name"=>"", "company_name"=>"", "department_in_charge"=>"-", "project_description"=>"", "message"=>""}, "commit"=>"Send Message"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` WHERE `customers`.`company_name` = '' LIMIT 1[0m
+  ↳ app/controllers/leads_controller.rb:29
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 1.1ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/leads_controller.rb:30:in `create'
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 09:47:44 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PTHS2QnWnArCcQbpOFlsQnhZ0gtIrdj+aF3RcVtfj0fjbFCXOXppIWSl6QzAPM6XMJv4zMspj3ntKRj/s+e+rQ==", "lead"=>{"full_name"=>"312321", "email"=>"321", "phone_number"=>"3213", "project_name"=>"213213", "company_name"=>"213", "department_in_charge"=>"Marketing", "project_description"=>"213", "message"=>"312"}, "commit"=>"Send Message"}
+  [1m[36mCustomer Load (2.0ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` WHERE `customers`.`company_name` = '213' LIMIT 1[0m
+  ↳ app/controllers/leads_controller.rb:29
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.0ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/leads_controller.rb:30:in `create'
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 09:48:06 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PTHS2QnWnArCcQbpOFlsQnhZ0gtIrdj+aF3RcVtfj0fjbFCXOXppIWSl6QzAPM6XMJv4zMspj3ntKRj/s+e+rQ==", "lead"=>{"full_name"=>"312321", "email"=>"321", "phone_number"=>"3213", "project_name"=>"213213", "company_name"=>"Skipfire", "department_in_charge"=>"Marketing", "project_description"=>"213", "message"=>"312"}, "commit"=>"Send Message"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` WHERE `customers`.`company_name` = 'Skipfire' LIMIT 1[0m
+  ↳ app/controllers/leads_controller.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:33
+  [1m[36mLead Create (1.0ms)[0m  [1m[32mINSERT INTO `leads` (`customer_id`, `full_name`, `company_name`, `email`, `phone_number`, `project_name`, `project_description`, `department_in_charge`, `message`, `created_at`, `updated_at`) VALUES (3, '312321', 'Skipfire', '321', '3213', '213213', '213', 'Marketing', '312', '2019-03-14 13:48:06', '2019-03-14 13:48:06')[0m
+  ↳ app/controllers/leads_controller.rb:33
+  [1m[35m (15.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:33
+Redirected to http://localhost:3000/index.html#contact
+Completed 302 Found in 103ms (ActiveRecord: 18.1ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2019-03-14 09:48:06 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 102ms (Views: 99.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 09:48:32 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b7VxTG0tG9pMBjMRR8oM7SEV2ISTt5jS7TyG5wwMBKex6PMCXYHu8erS3PS/r644adfyQxAzz1VoSE9p5LQ1TQ==", "lead"=>{"full_name"=>"", "email"=>"", "phone_number"=>"", "project_name"=>"", "company_name"=>"Skipfire", "department_in_charge"=>"-", "project_description"=>"", "message"=>""}, "commit"=>"Send Message"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` WHERE `customers`.`company_name` = 'Skipfire' LIMIT 1[0m
+  ↳ app/controllers/leads_controller.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:33
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/leads_controller.rb:33
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_form.html.erb (1.8ms)
+  Rendered leads/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 93ms (Views: 70.1ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 09:48:43 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b7VxTG0tG9pMBjMRR8oM7SEV2ISTt5jS7TyG5wwMBKex6PMCXYHu8erS3PS/r644adfyQxAzz1VoSE9p5LQ1TQ==", "lead"=>{"full_name"=>"fxdf", "email"=>"xdf", "phone_number"=>"", "project_name"=>"", "company_name"=>"resrse", "department_in_charge"=>"-", "project_description"=>"fx", "message"=>""}, "commit"=>"Send Message"}
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` WHERE `customers`.`company_name` = 'resrse' LIMIT 1[0m
+  ↳ app/controllers/leads_controller.rb:29
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/leads_controller.rb:30:in `create'
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 09:50:26 -0400
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:29: syntax error, unexpected tLABEL, expecting then or ';' or '\n'
+... Customer.find_by company_name: params[:lead][:company_name]
+...                  ^~~~~~~~~~~~~
+/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:33: syntax error, unexpected elsif
+      elsif @lead.save
+      ^~~~~
+/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:36: else without rescue is useless
+      else
+      ^~~~
+/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:77: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/leads_controller.rb:29: syntax error, unexpected tLABEL, expecting then or ';' or '\n'
+app/controllers/leads_controller.rb:33: syntax error, unexpected elsif
+app/controllers/leads_controller.rb:36: else without rescue is useless
+app/controllers/leads_controller.rb:77: syntax error, unexpected end, expecting end-of-input
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 09:52:01 -0400
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:28: syntax error, unexpected tLABEL, expecting then or ';' or '\n'
+... Customer.find_by company_name: params[:lead][:company_name]
+...                  ^~~~~~~~~~~~~
+/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:76: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/leads_controller.rb:28: syntax error, unexpected tLABEL, expecting then or ';' or '\n'
+app/controllers/leads_controller.rb:76: syntax error, unexpected end, expecting end-of-input
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 09:55:40 -0400
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:29: syntax error, unexpected tLABEL, expecting then or ';' or '\n'
+... Customer.find_by company_name: params[:lead][:company_name]
+...                  ^~~~~~~~~~~~~
+/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:32: syntax error, unexpected elsif, expecting end
+      elsif @lead.save
+      ^~~~~
+/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:35: else without rescue is useless
+      else
+      ^~~~
+/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:41: syntax error, unexpected end, expecting end-of-input
+  end
+  ^~~):
+  
+app/controllers/leads_controller.rb:29: syntax error, unexpected tLABEL, expecting then or ';' or '\n'
+app/controllers/leads_controller.rb:32: syntax error, unexpected elsif, expecting end
+app/controllers/leads_controller.rb:35: else without rescue is useless
+app/controllers/leads_controller.rb:41: syntax error, unexpected end, expecting end-of-input
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 10:02:57 -0400
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:29: syntax error, unexpected tLABEL, expecting ')'
+...Customer.find_by (company_name: params[:lead][:company_name])
+...                  ^~~~~~~~~~~~~
+/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:29: syntax error, unexpected ')', expecting end
+...: params[:lead][:company_name])
+...                              ^):
+  
+app/controllers/leads_controller.rb:29: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/leads_controller.rb:29: syntax error, unexpected ')', expecting end
+Started POST "/__web_console/repl_sessions/05c6572a997e95cc875e5e2a6cf1db2c/trace" for 127.0.0.1 at 2019-03-14 10:03:22 -0400
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 10:05:41 -0400
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:29: syntax error, unexpected tLABEL, expecting then or ';' or '\n'
+... Customer.find_by company_name: params[:lead][:company_name]
+...                  ^~~~~~~~~~~~~
+/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:33: syntax error, unexpected elsif
+        elsif @lead.save
+        ^~~~~
+/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:36: else without rescue is useless
+        else
+        ^~~~
+/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:42: syntax error, unexpected end, expecting end-of-input
+  end
+  ^~~):
+  
+app/controllers/leads_controller.rb:29: syntax error, unexpected tLABEL, expecting then or ';' or '\n'
+app/controllers/leads_controller.rb:33: syntax error, unexpected elsif
+app/controllers/leads_controller.rb:36: else without rescue is useless
+app/controllers/leads_controller.rb:42: syntax error, unexpected end, expecting end-of-input
+Started GET "/index.html" for 127.0.0.1 at 2019-03-14 10:11:19 -0400
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 33765ms (Views: 33738.7ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 10:12:00 -0400
+  
+SyntaxError (/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:29: syntax error, unexpected tLABEL, expecting then or ';' or '\n'
+... Customer.find_by company_name: params[:lead][:company_name]
+...                  ^~~~~~~~~~~~~
+/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:31: else without rescue is useless
+    else next
+    ^~~~):
+  
+app/controllers/leads_controller.rb:29: syntax error, unexpected tLABEL, expecting then or ';' or '\n'
+app/controllers/leads_controller.rb:31: else without rescue is useless
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 10:12:50 -0400
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:29: syntax error, unexpected tLABEL, expecting then or ';' or '\n'
+... Customer.find_by company_name: params[:lead][:company_name];
+...                  ^~~~~~~~~~~~~
+/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:31: else without rescue is useless
+    else next
+    ^~~~):
+  
+app/controllers/leads_controller.rb:29: syntax error, unexpected tLABEL, expecting then or ';' or '\n'
+app/controllers/leads_controller.rb:31: else without rescue is useless
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 10:12:55 -0400
+  
+SyntaxError (/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:29: syntax error, unexpected tLABEL, expecting then or ';' or '\n'
+... Customer.find_by company_name: params[:lead][:company_name];
+...                  ^~~~~~~~~~~~~
+/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:31: else without rescue is useless
+    else next
+    ^~~~):
+  
+app/controllers/leads_controller.rb:29: syntax error, unexpected tLABEL, expecting then or ';' or '\n'
+app/controllers/leads_controller.rb:31: else without rescue is useless
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 10:13:15 -0400
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"grX1WxiD0jqwwuiUgMeYSnSUzsg7P2MIpdJPzCO761dc6HcVKC8nERYWB3F4ojqfPFbkD7i7NI8gpoZCywPavQ==", "lead"=>{"full_name"=>"sdas", "email"=>"das", "phone_number"=>"dasd", "project_name"=>"sad", "company_name"=>"sadsad", "department_in_charge"=>"-", "project_description"=>"sa", "message"=>"das"}, "commit"=>"Send Message"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:33
+  [1m[36mLead Create (0.5ms)[0m  [1m[32mINSERT INTO `leads` (`full_name`, `company_name`, `email`, `phone_number`, `project_name`, `project_description`, `department_in_charge`, `message`, `created_at`, `updated_at`) VALUES ('sdas', 'sadsad', 'das', 'dasd', 'sad', 'sa', '-', 'das', '2019-03-14 14:13:15', '2019-03-14 14:13:15')[0m
+  ↳ app/controllers/leads_controller.rb:33
+  [1m[35m (11.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:33
+Redirected to http://localhost:3000/index.html#contact
+Completed 302 Found in 68ms (ActiveRecord: 13.8ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2019-03-14 10:13:15 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 7776ms (Views: 7772.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2019-03-14 10:14:10 -0400
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 7925ms (Views: 7900.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 10:17:28 -0400
+  
+SyntaxError (/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:29: syntax error, unexpected tLABEL, expecting then or ';' or '\n'
+... Customer.find_by company_name: params[:lead][:company_name]
+...                  ^~~~~~~~~~~~~
+/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:31: else without rescue is useless
+    else next
+    ^~~~):
+  
+app/controllers/leads_controller.rb:29: syntax error, unexpected tLABEL, expecting then or ';' or '\n'
+app/controllers/leads_controller.rb:31: else without rescue is useless
+Started GET "/" for 127.0.0.1 at 2019-03-14 10:19:57 -0400
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (26.8ms)
+Started GET "/" for 127.0.0.1 at 2019-03-14 10:20:00 -0400
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 16799ms (Views: 16749.1ms | ActiveRecord: 2.3ms)
+
+
+Completed 200 OK in 16322ms (Views: 16313.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 10:25:56 -0400
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (28.9ms)
+Started GET "/" for 127.0.0.1 at 2019-03-14 10:25:57 -0400
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 18542ms (Views: 18500.5ms | ActiveRecord: 2.6ms)
+
+
+Completed 200 OK in 17578ms (Views: 17570.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 10:26:28 -0400
+  
+SyntaxError (/mnt/c/code/Rocket_Elevators_Information_System/app/controllers/leads_controller.rb:78: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/leads_controller.rb:78: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for 127.0.0.1 at 2019-03-14 10:27:21 -0400
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (52.5ms)
+Completed 200 OK in 17756ms (Views: 17666.2ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 10:27:52 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rJmC/1yHzTd8pvC7/2gJxqF9KQJXopyFqB25NrINejtyxACxbCs4HNpyH14HDasT6b8DxdQmywItaXC4WrVL0Q==", "lead"=>{"full_name"=>"asdda", "email"=>"dsa", "phone_number"=>"dsad", "project_name"=>"dsad", "company_name"=>"sad", "department_in_charge"=>"-", "project_description"=>"asd", "message"=>"da"}, "commit"=>"Send Message"}
+  [1m[36mCustomer Load (1.0ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` WHERE `customers`.`company_name` = 'sad' LIMIT 1[0m
+  ↳ app/controllers/leads_controller.rb:29
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 2.1ms)
+
+
+  
+NoMethodError (undefined method `exists?' for nil:NilClass):
+  
+app/controllers/leads_controller.rb:30:in `create'
+Started GET "/" for 127.0.0.1 at 2019-03-14 10:28:26 -0400
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 15465ms (Views: 15409.1ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 10:29:13 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G2ZgNpTRoLPF+IEne4448rZVc61dZ0aJ10sKRqGt0RbFO+J4pH1VmGMsbsKD65on/pdZat7jEQ5SP8PISRXg/A==", "lead"=>{"full_name"=>"dasd", "email"=>"adsa", "phone_number"=>"das", "project_name"=>"dsa", "company_name"=>"dsa", "department_in_charge"=>"-", "project_description"=>"dsad", "message"=>"das"}, "commit"=>"Send Message"}
+  [1m[36mCustomer Load (2.1ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` WHERE `customers`.`company_name` = 'dsa' LIMIT 1[0m
+  ↳ app/controllers/leads_controller.rb:29
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 4.1ms)
+
+
+  
+NoMethodError (undefined method `exists?' for nil:NilClass):
+  
+app/controllers/leads_controller.rb:30:in `create'
+Started GET "/" for 127.0.0.1 at 2019-03-14 10:30:08 -0400
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 16993ms (Views: 16941.1ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 10:30:42 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kp2bkolEEpCvfmsSOKeAAcjTOcBpl7vP87fKEOY7CzD0wBncuejnuwmqhPfAwiLUgBETB+oT7Eh2wwOeDoM62g==", "lead"=>{"full_name"=>"adsdsa", "email"=>"dsa", "phone_number"=>"dsad", "project_name"=>"sad", "company_name"=>"dsa", "department_in_charge"=>"-", "project_description"=>"dsad", "message"=>"dasd"}, "commit"=>"Send Message"}
+  [1m[36mCustomer Load (1.0ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` WHERE `customers`.`company_name` = 'dsa' LIMIT 1[0m
+  ↳ app/controllers/leads_controller.rb:29
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 1.9ms)
+
+
+  
+NoMethodError (undefined method `exists' for nil:NilClass):
+  
+app/controllers/leads_controller.rb:30:in `create'
+Started GET "/" for 127.0.0.1 at 2019-03-14 10:32:37 -0400
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (58.1ms)
+Completed 200 OK in 18069ms (Views: 17971.3ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 10:33:05 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vvSPfzIGKqqSDiD2pqPHy50dnlnotjWmf25MsVXZLz1gqQ0xAqrfgTTazxNexmUe1d+0nmsyYiH6GoU/vWEe1w==", "lead"=>{"full_name"=>"dasdsa", "email"=>"dsa", "phone_number"=>"dasd", "project_name"=>"ddsadasd", "company_name"=>"", "department_in_charge"=>"-", "project_description"=>"", "message"=>""}, "commit"=>"Send Message"}
+  [1m[36mCustomer Load (1.6ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` WHERE `customers`.`company_name` = '' LIMIT 1[0m
+  ↳ app/controllers/leads_controller.rb:29
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 2.9ms)
+
+
+  
+NameError (uninitialized constant LeadsController::NULL):
+  
+app/controllers/leads_controller.rb:30:in `create'
+Started GET "/" for 127.0.0.1 at 2019-03-14 10:34:07 -0400
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (26.0ms)
+Started GET "/" for 127.0.0.1 at 2019-03-14 10:34:10 -0400
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (9.2ms)
+Started GET "/" for 127.0.0.1 at 2019-03-14 10:34:14 -0400
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/andrew/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 20033ms (Views: 19972.2ms | ActiveRecord: 2.6ms)
+
+
+Completed 200 OK in 20451ms (Views: 20444.9ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 20175ms (Views: 20167.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for 127.0.0.1 at 2019-03-14 10:34:55 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zHrHr2yQDdGZpoU+CDzFhrcijUHyxLprZCIbUD+IlP4SJ0XhXDz4+j9yatvwWWdT/+CnhnFA7ezhVtLe1zClFA==", "lead"=>{"full_name"=>"dsadas", "email"=>"sad", "phone_number"=>"asdsa", "project_name"=>"sad", "company_name"=>"dasd", "department_in_charge"=>"-", "project_description"=>"", "message"=>"sad"}, "commit"=>"Send Message"}
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` WHERE `customers`.`company_name` = 'dasd' LIMIT 1[0m
+  ↳ app/controllers/leads_controller.rb:29
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:34
+  [1m[36mLead Create (0.9ms)[0m  [1m[32mINSERT INTO `leads` (`full_name`, `company_name`, `email`, `phone_number`, `project_name`, `project_description`, `department_in_charge`, `message`, `created_at`, `updated_at`) VALUES ('dsadas', 'dasd', 'sad', 'asdsa', 'sad', '', '-', 'sad', '2019-03-14 14:34:55', '2019-03-14 14:34:55')[0m
+  ↳ app/controllers/leads_controller.rb:34
+  [1m[35m (18.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:34
+Redirected to http://localhost:3000/index.html#contact
+Completed 302 Found in 45ms (ActiveRecord: 22.0ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2019-03-14 10:34:55 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 167ms (Views: 160.3ms | ActiveRecord: 0.0ms)
+
+
