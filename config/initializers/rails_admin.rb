@@ -33,6 +33,7 @@ RailsAdmin.config do |config|
     edit
     delete
     show_in_app
+
     config.current_user_method(&:current_user)
 
     ## With an audit adapter, you can add:
