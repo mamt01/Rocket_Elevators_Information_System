@@ -1,6 +1,8 @@
 require 'pg'
 namespace :export do
 
+    #[do not forget (init.rake)]
+
     desc "export to postgresql"
     task datawarehouse: :environment do
     

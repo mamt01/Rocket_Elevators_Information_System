@@ -30,7 +30,7 @@ class LeadsController < ApplicationController
     # if @lead.full_name.include? "'"
     #   sentence["'"] = " "
     # end
-    #   #ADDED THE UPPER LINES TO TRY AND SOLVE THE O'HARA PROBLEM
+    #   #ADDED THE UPPER LINES TO TRY AND SOLVE THE O'HARA PROBLEM ... still not working
 
  
     @customer = Customer.find_by company_name: params[:lead][:company_name]
