@@ -44,6 +44,7 @@ gem 'rvm1-capistrano3', require: false
 #
 gem 'capistrano3-puma'
 #
+gem 'pg', '~> 0.18.4'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
