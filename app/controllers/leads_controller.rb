@@ -15,6 +15,7 @@ class LeadsController < ApplicationController
   # GET /leads/new
   def new
     @lead = Lead.new
+    format.html { redirect_to "/index.html#contact"}
   end
 
   # GET /leads/1/edit
@@ -42,7 +43,7 @@ class LeadsController < ApplicationController
       end
     end
   end
-
+end
   # PATCH/PUT /leads/1
   # PATCH/PUT /leads/1.json
   def update
@@ -77,5 +78,4 @@ class LeadsController < ApplicationController
     def lead_params
       params.require(:lead).permit(:full_name, :company_name, :email, :phone_number, :project_name, :project_description, :department_in_charge, :message, :attachment)
     end
-end
 end
