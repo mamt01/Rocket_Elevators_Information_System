@@ -42,6 +42,7 @@ class LeadsController < ApplicationController
       end
     end
   end
+end
 
   # PATCH/PUT /leads/1
   # PATCH/PUT /leads/1.json
