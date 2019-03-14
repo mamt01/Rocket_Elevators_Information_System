@@ -15,6 +15,7 @@ class LeadsController < ApplicationController
   # GET /leads/new
   def new
     @lead = Lead.new
+    format.html { redirect_to "/index.html#contact"}
   end
 
   # GET /leads/1/edit
@@ -34,16 +35,15 @@ class LeadsController < ApplicationController
 
     respond_to do |format|
       if @lead.save
-        format.html { redirect_to "/index.html#contact", notice: 'Lead was successfully created.' }
+        format.html { redirect_to "/index.html#contact", alert: 'Lead was successfully created.' }
         format.json { render :show, status: :created, location: @lead }
       else
-        format.html { render :new }
+        format.html { redirect_to "/index.html#contact" }
         format.json { render json: @lead.errors, status: :unprocessable_entity }
       end
     end
   end
 end
-
   # PATCH/PUT /leads/1
   # PATCH/PUT /leads/1.json
   def update
@@ -78,5 +78,4 @@ end
     def lead_params
       params.require(:lead).permit(:full_name, :company_name, :email, :phone_number, :project_name, :project_description, :department_in_charge, :message, :attachment)
     end
-end
 end
