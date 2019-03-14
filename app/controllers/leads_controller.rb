@@ -35,10 +35,10 @@ class LeadsController < ApplicationController
 
     respond_to do |format|
       if @lead.save
-        format.html { redirect_to "/index.html#contact", notice: 'Lead was successfully created.' }
+        format.html { redirect_to "/index.html#contact", alert: 'Lead was successfully created.' }
         format.json { render :show, status: :created, location: @lead }
       else
-        format.html { render :new }
+        format.html { redirect_to "/index.html#contact" }
         format.json { render json: @lead.errors, status: :unprocessable_entity }
       end
     end
