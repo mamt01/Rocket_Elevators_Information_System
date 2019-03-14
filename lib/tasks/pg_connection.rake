@@ -15,13 +15,13 @@ namespace :export do
         conn.exec ("TRUNCATE factcontact RESTART IDENTITY")
         Lead.all.each do |lead|
             conn.exec("INSERT INTO \"factcontact\" (contact_id, date_of_creation, business_name, email, project_name) 
-            VALUES (#{lead.id}, '#{lead.created_at}', '#{lead.company_name}', '#{lead.email}', #{lead.project_name})")
+            VALUES (#{lead.id}, '#{lead.created_at}', '#{lead.company_name}', '#{lead.email}', '#{lead.project_name}')")
         end
 
         conn.exec ("TRUNCATE factelevator RESTART IDENTITY")
         Elevator.all.each do |elevator|
             conn.exec("INSERT INTO \"factelevator\" (elevator_id, serial_no, date_of_init, building_id, customer_id, city) 
-            VALUES (#{elevator.id}, '#{elevator.serial_number}', '#{elevator.date_of_instal}', '#{elevator.column.battery.building_id}', #{elevator.column.battery.building.customer_id}, #{elevator.column.battery.building.address.city})")
+            VALUES (#{elevator.id}, '#{elevator.serial_number}', '#{elevator.date_of_instal}', '#{elevator.column.battery.building_id}', #{elevator.column.battery.building.customer_id}, '#{elevator.column.battery.building.address.city}')")
         end
 
         conn.exec("TRUNCATE dimcustomers RESTART IDENTITY")
