@@ -27,7 +27,10 @@ class LeadsController < ApplicationController
     @lead = Lead.new(lead_params)
 
     @customer = Customer.find_by company_name: params[:lead][:company_name]
-    @lead.customer_id = @customer.id
+
+   if @customer != nil
+      @lead.customer_id = @customer.id
+   else @lead.customer_id = nil
 
     respond_to do |format|
       if @lead.save
@@ -74,4 +77,5 @@ class LeadsController < ApplicationController
     def lead_params
       params.require(:lead).permit(:full_name, :company_name, :email, :phone_number, :project_name, :project_description, :department_in_charge, :message, :attachment)
     end
+end
 end
