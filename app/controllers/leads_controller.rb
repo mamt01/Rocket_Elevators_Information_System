@@ -25,9 +25,15 @@ class LeadsController < ApplicationController
   # POST /leads.json
   def create
     @lead = Lead.new(lead_params)
+<<<<<<< HEAD
 
     @customer = Customer.find_by company_name: params[:lead][:company_name] 
     if @customer != nil 
+=======
+ 
+    @customer = Customer.find_by company_name: params[:lead][:company_name]
+    if @customer != nil
+>>>>>>> 88a17c744d9ceea7938b36b1db0b3bb8f3b73d48
         @lead.customer_id = @customer.id
     else @lead.customer_id = nil
     respond_to do |format|

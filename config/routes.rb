@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :stats
   devise_for :users
   mount RailsAdmin::Engine => '/emp-dashboard', as: 'rails_admin'
   resources :elevators
@@ -31,6 +32,7 @@ Rails.application.routes.draw do
   get '/work10', to: 'pages#work10'
   get '/work11', to: 'pages#work11'
   get '/work12', to: 'pages#work12'
+  get '/stats', to: 'stats#stats'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'pages#index'
 end

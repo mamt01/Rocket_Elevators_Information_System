@@ -15,6 +15,10 @@
 // = require scripts
 // = require plugins/slider.revolution/js/jquery.themepunch.tools.min
 // = require plugins/slider.revolution/js/jquery.themepunch.revolution.min.js
+<<<<<<< HEAD
 // = require demo.revolution_slider
 //= require Chart.bundle
 //= require chartkick
+=======
+// = require demo.revolution_slider
+>>>>>>> 88a17c744d9ceea7938b36b1db0b3bb8f3b73d48
