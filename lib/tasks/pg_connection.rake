@@ -4,7 +4,7 @@ namespace :export do
     desc "export to postgresql"
     task datawarehouse: :environment do
     
-        conn = PG::Connection.open(host: "localhost", port: 5432, dbname: "datawarehouse", user: "postgres", password: "admin")
+        conn = PG::Connection.open(host: "localhost", port: 5432, dbname: "postgres", user: "postgres", password: "123456")
 
         conn.exec ("TRUNCATE factquotes RESTART IDENTITY")
         Quote.all.each do |quote|
@@ -14,8 +14,8 @@ namespace :export do
 
         conn.exec ("TRUNCATE factcontact RESTART IDENTITY")
         Lead.all.each do |lead|
-            conn.exec("INSERT INTO \"factcontact\" (contact_id, date_of_creation, business_name, email, project_name) 
-            VALUES (#{lead.id}, '#{lead.created_at}', '#{lead.company_name}', '#{lead.email}', #{lead.project_name})")
+            conn.exec("INSERT INTO \"factcontact\" (contact_id, date_of_creation, business_name, email, project_name)
+            VALUES ( #{lead.id}, '#{lead.created_at}', '#{lead.company_name}', '#{lead.email}', '#{lead.project_name}')")
         end
 
         conn.exec ("TRUNCATE factelevator RESTART IDENTITY")
