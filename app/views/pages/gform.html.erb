@@ -367,13 +367,21 @@
                                     
                                 <div class="row">
                                     <div class="col-md-4-1">
-                                    <label class="label_form" for="radio-button">Service level *</label>
-                                    <%= form.radio_button(:service_level, 'Standard') %>
-                                    <%= form.label :Standard %>
-                                    <%= form.radio_button(:service_level, 'Premium') %>
-                                    <%= form.label :Premium %>
-                                    <%= form.radio_button(:service_level, 'Excelium') %>
-                                    <%= form.label :Excelium %>
+                                        <label class="label_form" for="radio-button">Service level *</label>
+                                            <table>   
+                                                    <tr>
+                                                        <td><%= form.radio_button(:service_level, 'Standard') %></td>
+                                                        <td><%= form.label :Standard %></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><%= form.radio_button(:service_level, 'Premium') %></td>
+                                                        <td><%= form.label :Premium %></td>
+                                                    </tr>
+                                                    <tr>    
+                                                        <td><%= form.radio_button(:service_level, 'Excelium') %></td>
+                                                        <td><%= form.label :Excelium %></td>
+                                                    </tr>    
+                                            </table>            
                                     </div>
                                 </div>
                                 
@@ -503,27 +511,7 @@
                     </div>
                     <!-- /col #1 -->
 
-                    <!-- col #2 -->
-                    <div class="col-md-4">
-                        <h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
-
-                        <!-- Newsletter Form -->
-                        <p>Subscribe to Our Newsletter to get Important News from Rocket Elevators ! </p>
-
-                        <class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                <input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-primary" type="submit">Subscribe</button>
-                                </span>
-                            </div>
-                        <!-- /Newsletter Form -->
-
-
-                    </div>
-                    <!-- /col #2 -->
- 
+                    
                 </div>
 
             </div>
