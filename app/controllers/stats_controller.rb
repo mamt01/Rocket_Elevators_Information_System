@@ -7,16 +7,32 @@ def authenticate
 end
 
 
-
   # GET /stats
   # GET /stats.json
   def index
-      conn = PG::Connection.open(host: "localhost", port: 5432, dbname: "datawarehouse", user: "postgres", password: "admin")
-      @results  = conn.exec_params('
-      SELECT YEAR(creation_date), MONTH(creation_date), COUNT(*) as number_of_quotes
-      FROM      factquotes 
-      GROUP BY  YEAR(creation_date) MONTH(creation_date)
-      ORDER BY  YEAR(creation_date), MONTH(creation_date)')
+      conn = PG::Connection.open(host: "codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com", port: 5432, dbname: "marc_antoine_tanguay", user: "codeboxx", password: "Codeboxx1!")
+      @result  = conn.exec('SELECT extract(YEAR FROM creation_date) AS YEAR, extract(MONTH FROM creation_date) AS MONTH, COUNT(quote_id)
+      FROM      factquotes
+      GROUP BY  YEAR, MONTH
+      ORDER BY  YEAR, MONTH')
+      @x1 = @result.column_values(1)
+      @y1 = @result.column_values(2)
+
+      @result1 = conn.exec('SELECT extract(YEAR FROM date_of_creation) AS YEAR, extract(MONTH FROM date_of_creation) AS MONTH, COUNT(contact_id)
+      FROM      factcontact
+      GROUP BY  YEAR, MONTH
+      ORDER BY  YEAR, MONTH')
+      @x2 = @result1.column_values(1)
+      @y2 = @result1.column_values(2)
+
+      @result2 = conn.exec('SELECT  company_name, number_of_elevators FROM dimcustomers WHERE number_of_elevators > 0
+      GROUP BY company_name,number_of_elevators 
+      order by number_of_elevators
+      LIMIT 10')
+      @x3 = @result2.column_values(0)
+      @y3 = @result2.column_values(1)
+
+
   end
 
   # GET /stats/1

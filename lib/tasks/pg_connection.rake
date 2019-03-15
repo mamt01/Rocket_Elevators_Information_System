@@ -4,7 +4,7 @@ namespace :export do
     desc "export to postgresql"
     task datawarehouse: :environment do
     
-        conn = PG::Connection.open(host: "localhost", port: 5432, dbname: "datawarehouse", user: "postgres", password: "admin")
+        conn = PG::Connection.open(host: "codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com", port: 5432, dbname: "marc_antoine_tanguay", user: "codeboxx", password: "Codeboxx1!")
 
         conn.exec ("TRUNCATE factquotes RESTART IDENTITY")
         Quote.all.each do |quote|
@@ -21,7 +21,7 @@ namespace :export do
         conn.exec ("TRUNCATE factelevator RESTART IDENTITY")
         Elevator.all.each do |elevator|
             conn.exec("INSERT INTO \"factelevator\" (elevator_id, serial_no, date_of_init, building_id, customer_id, city) 
-            VALUES (#{elevator.id}, '#{elevator.serial_number}', '#{elevator.date_of_instal}', '#{elevator.column.battery.building_id}', #{elevator.column.battery.building.customer_id}, #{elevator.column.battery.building.address.city})")
+            VALUES (#{elevator.id}, '#{elevator.serial_number}', '#{elevator.date_of_instal}', '#{elevator.column.battery.building_id}', #{elevator.column.battery.building.customer_id}, '#{elevator.column.battery.building.address.city}')")
         end
 
         conn.exec("TRUNCATE dimcustomers RESTART IDENTITY")
@@ -38,6 +38,5 @@ namespace :export do
                         VALUES ('#{customer.date_of_creation}', '#{customer.company_name}', '#{customer.full_name_contact_person}', '#{customer.email_contact_person}', #{no_elevators}, '#{customer.address.city}')")
                         conn.exec(sql)
         end
-
     end
 end

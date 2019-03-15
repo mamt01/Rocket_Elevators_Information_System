@@ -36,6 +36,7 @@ require "capistrano/bundler"
 # require "capistrano/passenger"
 require "capistrano/rails"
 require "capistrano/puma"
+require "whenever/capistrano"
 install_plugin Capistrano::Puma
 install_plugin Capistrano::Puma::Nginx
 
