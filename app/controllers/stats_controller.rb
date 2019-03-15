@@ -11,8 +11,8 @@ end
   # GET /stats
   # GET /stats.json
   def index
-      conn = PG::Connection.open(host: "localhost", port: 5432, dbname: "datawarehouse", user: "postgres", password: "admin")
-      @results  = conn.exec_params(Question 1.sql)
+      conn = PG::Connection.open(host: "codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com", port: 5432, dbname: "marc_antoine_tanguay", user: "codeboxx", password: "Codeboxx1!")
+      @results  = conn.exec_params(Question_1.sql)
   end
 
   # GET /stats/1
