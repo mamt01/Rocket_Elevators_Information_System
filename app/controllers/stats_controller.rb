@@ -10,7 +10,7 @@ end
   # GET /stats
   # GET /stats.json
   def index
-      conn = PG::Connection.open(host: "localhost", port: 5432, dbname: "postgres", user: "postgres", password: "123456")
+      conn = PG::Connection.open(host: "codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com", port: 5432, dbname: "marc_antoine_tanguay", user: "codeboxx", password: "Codeboxx1!")
       @result  = conn.exec('SELECT extract(YEAR FROM creation_date) AS YEAR, extract(MONTH FROM creation_date) AS MONTH, COUNT(quote_id)
       FROM      factquotes
       GROUP BY  YEAR, MONTH
