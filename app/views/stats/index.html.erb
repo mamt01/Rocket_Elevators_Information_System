@@ -129,9 +129,9 @@
             </div>
 		<section class='row'>
 
-			<canvas id="myChart" width="133" height="133"></canvas>
-			<canvas id="myChart1" width="133" height="133"></canvas>
-			<canvas id="myChart2" width="133" height="133"></canvas>
+			<canvas id="myChart" width="30%" height="100px"></canvas>
+			<canvas id="myChart1" width="30%" height="100px"></canvas>
+			<canvas id="myChart2" width="30%" height="100px"></canvas>
 
 		<script>
 			var ctx = document.getElementById('myChart').getContext('2d');
@@ -178,7 +178,7 @@
 				data: {
 					labels: <%= raw @x2 %>,
 					datasets: [{
-						label: 'Demands Group By Month',
+						label: 'Contacts Group By Month',
 						data: <%= raw @y2 %>,
 						backgroundColor: [
 							'rgba(255, 99, 132, 0.2)',
@@ -216,7 +216,7 @@
 					data: {
 						labels: <%= raw @x3 %>,
 						datasets: [{
-							label: 'Demands Group By Month',
+							label: 'Number Of Elevator Per Customer',
 							data: <%= raw @y3 %>,
 							backgroundColor: [
 								'rgba(255, 99, 132, 0.2)',
