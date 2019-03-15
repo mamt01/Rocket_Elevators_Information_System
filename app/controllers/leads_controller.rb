@@ -26,13 +26,11 @@ class LeadsController < ApplicationController
   # POST /leads.json
   def create
     @lead = Lead.new(lead_params)
-
+ 
     @customer = Customer.find_by company_name: params[:lead][:company_name]
-
-   if @customer != nil
-      @lead.customer_id = @customer.id
-   else @lead.customer_id = nil
-
+    if @customer != nil
+        @lead.customer_id = @customer.id
+    else @lead.customer_id = nil
     respond_to do |format|
       if @lead.save
         format.html { redirect_to "/index#contact", alert: 'Lead was successfully created.' }
@@ -40,6 +38,7 @@ class LeadsController < ApplicationController
       else
         format.html { redirect_to "/index#contact" }
         format.json { render json: @lead.errors, status: :unprocessable_entity }
+      end
       end
     end
   end
