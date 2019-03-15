@@ -52,12 +52,12 @@
 							</a>
 	
 							<!-- 
-								Top Nav 
-								
-								AVAILABLE CLASSES:
-								submenu-dark = dark sub menu
-							-->
-							<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+								                       													Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
 								<nav class="nav-main">
 	
 									<!-- 
@@ -67,10 +67,10 @@
 										Add .external for an external link!
 									-->
 									<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
-										<%= link_to "", '/index', :method => :get %> 
+										<%= link_to "", '/index', :method => :get %>
 										<li class="active"><!-- HOME -->
 											<a href="index.html">
-												HOME 	
+												HOME
 											</a>
 										</li>
 										<li><!-- SERVICES -->
@@ -114,14 +114,20 @@
                                         EMPLOYEES
                                     </a>
                                 </li>
+							<%=link_to "", '/stats', :method => :get %>
+                                <li> <!-- STATS -->
+                                    <a href="stats">
+                                        STATS
+                                    </a>
+                                </li>
 									</ul>
 	
 								</nav>
 							</div>
-	
-						</div>
-					</header>
-					<!-- /Top Nav -->
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
 	
 				</div>
 			<section class="page-header page-header-xs">
@@ -241,27 +247,7 @@
 							</div>
 							<!-- /col #1 -->
 	
-							<!-- col #2 -->
-							<div class="col-md-4">
-								<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
-	
-								<!-- Newsletter Form -->
-								<p>Subscribe to Our Newsletter to get Important News from Rocket Elevators ! </p>
-	
-								<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-										<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
-										<span class="input-group-btn">
-											<button class="btn btn-primary" type="submit">Subscribe</button>
-										</span>
-									</div>
-								</form>
-								<!-- /Newsletter Form -->
-	
-	
-							</div>
-							<!-- /col #2 -->
+						
 	
 						</div>
 	

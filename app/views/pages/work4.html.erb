@@ -122,13 +122,13 @@
 							</a>
 	
 							<!-- 
-								Top Nav 
-								
-								AVAILABLE CLASSES:
-								submenu-dark = dark sub menu
-							-->
-							<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
-									<nav class="nav-main">
+                       													Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+								<nav class="nav-main">
 	
 									<!-- 
 										.nav-onepage
@@ -137,10 +137,10 @@
 										Add .external for an external link!
 									-->
 									<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
-										<%= link_to "", '/index', :method => :get %> 
+										<%= link_to "", '/index', :method => :get %>
 										<li class="active"><!-- HOME -->
 											<a href="index.html">
-												HOME 	
+												HOME
 											</a>
 										</li>
 										<li><!-- SERVICES -->
@@ -184,14 +184,20 @@
                                         EMPLOYEES
                                     </a>
                                 </li>
+							<%=link_to "", '/stats', :method => :get %>
+                                <li> <!-- STATS -->
+                                    <a href="stats">
+                                        STATS
+                                    </a>
+                                </li>
 									</ul>
 	
 								</nav>
 							</div>
-	
-						</div>
-					</header>
-					<!-- /Top Nav -->
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
 	
 				</div>
 			<section class="page-header page-header-xs">
