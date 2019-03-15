@@ -27,7 +27,8 @@ end
 
       @result2 = conn.exec('SELECT  company_name, number_of_elevators FROM dimcustomers WHERE number_of_elevators > 0
       GROUP BY company_name,number_of_elevators 
-      order by number_of_elevators;')
+      order by number_of_elevators
+      LIMIT 10')
       @x3 = @result2.column_values(0)
       @y3 = @result2.column_values(1)
 

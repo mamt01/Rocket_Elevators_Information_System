@@ -129,15 +129,15 @@
 			</div>
 		<section>
 		<div class= 'row'>
-		<div width="400px" height="350px">
+		<div width="450px" height="350px">
 			<canvas id="myChart"></canvas>
 		</div>
 
-		<div width="400px" height="350px">
+		<div width="450px" height="350px">
 			<canvas id="myChart1"></canvas>
 		</div>
 
-		<div width="400px" height="350px">
+		<div width="450px" height="350px">
 			<canvas id="myChart2"></canvas>
 		</div>
 		</div>
@@ -148,7 +148,7 @@
 				data: {
 					labels: <%= raw @x1 %>,
 					datasets: [{
-						label: 'Demands Group By Month',
+						label: 'Demands Grouped By Month',
 						data: <%= raw @y1 %>,
 						backgroundColor: [
 							'rgba(255, 99, 132, 0.2)',
@@ -186,7 +186,7 @@
 				data: {
 					labels: <%= raw @x2 %>,
 					datasets: [{
-						label: 'Contacts Group By Month',
+						label: 'Contacts Grouped By Month',
 						data: <%= raw @y2 %>,
 						backgroundColor: [
 							'rgba(255, 99, 132, 0.2)',
