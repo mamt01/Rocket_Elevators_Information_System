@@ -12,11 +12,7 @@ end
   # GET /stats.json
   def index
       conn = PG::Connection.open(host: "localhost", port: 5432, dbname: "datawarehouse", user: "postgres", password: "admin")
-      @results  = conn.exec_params('
-      SELECT YEAR(creation_date), MONTH(creation_date), COUNT(*) as number_of_quotes
-      FROM      factquotes 
-      GROUP BY  YEAR(creation_date) MONTH(creation_date)
-      ORDER BY  YEAR(creation_date), MONTH(creation_date)')
+      @results  = conn.exec_params(Question 1.sql)
   end
 
   # GET /stats/1

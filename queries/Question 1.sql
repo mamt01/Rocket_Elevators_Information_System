@@ -1,4 +1,4 @@
-SELECT    YEAR(creation_date), MONTH(creation_date) COUNT(*) as number_of_quotes
-FROM      factquotes 
-GROUP BY  YEAR(creation_date) MONTH(creation_date)
-ORDER BY  YEAR(creation_date), MONTH(creation_date)
+SELECT extract(YEAR FROM creation_date) AS YEAR, extract(MONTH FROM creation_date) AS MONTH, COUNT(quote_id)
+FROM      factquotes
+GROUP BY  YEAR, MONTH
+ORDER BY  YEAR, MONTH
