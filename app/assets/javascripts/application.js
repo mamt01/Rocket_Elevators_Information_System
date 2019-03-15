@@ -17,5 +17,4 @@
 // = require plugins/slider.revolution/js/jquery.themepunch.tools.min
 // = require plugins/slider.revolution/js/jquery.themepunch.revolution.min.js
 // = require demo.revolution_slider
-//= require Chart.bundle
-//= require chartkick
+
