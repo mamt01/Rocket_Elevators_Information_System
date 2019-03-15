@@ -971,7 +971,7 @@
 						<div class="img-hover">
 								<img class="img-fluid" src="https://cdnph.upi.com/svc/sv/i/7801547732083/2019/1/15477336439292/First-advanced-weapons-elevator-completed-on-USS-Gerald-R-Ford.jpg" alt="" style="height:150px; width:250px">
 
-							<h4 class="text-left mt-20"><a href="https://taskandpurpose.com/gerald-r-ford-weapons-elevator">Eveletors And The Army</a></h4>
+							<h4 class="text-left mt-20"><a href="https://taskandpurpose.com/gerald-r-ford-weapons-elevator">Elevators And The Army</a></h4>
 							<p class="text-left">A new elevator is used by the Navy to lift some of their weapons.</p>
 							<ul class="text-left fs-12 list-inline list-separator">
 								<li>
@@ -1192,7 +1192,7 @@
 									<div class="row">
 											<div class="col-md-12">
 											<%= form.label :attachment %>
-											<%= form.file_field :attachment, class: 'custom-file-upload'%>
+											<%= form.file_field :attachment, class: 'custom-file-upload', id: 'attachment' %>
 
 											</div>
 									</div>
@@ -1201,7 +1201,7 @@
 
 								<div class="row">
 									<div class="col-md-12">
-									<%= form.submit class: 'btn btn-primary', value: 'Send Message', :onclick => "alert('The demand was sucessfully sent')" %>	
+									<%= form.submit class: 'btn btn-primary', value: 'Send Message', :onclick => "alert('Have you filled all the required fields? If Yes, your demand was successfully sent!)" %>	
 									</div>
 								</div>
 							<% end %>
