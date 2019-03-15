@@ -1,2 +1,3 @@
 class Stat < ApplicationRecord
+    
 end

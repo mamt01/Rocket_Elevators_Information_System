@@ -10,9 +10,12 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives
 //
+
 // = require jquery
-//= require jquery_ujs
+// = require jquery_ujs
 // = require scripts
 // = require plugins/slider.revolution/js/jquery.themepunch.tools.min
 // = require plugins/slider.revolution/js/jquery.themepunch.revolution.min.js
 // = require demo.revolution_slider
+// = require Chart.bundle
+// = require chartkick
