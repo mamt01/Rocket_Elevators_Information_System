@@ -11,14 +11,14 @@ end
   # GET /stats.json
   def index
       conn = PG::Connection.open(host: "codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com", port: 5432, dbname: "marc_antoine_tanguay", user: "codeboxx", password: "Codeboxx1!")
-      @result  = conn.exec('SELECT extract(YEAR FROM creation_date) AS YEAR, extract(MONTH FROM creation_date) AS MONTH, COUNT(quote_id)
+      @result  = conn.exec('SELECT extract(YEAR FROM creation_date) AS YEAR, to_char(to_timestamp(extract(MONTH FROM creation_date)::text, 'MM'), 'TMmon') AS MONTH, COUNT(quote_id)
       FROM      factquotes
       GROUP BY  YEAR, MONTH
       ORDER BY  YEAR, MONTH')
       @x1 = @result.column_values(1)
       @y1 = @result.column_values(2)
 
-      @result1 = conn.exec('SELECT extract(YEAR FROM date_of_creation) AS YEAR, extract(MONTH FROM date_of_creation) AS MONTH, COUNT(contact_id)
+      @result1 = conn.exec('SELECT extract(YEAR FROM date_of_creation) AS YEAR, to_char(to_timestamp(extract(MONTH FROM date_of_creation)::text, 'MM'), 'TMmon') AS MONTH, COUNT(contact_id)
       FROM      factcontact
       GROUP BY  YEAR, MONTH
       ORDER BY  YEAR, MONTH')
