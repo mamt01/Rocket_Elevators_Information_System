@@ -129,13 +129,13 @@
             </div>
 		<section class='row'>
 		<div>
-			<canvas id="myChart" width="400" height="400"></canvas>
+			<canvas id="myChart" width="350" height="300"></canvas>
 		</div>
 		<div>
-			<canvas id="myChart1" width="400" height="400"></canvas>
+			<canvas id="myChart1" width="350" height="300"></canvas>
 		</div>
 		<div>
-			<canvas id="myChart2" width="400" height="400"></canvas>
+			<canvas id="myChart2" width="350" height="300"></canvas>
 		</div>
 
 		<script>
@@ -168,6 +168,7 @@
 				},
 				options: {
 					scales: {
+						barPercentage: 0.1,
 						yAxes: [{
 							ticks: {
 								beginAtZero: true
