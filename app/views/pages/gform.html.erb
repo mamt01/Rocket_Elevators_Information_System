@@ -358,16 +358,24 @@
                                 </div>
                                     
                                 <div class="row">
-                                    <div class="col-md-4-1">
-                                    <label class="label_form" for="radio-button">Service level *</label>
-                                    <%= form.radio_button(:service_level, 'Standard') %>
-                                    <%= form.label :Standard %>
-                                    <%= form.radio_button(:service_level, 'Premium') %>
-                                    <%= form.label :Premium %>
-                                    <%= form.radio_button(:service_level, 'Excelium') %>
-                                    <%= form.label :Excelium %>
-                                    </div>
-                                </div>
+                                   <div class="col-md-4-1">
+                                       <label class="label_form" for="radio-button">Service level *</label>
+                                           <table>
+                                                   <tr>
+                                                       <td><%= form.radio_button(:service_level, 'Standard') %></td>
+                                                       <td><%= form.label :Standard %></td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td><%= form.radio_button(:service_level, 'Premium') %></td>
+                                                       <td><%= form.label :Premium %></td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td><%= form.radio_button(:service_level, 'Excelium') %></td>
+                                                       <td><%= form.label :Excelium %></td>
+                                                   </tr>
+                                           </table>
+                                   </div>
+                               </div>
                                 
                             </fieldset>
 
