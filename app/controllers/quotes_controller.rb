@@ -58,7 +58,7 @@ class QuotesController < ApplicationController
         format.html { redirect_to "/gform" }
         format.json { render :show, status: :created, location: @quote }
       else
-        format.html { render :new }
+        format.html { redirect_to "/gform" }
         format.json { render json: @quote.errors, status: :unprocessable_entity }
       end
     end
