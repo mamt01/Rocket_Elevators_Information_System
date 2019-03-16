@@ -251,15 +251,15 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                         <%= form.label :full_name %>
-                                        <%= form.text_field :full_name, class: 'form-control-5' %>
+                                        <%= form.text_field :full_name, class: 'form-control-5', required => true %>
                                     </div>
                                     <div class="col-md-3">
                                         <%= form.label :company_name %>
-                                        <%= form.text_field :company_name, class: 'form-control-5' %>
+                                        <%= form.text_field :company_name, class: 'form-control-5', required => true %>
                                     </div>
                                     <div class="col-md-3">
                                         <%= form.label :email %>
-                                        <%= form.text_field :email, class: 'form-control-5' %>
+                                        <%= form.text_field :email, class: 'form-control-5' required => true%>
                                     </div>
                                     <div class="col-md-3">
                                         <%= form.label :phone_number %>
@@ -276,22 +276,22 @@
                                     
                                         <div class="col-md-4">
                                             <%= form.label :number_of_apartments %>
-                                            <%= form.text_field :number_of_apartments, class: 'form-control-1', name:'quote[resi_number_of_apartments]', id: 'resi-app'  %>
+                                            <%= form.text_field :number_of_apartments, class: 'form-control-1', name:'quote[resi_number_of_apartments]', id: 'resi-app', required => true  %>
                                             </div>
                                         <div class="col-md-4">
                                             <%= form.label :number_of_floors %>
-                                            <%= form.text_field :number_of_floors, class: 'form-control-1', name:'quote[resi_number_of_floors]', id: 'resi-floor'  %>
+                                            <%= form.text_field :number_of_floors, class: 'form-control-1', name:'quote[resi_number_of_floors]', id: 'resi-floor', required => true  %>
                                         </div>
                                             <div class="col-md-4">
                                             <%= form.label :number_of_basements %>
-                                            <%= form.text_field :number_of_basements, class: 'form-control-1', name:'quote[resi_number_of_basements]', id: 'resi-quar'  %>
+                                            <%= form.text_field :number_of_basements, class: 'form-control-1', name:'quote[resi_number_of_basements]', id: 'resi-quar' %>
                                             </div>
                               
                                 </div>
                                 <div class="row-2">
                                         <div class="col-md-4">
                                             <%= form.label :number_of_elevators %>
-                                            <%= form.text_field :number_of_elevators, class: 'form-control-4', name:'quote[number_of_elevators]', id: 'com-asce'  %>
+                                            <%= form.text_field :number_of_elevators, class: 'form-control-4', name:'quote[number_of_elevators]', id: 'com-asce', required => true  %>
                                             </div>
                                         <div class="col-md-4">
                                             <%= form.label :number_of_apartments %>
@@ -316,19 +316,19 @@
                                 <div class="row-3">
                                         <div class="col-md-4">
                                             <%= form.label :number_of_floors %>
-                                            <%= form.text_field :number_of_floors, class: 'form-control-2', name:'quote[corp_number_of_floors]', id: 'cor-floor'  %>
+                                            <%= form.text_field :number_of_floors, class: 'form-control-2', name:'quote[corp_number_of_floors]', id: 'cor-floor', required => true  %>
                                             </div>
                                         <div class="col-md-4">
                                             <%= form.label :number_of_basements %>
-                                            <%= form.text_field :number_of_basements, class: 'form-control-2', name:'quote[corp_number_of_basements]', id: 'cor-quar'  %>
+                                            <%= form.text_field :number_of_basements, class: 'form-control-2', name:'quote[corp_number_of_basements]', id: 'cor-quar' %>
                                         </div>
                                             <div class="col-md-4">
                                             <%= form.label :max_occupancy_per_floor %>
-                                            <%= form.text_field :max_occupancy_per_floor, class: 'form-control-2', name:'quote[corp_max_occupancy_per_floor]', id: 'cor-occu'  %>
+                                            <%= form.text_field :max_occupancy_per_floor, class: 'form-control-2', name:'quote[corp_max_occupancy_per_floor]', id: 'cor-occu', required => true %>
                                          </div>
                                             <div class="col-md-4">
                                                 <%= form.label :number_of_stores %>
-                                                <%= form.text_field :number_of_stores, class: 'form-control-2', name:'quote[corp_number_of_stores]', id: 'cor-com'  %>
+                                                <%= form.text_field :number_of_stores, class: 'form-control-2', name:'quote[corp_number_of_stores]', id: 'cor-com', required => true  %>
                                             </div>
 
                                             <div class="col-md-4">
@@ -340,7 +340,7 @@
                                 <div class="row-4">
                                         <div class="col-md-4">
                                             <%= form.label :number_of_floors %>
-                                            <%= form.text_field :number_of_floors, class: 'form-control-3', name:'quote[hyb_number_of_floors]', id: 'hyb-floor'  %>
+                                            <%= form.text_field :number_of_floors, class: 'form-control-3', name:'quote[hyb_number_of_floors]', id: 'hyb-floor', required => true  %>
                                             </div>
                                         <div class="col-md-4">
                                             <%= form.label :number_of_basements %>
@@ -348,7 +348,7 @@
                                         </div>
                                         <div class="col-md-4">
                                             <%= form.label :max_occupancy_per_floor %>
-                                            <%= form.text_field :max_occupancy_per_floor, class: 'form-control-3', name:'quote[hyb_max_occupancy_per_floor]', id: 'hyb-occu'  %>
+                                            <%= form.text_field :max_occupancy_per_floor, class: 'form-control-3', name:'quote[hyb_max_occupancy_per_floor]', id: 'hyb-occu', required => true  %>
                                         </div>
                                         <div class="col-md-4">
                                             <%= form.label :number_of_parking %>
@@ -357,7 +357,7 @@
 
                                         <div class="col-md-4">
                                             <%= form.label :number_of_stores %>
-                                            <%= form.text_field :number_of_stores, class: 'form-control-3', name:'quote[hyb_number_of_stores]', id: 'hyb-com'  %>
+                                            <%= form.text_field :number_of_stores, class: 'form-control-3', name:'quote[hyb_number_of_stores]', id: 'hyb-com', required => true  %>
                                         </div>
                                         <div class="col-md-4">
                                             <%= form.label :hour_of_activity %>
@@ -433,7 +433,7 @@
                                         </span>
                                         <hr>
                                     <div class="actions"> 
-                                    <%= form.submit class: 'btn btn-primary btn-lg btn-block fs-15', :onclick => "alert('The quote was sucessfully created')"%>
+                                    <%= form.submit class: 'btn btn-primary btn-lg btn-block fs-15', :onclick => "alert('Have you filled all the required fields? If Yes, your quote was successfully sent!')"%>
                                     </div>
                                     </div>
                                 </div>

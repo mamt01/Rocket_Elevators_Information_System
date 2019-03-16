@@ -69,7 +69,7 @@ class QuotesController < ApplicationController
   def update
     respond_to do |format|
       if @quote.update(quote_params)
-        format.html { redirect_to @quote }
+        format.html { redirect_to "/gform" }
         format.json { render :show, status: :ok, location: @quote }
       else
         format.html { render :edit }
@@ -83,7 +83,7 @@ class QuotesController < ApplicationController
   def destroy
     @quote.destroy
     respond_to do |format|
-      format.html { redirect_to quotes_url}
+      format.html { redirect_to "/gform" }
       format.json { head :no_content }
     end
   end
@@ -99,3 +99,4 @@ class QuotesController < ApplicationController
       params.require(:quote).permit(:department, :full_name, :company_name, :email, :phone_number, :number_of_floors, :number_of_basements, :number_of_parking, :number_of_stores, :max_occupancy_per_floor, :hours_of_activity, :service_level, :number_of_elevators, :total_cost)
     end
 end
+
