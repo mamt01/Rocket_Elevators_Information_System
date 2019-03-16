@@ -40,11 +40,9 @@
 
         <!-- 
             AVAILABLE HEADER CLASSES
-
             Default nav height: 96px
             .header-md 		= 70px nav height
             .header-sm 		= 60px nav height
-
             .b-0 		= remove bottom border (only with transparent use)
             .transparent	= transparent header
             .translucent	= translucent header
@@ -59,9 +57,7 @@
             shadow-after-2 	= shadow 2 header bottom
             shadow-before-3 = shadow 3 header top
             shadow-after-3 	= shadow 3 header bottom
-
             .clearfix		= required for mobile menu, do not remove!
-
             Example Usage:  class="clearfix sticky header-sm transparent b-0"
         -->
         <div id="header" class="navbar-toggleable-md sticky header-md clearfix">
@@ -82,82 +78,81 @@
                     </a>
 
                     <!-- 
-                            Top Nav 
-							
-							AVAILABLE CLASSES:
-							submenu-dark = dark sub menu
-						-->
-						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
-								<nav class="nav-main">
-	
-									<!-- 
-										.nav-onepage
-										Required for onepage navigation links
-										
-										Add .external for an external link!
-									-->
-									<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
-										<%= link_to "", '/index', :method => :get %>
-										<li class="active"><!-- HOME -->
-											<a href="index.html">
-												HOME
-											</a>
-										</li>
-										<li><!-- SERVICES -->
-											<a class="dropdown-toogle">
-												SERVICES
-	
-											</a>
-											<ul class="dropdown-menu">
-												<li>
-													<%= link_to "", '/residential', :method => :get %> <a href="residential.html">Residential</a>
-												</li>
-												<li>
-													<%= link_to "", '/commercial', :method => :get %> <a href="commercial.html">Commercial</a>
-												</li>
-											</ul>
-											
-										</li>
-											<%= link_to "", '/index', :method => :get %> <a href="index.html#work">
-										<li><!-- WORK -->
-												PORTFOLIO
-											</a>
-										</li>
-											<%= link_to "", '/index', :method => :get %><a href="index.html#news">
-										<li><!-- NEWS -->
-												NEWS
-											</a>
-										</li>
-											<%= link_to "", '/index', :method => :get %><a href="index.html#contact">
-										<li><!-- OVERVIEW -->
-												CONTACT
-											</a>
-										</li>
-											<%= link_to "", '/index', :method => :get %><a href="index.html#clients">
-										<li><!-- CLIENTS -->
-												CLIENTS
-											</a>
-										</li>
-										<%=link_to "", '/emp-dashboard', :method => :get %>
+                        Top Nav 
+                        
+                        AVAILABLE CLASSES:
+                        submenu-dark = dark sub menu
+                    -->
+                    <div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+                        <nav class="nav-main">
+
+                            <!-- 
+                                .nav-onepage
+                                Required for onepage navigation links
+                                
+                                Add .external for an external link!
+                            -->
+                            <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+                            <%=link_to "", '/index', :method => :get %>
+                                <li class="active"><!-- HOME -->
+                                    <a href="index.html">
+                                        HOME
+                                    </a>
+                                </li>
+                                <li><!-- SERVICES -->
+                                    <a class="dropdown-toogle">
+                                        SERVICES
+
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                        <%=link_to "", '/residential', :method => :get %><a  href="residential.html">Residential</a>
+                                        </li>
+                                        <li>
+                                        <%=link_to "", '/commercial', :method => :get %><a  href="commercial.html">Commercial</a>
+                                        </li>
+                                    </ul>
+                                    
+                                </li>
+                                <%=link_to "", '/index', :method => :get %>
+                                <li><!-- WORK -->
+                                    <a href="index.html#work">
+                                        PORTFOLIO
+                                    </a>
+                                </li>
+                                <%=link_to "", '/index', :method => :get %>
+                                <li><!-- NEWS -->
+                                    <a href="index.html#news">
+                                        NEWS
+                                    </a>
+                                </li>
+                                <%=link_to "", '/index', :method => :get %>
+                                <li><!-- OVERVIEW -->
+                                    <a href="index.html#contact">
+                                        CONTACT
+                                    </a>
+                                </li>
+                                <%=link_to "", '/index', :method => :get %>
                                 <li><!-- CLIENTS -->
-                                    <a href="/emp-dashboard">
+                                    <a href="index.html#clients">
+                                        CLIENTS
+                                    </a>
+                                </li>
+                                <%=link_to "", '/users/sign_in', :method => :get %>
+                                <li><!-- CLIENTS -->
+                                    <a href="/users/sign_in.html">
                                         EMPLOYEES
                                     </a>
                                 </li>
-							<%=link_to "", '/stats', :method => :get %>
-                                <li> <!-- STATS -->
-                                    <a href="stats">
-                                        STATS
-                                    </a>
-                                </li>
-									</ul>
-	
-								</nav>
-							</div>
+                            </ul>
 
-					</div>
-				</header>
-				<!-- /Top Nav -->
+                        </nav>
+                    </div>
+
+                </div>
+            </header>
+            <!-- /Top Nav -->
+
         </div>
 
 
@@ -172,7 +167,6 @@
 
 
         <!-- BLUE BUTTON CALLOUT 
-
         <a href="#" class="btn btn-xlg btn-primary fs-30 fullwidth m-0 rad-0 p-40">
                 <button>Awards and Projects </button>
                 <button>Residential's services</button>
@@ -209,15 +203,12 @@
                                     #alert_failed		= email not sent - internal server error (404 error or SMTP problem)
                                     #alert_mandatory	= email not sent - required fields empty
                                     Hashes are handled by assets/js/contact.js
-
                                 Form data: required to be an array. Example:
                                     contact[email][required]  WHERE: [email] = field name, [required] = only if this field is required (PHP will check this)
                                     Also, add `required` to input fields if is a mandatory field. 
                                     Example: <input required type="email" value="" class="form-control" name="contact[email][required]">
-
                                 PLEASE NOTE: IF YOU WANT TO ADD OR REMOVE FIELDS (EXCEPT CAPTCHA), JUST EDIT THE HTML CODE, NO NEED TO EDIT php/contact.php or javascript
                                              ALL FIELDS ARE DETECTED DINAMICALY BY THE PHP
-
                                 WARNING! Do not change the `email` and `name`!
                                             contact[name][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
                                             contact[email][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
@@ -251,7 +242,7 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                         <%= form.label :full_name %>
-                                        <%= form.text_field :full_name, class: 'form-control-5', :required => true %>
+                                        <%= form.text_field :full_name, class: 'form-control-5', :required => true%>
                                     </div>
                                     <div class="col-md-3">
                                         <%= form.label :company_name %>
@@ -259,11 +250,11 @@
                                     </div>
                                     <div class="col-md-3">
                                         <%= form.label :email %>
-                                        <%= form.text_field :email, class: 'form-control-5' :required => true%>
+                                        <%= form.text_field :email, class: 'form-control-5', :required => true %>
                                     </div>
                                     <div class="col-md-3">
                                         <%= form.label :phone_number %>
-                                        <%= form.text_field :phone_number, class: 'form-control-5' %>
+                                        <%= form.text_field :phone_number, class: 'form-control-5', :required => true %>
                                     </div>
                                 </div>
                             <div class="row">
@@ -284,7 +275,7 @@
                                         </div>
                                             <div class="col-md-4">
                                             <%= form.label :number_of_basements %>
-                                            <%= form.text_field :number_of_basements, class: 'form-control-1', name:'quote[resi_number_of_basements]', id: 'resi-quar' %>
+                                            <%= form.text_field :number_of_basements, class: 'form-control-1', name:'quote[resi_number_of_basements]', id: 'resi-quar'  %>
                                             </div>
                               
                                 </div>
@@ -320,11 +311,11 @@
                                             </div>
                                         <div class="col-md-4">
                                             <%= form.label :number_of_basements %>
-                                            <%= form.text_field :number_of_basements, class: 'form-control-2', name:'quote[corp_number_of_basements]', id: 'cor-quar' %>
+                                            <%= form.text_field :number_of_basements, class: 'form-control-2', name:'quote[corp_number_of_basements]', id: 'cor-quar'  %>
                                         </div>
                                             <div class="col-md-4">
                                             <%= form.label :max_occupancy_per_floor %>
-                                            <%= form.text_field :max_occupancy_per_floor, class: 'form-control-2', name:'quote[corp_max_occupancy_per_floor]', id: 'cor-occu', :required => true %>
+                                            <%= form.text_field :max_occupancy_per_floor, class: 'form-control-2', name:'quote[corp_max_occupancy_per_floor]', id: 'cor-occu', :required => true  %>
                                          </div>
                                             <div class="col-md-4">
                                                 <%= form.label :number_of_stores %>
@@ -368,21 +359,13 @@
                                     
                                 <div class="row">
                                     <div class="col-md-4-1">
-                                        <label class="label_form" for="radio-button">Service level *</label>
-                                            <table>   
-                                                    <tr>
-                                                        <td><%= form.radio_button(:service_level, 'Standard') %></td>
-                                                        <td><%= form.label :Standard %></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><%= form.radio_button(:service_level, 'Premium') %></td>
-                                                        <td><%= form.label :Premium %></td>
-                                                    </tr>
-                                                    <tr>    
-                                                        <td><%= form.radio_button(:service_level, 'Excelium') %></td>
-                                                        <td><%= form.label :Excelium %></td>
-                                                    </tr>    
-                                            </table>            
+                                    <label class="label_form" for="radio-button">Service level *</label>
+                                    <%= form.radio_button(:service_level, 'Standard') %>
+                                    <%= form.label :Standard %>
+                                    <%= form.radio_button(:service_level, 'Premium') %>
+                                    <%= form.label :Premium %>
+                                    <%= form.radio_button(:service_level, 'Excelium') %>
+                                    <%= form.label :Excelium %>
                                     </div>
                                 </div>
                                 
@@ -433,7 +416,7 @@
                                         </span>
                                         <hr>
                                     <div class="actions"> 
-                                    <%= form.submit class: 'btn btn-primary btn-lg btn-block fs-15', :onclick => "alert('The quote was sucessfully created')"%>
+                                    <%= form.submit class: 'btn btn-primary btn-lg btn-block fs-15', :onclick => "alert('Have you filled all the required fields? If Yes, your quote was successfully sent!)"%>
                                     </div>
                                     </div>
                                 </div>
@@ -511,6 +494,27 @@
                         <h2>1-800-555-1234</h2>
                     </div>
                     <!-- /col #1 -->
+
+                    <!-- col #2 -->
+                    <div class="col-md-4">
+                        <h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+                        <!-- Newsletter Form -->
+                        <p>Subscribe to Our Newsletter to get Important News from Rocket Elevators ! </p>
+
+                        <class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                <input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                                </span>
+                            </div>
+                        <!-- /Newsletter Form -->
+
+
+                    </div>
+                    <!-- /col #2 -->
  
                 </div>
 
@@ -522,8 +526,8 @@
                 </div>
             </div>
 
-        <!-- /FOOTER -->
         </footer>
+        <!-- /FOOTER -->
         
     </div>
     <%=javascript_include_tag "contact" %>
@@ -547,9 +551,3 @@
 
 
     <!-- REVOLUTION SLIDER -->
-
-
-    <!-- PAGELEVEL SCRIPTS -->
-    
-
-
