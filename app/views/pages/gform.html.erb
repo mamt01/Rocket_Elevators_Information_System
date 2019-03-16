@@ -242,15 +242,15 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                         <%= form.label :full_name %>
-                                        <%= form.text_field :full_name, class: 'form-control-5', :required => true%>
+                                        <%= form.text_field :full_name, class: 'form-control-5'%>
                                     </div>
                                     <div class="col-md-3">
                                         <%= form.label :company_name %>
-                                        <%= form.text_field :company_name, class: 'form-control-5', :required => true%>
+                                        <%= form.text_field :company_name, class: 'form-control-5'%>
                                     </div>
                                     <div class="col-md-3">
                                         <%= form.label :email %>
-                                        <%= form.text_field :email, class: 'form-control-5', :required => true%>
+                                        <%= form.text_field :email, class: 'form-control-5'%>
                                     </div>
                                     <div class="col-md-3">
                                         <%= form.label :phone_number %>
@@ -402,7 +402,7 @@
                                         <span class="clearfix">
                                             <strong class="float-left">Total elevators:</strong>
                                             <span id="float-right-1"></span>
-                                            <%= form.hidden_field :'number_of_elevators', name:'quote[number_of_elevators]', :required => true %>
+                                            <%= form.hidden_field :'number_of_elevators', name:'quote[number_of_elevators]'%>
                                         </span>
 
                                         <hr>
@@ -412,14 +412,14 @@
                                             <strong class="float-left">Standard price unit:</strong><br>
                                             <span>Installation fee:</span>
                                             <span id="fees"></span>
-                                            <%= form.hidden_field :'installation_cost', name:'quote[installation_cost]', :required => true %>
+                                            <%= form.hidden_field :'installation_cost', name:'quote[installation_cost]' %>
                                         </span>
 
                                         <hr>
                                         <span class="clearfix">
                                                 <strong class="float-left">Approximate price:</strong>
                                                 <span id="float-right-3"></span>
-                                                <%= form.hidden_field :'total_cost', name:'quote[total_cost]', :required => true %>
+                                                <%= form.hidden_field :'total_cost', name:'quote[total_cost]' %>
 
                                         </span>
                                         <hr>
