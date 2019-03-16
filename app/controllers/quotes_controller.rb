@@ -70,6 +70,7 @@ class QuotesController < ApplicationController
     respond_to do |format|
       if @quote.update(quote_params)
         format.html { redirect_to @quote }
+        # format.html { redirect_to "/gform" }
         format.json { render :show, status: :ok, location: @quote }
       else
         format.html { render :edit }
@@ -84,6 +85,7 @@ class QuotesController < ApplicationController
     @quote.destroy
     respond_to do |format|
       format.html { redirect_to quotes_url}
+      # format.html { redirect_to "/gform" }
       format.json { head :no_content }
     end
   end
